@@ -6,7 +6,7 @@ Serveur dispo (Actuellement Proxmox)
 	-256 Go RAM
 	-bi Intel Xeon Quadcore
 
-License HyperV, Windows VMWARE(P-e)
+License HyperV VMWARE(P-e)
 
 Plage réseau : 172.18.10.??
 

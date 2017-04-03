@@ -1,0 +1,68 @@
+\documentclass[french]{article}
+\usepackage{amssymb, amsmath, mathtools} %pour les mathématiques
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage[a4paper]{geometry}
+\usepackage{babel}
+\usepackage{hyperref}
+\begin{document}
+
+\title{Résumé Journalier}
+\author{Joffrey Hérard}
+\date{\today} 
+
+\maketitle
+
+\paragraph{Quels supports de VM ?}
+\begin{enumerate}
+	\item VirtualBox?
+	\item VMWARE?
+	\item LXC?
+	\item Docker?
+	\item QEMU?
+	\item KVM?
+	\item HyperV?
+	\item Proxmox VE?
+\end{enumerate}
+
+\paragraph{C'est quoi faire un Test ? }
+\begin{itemize}
+\item Test de performance ? 
+\item Test de charge ? 
+\item Test de dégradations?
+\item Test de robustesse ?
+\item Test de montée en charge ?
+\item Test aux limites?
+\item Test de Benchmark ?
+\end{itemize}
+
+\paragraph{Tester quoi ?}
+\begin{itemize}
+	\item CPU.
+	\item Disque Lecture/écriture.
+	\item Transfert réseaux.
+	\item Accès mémoire.
+	\item GPU.  
+\end{itemize}
+Nécessaire d'évaluer l'impacte de la virtualisation sur une même machine avec plusieurs VMs active au même moment 
+\paragraph{Cas d'utilisations}
+\subparagraph{Pour quel genre d'utilisateurs?}
+Étant censé évaluer les performances des solutions de virtualisation d'un point de vue utilisateurs.
+On ce pose la question de quoi évaluer( entrevu dans le paragraphe précédent  ), et comment (Paragraphe suivant)? Il faut faire plusieurs évaluation en fonction de quels genre d'utilisateurs on cible ? 
+\begin{itemize}
+	\item Un utilisateur désirant faire du HPC $\rightarrow$ Évaluations des échanges (pour les modèle a passage de message), Thread, multi-cœur.
+	\item Serveurs Web $\rightarrow$ Évaluations du réseaux, évaluations des écriture/lecture disque . processeurs .
+	\item etc.. 
+\end{itemize}
+Il faut établir des scenarios associe a chaque d'utilisations pour mettre en place une campagne de test idéal et donc en extraire des données représentatives. 
+\paragraph{Driver/sans Driver ? }
+\begin{itemize}
+	\item Avec Driver = Installation de programme supplémentaire, meilleur performance ? pertinence ? 
+	\item Sans Driver = Machine virtuelle en brute $\rightarrow$ intérêt de la virtualisation en premier lieu, créer une machines a la volée en fonction des besoins, si le besoin est immédiat le temps d'installations des drivers serait probablement trop gourmand  
+\end{itemize}
+\paragraph{Ressource existante }
+\subparagraph{VMWare}
+	Il existe déjà un outil fournit par VMWare VMMark trouvable ici : \newline
+	\url{<http://www.vmware.com/products/vmmark.html>}
+\paragraph{Mis en place de test personnel ?}
+\end{document}
