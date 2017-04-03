@@ -44,7 +44,7 @@
 	\item Accès mémoire.
 	\item GPU.  
 \end{itemize}
-Nécessaire d'évaluer l'impacte de la virtualisation sur une même machine avec plusieurs VMs active au même moment 
+Nécessaire d'évaluer l'impact de la virtualisation sur une même machine avec plusieurs VMs active au même moment 
 \paragraph{Cas d'utilisations}
 \subparagraph{Pour quel genre d'utilisateurs?}
 Étant censé évaluer les performances des solutions de virtualisation d'un point de vue utilisateurs.
@@ -54,15 +54,52 @@ On ce pose la question de quoi évaluer( entrevu dans le paragraphe précédent 
 	\item Serveurs Web $\rightarrow$ Évaluations du réseaux, évaluations des écriture/lecture disque . processeurs .
 	\item etc.. 
 \end{itemize}
-Il faut établir des scenarios associe a chaque d'utilisations pour mettre en place une campagne de test idéal et donc en extraire des données représentatives. 
+Il faut établir des scenarios associés à chaque d'utilisations pour mettre en place une campagne de test idéal et donc en extraire des données représentatives. 
 \paragraph{Driver/sans Driver ? }
 \begin{itemize}
 	\item Avec Driver = Installation de programme supplémentaire, meilleur performance ? pertinence ? 
-	\item Sans Driver = Machine virtuelle en brute $\rightarrow$ intérêt de la virtualisation en premier lieu, créer une machines a la volée en fonction des besoins, si le besoin est immédiat le temps d'installations des drivers serait probablement trop gourmand  
+	\item Sans Driver = Machine virtuelle en brute $\rightarrow$ intérêt de la virtualisation en premier lieu, créer une machines à la volée en fonction des besoins, si le besoin est immédiat le temps d'installations des drivers serait probablement trop gourmand.  
 \end{itemize}
 \paragraph{Ressource existante }
 \subparagraph{VMWare}
 	Il existe déjà un outil fournit par VMWare VMMark trouvable ici : \newline
 	\url{<http://www.vmware.com/products/vmmark.html>}
 \paragraph{Mis en place de test personnel ?}
+
+
+\paragraph{Listes des choses à faire}
+\begin{enumerate}
+	\item Choix des Hyperviseurs de Type 1 ? Type 2 ? Conteneurs?
+	\item Choix cible des Tests.
+	\item Définitions des cas d'utilisations. 
+	\item Définitions des différents scenarios associé au différent schéma ..
+	\item Préparations des différents scripts associés aux scenarios pour les différent hyperviseur, conteneurs 
+	\item Remise à zero de la machine hôte.
+	\item Mise en place d'une << sonde >> pour effectué les relevés de sorte à être des plus neutre dans les enregistrements.
+	\item Mise en place des Tests 
+		\begin{enumerate}
+			\item Préparations de la machine physique et des machines virtuelles. 
+			\item Lancement des tests.
+			\item Surveillance régulière du bon déroulement des différents test.
+			\item Récupérations des données . 
+			\item Analyse des résultats sur la cohérence .
+			\begin{enumerate}
+				\item Établir des liens entre certain paramètres $\rightarrow $ les confirmers par d'autre test ? 
+				\item Analyse sur les différents hyperviseur/conteneurs sur les mêmes scenarios 
+			\end{enumerate}
+			\item Représentations des résultats pour chaque batterie de tests. (Courbes) et les interprétations.
+			\item Retour à l’étape (a) si nécessaire sinon étapes suivantes.
+		\end{enumerate}
+	\item Écriture du rapport au fur et mesure.	
+			
+\end{enumerate}
+
+
+\begin{figure}
+\centering
+\caption{Graphe des dépendances }
+\label{Graphe des dépendances }
+\includegraphics[scale=0.250]{GrapheDepends.png}
+\end{figure}
+
 \end{document}
