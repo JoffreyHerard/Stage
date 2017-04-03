@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}  
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\usepackage{titlesec} 
+\usepackage[frenchb]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{tabu}
+\usepackage[svgnames]{xcolor}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{layout}
+\usepackage{listings}
+\usepackage{textcomp}
+\usepackage{minted}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+\newenvironment{strechpage}[1][0cm]{%
+	\newpage\vspace*{#1}\leavevmode\noindent\centering
+	\def\tempdimen{#1}%
+	\begin{minipage}{\dimexpr\linewidth-#1-#1\relax}}%
+	{\end{minipage}\vspace*\tempdimen\newpage}
+	
+\pagestyle{fancy}
+\renewcommand\headrulewidth{1pt}
+\fancyhead[L]{}
+\fancyhead[R]{URCA}
+\renewcommand\footrulewidth{1pt}
+\fancyfoot[L]{HERARD Joffrey}
+\fancyfoot[C]{
+\textbf{Page \thepage/\pageref{LastPage}}}
+\fancyfoot[R]{2016-2017}
+
+
+
+\titleformat{\chapter}[display]
+  {\centering\normalfont\huge\bfseries}
+  {\chaptertitlename\ \thechapter}
+  {20pt}
+  {\Huge}
+  
+\newcommand\T{\rule{0pt}{2.6ex}}       % Top strut
+\newcommand\B{\rule[-1.2ex]{0pt}{0pt}} % Bottom strut
+
+\begin{document}
+ \makeatletter
+\def\maketitle{%
+  \null
+  \thispagestyle{empty}%
+  \vfill
+  \begin{center}\leavevmode
+    \normalfont
+    {\Huge \@title\par}%
+    \vskip 3cm
+    {\Large \@author\par}%
+    \vskip 1cm
+    {\Large \@date\par}%
+  \end{center}%
+  \vfill
+  \null
+  \cleardoublepage
+  }
+\makeatother
+\title{Mise en place d’une solution d'évaluation des performances de solutions de virtualisation, basée sur une expérience utilisateur}
+\author{ Réalisé par Joffrey Hérard \begin{center}Responsable : Olivier Flauzac\end{center}}
+\date{2016-2017}
+\maketitle
+ 
+\tableofcontents 
+
+\newpage
+\section{Introduction} 
+Sujet : Mise en place d’une solution d'évaluation des performances de solutions de virtualisation, basée sur une expérience utilisateur
+
+
+
+
+\section{Annexes}
+
+\end{document}

@@ -1,0 +1,28 @@
+Dates Stages 
+	3 Avril - 23 Mai 
+
+Serveur dispo (Actuellement Proxmox)
+	-4 disques de 750 Go 
+	-256 Go RAM
+	-bi Intel Xeon Quadcore
+
+License HyperV, Windows VMWARE(P-e)
+
+Plage réseau : 172.18.10.??
+
+Definir ce que l'on teste ? 
+	-> Lister ce que l'on teste
+Lecture/ecriture -> disque, accès mémoire . 
+Taux de transfert réseau -> OpenVSwitch 
+Impacte de la virtualisation . 
+Hyperviseur Type 1 	->
+Hyperviseur Type 2 	->	ENVIRONNEMENT DE TEST { Qemu, Docker, LXC, KVM }- > Outils de bench .
+Conteneur 		->	
+
+
+
+Definir les Use case.
+
+QEMU, KVM - > DRIVERS? elements en brut ? avec drivers ? 
+Virtio ? 
+ 
