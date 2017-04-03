@@ -19,8 +19,8 @@ Start->5;
 g->a[ fontsize=20,  label = " Retour à l’étape (a)" ];
 a->b[ fontsize=20, label = "Préparations des machines " ];
 b->c[ fontsize=20, label = "Lancement des tests." ];
-c->d[ fontsize=20, label = "Surveillance régulière du bon déroulement des différents test" ];
-c->c 
+c->d[ fontsize=20, label = "Fin du test " ];
+c->c [ fontsize=20, label = "Surveillance régulière du bon déroulement des différents test" ];
 d->e[ fontsize=20, label = "Récupérations des données" ];
 e->i[ fontsize=20, label = " Analyse" ];
 i->ii[ fontsize=20,  label = "Établir des liens entre certain paramètres" ];

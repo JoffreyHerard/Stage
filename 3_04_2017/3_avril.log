@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2016.12.26)  3 APR 2017 19:30
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2016.12.26)  3 APR 2017 19:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -798,7 +798,7 @@ File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 File: GrapheDepends.png Graphic file (type QTm)
 
 <use  "GrapheDepends.png" >
-Overfull \hbox (63.79608pt too wide) in paragraph at lines 102--103
+Overfull \hbox (80.85979pt too wide) in paragraph at lines 102--103
  [][] 
  []
 
