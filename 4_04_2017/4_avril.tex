@@ -104,10 +104,15 @@ Hyper-V : Jamais abordé.
 
 \section{Les tests}
 \paragraph{Test de performance}
+ Les informations recueillies concernent les temps de réponse utilisateurs, les temps de réponse réseau et les temps de traitement d’une requête.
 \paragraph{Test de montée en charge}
+Il s'agit d'un test au cours duquel on va simuler un nombre d'utilisateurs sans cesse croissant de manière à déterminer quelle charge limite le système est capable de supporter
 \paragraph{Test de dégradations}
+ Ce test peut tenir compte ou non de la cadence des itérations, la représentativité en termes d'utilisateurs simultanés vs. sessions simultanées n'étant pas ici un objectif obligatoire, s'agissant ici plutôt de déterminer les points de contention générés par chaque scénario fonctionnel.
 \paragraph{Test de robustesse}
-\paragraph{Test aux limites}
+ il s'agit de tests au cours desquels on va simuler une charge importante d'utilisateurs sur une durée relativement longue, pour voir si le système testé est capable de supporter une activité intense sur une longue période sans dégradations des performances et des ressources applicatives ou système.
+\paragraph{Test aux limites} 
+Proche du test de capacité,
 \paragraph{Benchmark}
 \newpage
 \begin{thebibliography}{9}
@@ -139,7 +144,14 @@ Hyper-V : Jamais abordé.
    \bibitem{KVM}
          KVM
          \url{https://www.linux-kvm.org/}.
-
+   \bibitem{Wikipedia-Test}
+         Wikipedia sur les Tests
+         \url{https://fr.wikipedia.org/wiki/Test_de_performance}.
+   \bibitem{VMMark}
+         VM Mark
+         \url{https://www.vmmark.com/products/vmark.html}.
+         
+         
 \end{thebibliography}
 
 
