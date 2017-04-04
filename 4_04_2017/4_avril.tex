@@ -1,0 +1,146 @@
+\documentclass[french]{article}
+\usepackage{amssymb, amsmath, mathtools} %pour les mathématiques
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage[a4paper]{geometry}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{pifont}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newtheorem{post}{Postulat}
+\begin{document}
+\title{Résumé Journalier}
+\author{Joffrey Hérard}
+\date{\today} 
+
+\maketitle
+\section{Les VMs}
+\paragraph{Liste de mes connaissances des différentes technologies de virtualisation}
+\begin{itemize}
+	\item VirtualBox
+	\item VMWARE
+	\item LXC
+	\item Docker
+	\item QEMU
+	\item KVM
+	\item HyperV
+	\item Proxmox VE
+	\item Oracle VM Server 
+	\item Hyper-V Containers
+\end{itemize}
+
+Réorganisation des différentes VM par tableau :   
+\begin{table}[!h]
+\centering
+\caption{Différents services de Virtualisations }
+\begin{tabular}{|l|l|}
+\hline
+Conteneurs         & Hyperviseurs Types 1 et 2                                                                              \\ \hline
+LXC                & Virtualbox                                                                                             \\
+Docker             & VMWare                                                                                                 \\
+Vagrant            & Qemu                                                                                                   \\
+Hyper-V Containers & \begin{tabular}[c]{@{}l@{}}KVM\\ Proxmox(Basé sur KVM)\\ Oracle VM Server\\ Hyper-V\\\end{tabular} \\ \hline
+\end{tabular}
+\end{table}
+
+\paragraph{Quoi garder?}
+Choix sur les différentes VM :  
+\begin{table}[!h]
+\centering
+\begin{tabular}{lll}
+LXC   \checkmark \par           & Docker  \checkmark \par            &  HyperV \xmark \\
+VMWare  \xmark         & VirtualBox   \checkmark \par       & Qemu \xmark   \\
+Oracle VM Server \xmark & Proxmox  \cmark          & KVM \xmark    \\
+Hyper-V Containers \xmark          &  &
+\end{tabular}
+\end{table}
+\newpage
+Justification des choix cas par cas :
+\begin{post}
+LXC : Gestionnaire de Conteneurs Linux, utilisé aussi souvent que Docker (NB : Docker basé sur LXC)
+\end{post}
+
+
+\begin{post}
+Docker : Gestionnaire de Conteneurs, que j'ai utilisé très souvent. (NB : Docker basé sur LXC)
+\end{post}
+
+\begin{post}
+VirtualBox : Utilisé de manière courante aussi, de plus c'est un Hyperviseur classique de Type 2.
+\end{post}
+
+\begin{post}
+Proxmox VE : Utilisé d'un point de vue utilisateurs, mais il complète la liste en étant un Hyperviseur de type 1.
+\end{post}
+
+\begin{post}
+VMware : Je ne sais pas si l'on a une licence à notre disposition ? 
+\end{post}
+
+\begin{post}
+Qemu : Utilisé quelque fois cependant, basé sur KVM(Comme Proxmox VE) et XEN(Connu que de nom). 
+\end{post}
+
+
+\begin{post}
+Oracle VM Server : Jamais abordé ..et je ne sais pas si l'on a une licence à notre disposition ? 
+\end{post}
+
+\begin{post}
+KVM : HyperViseur de type 1. Proxmox étant basé sur KVM et étant lui aussi un Hyperviseur de Type 1, 
+\end{post}
+
+\begin{post}
+Hyper-V Containers : Jamais abordé .. ne connaissait pas son existence avant de faire de la recherche sur le sujet .
+\end{post}
+
+\begin{post}
+Hyper-V : Jamais abordé.
+\end{post}
+
+
+\section{Les tests}
+\paragraph{Test de performance}
+\paragraph{Test de montée en charge}
+\paragraph{Test de dégradations}
+\paragraph{Test de robustesse}
+\paragraph{Test aux limites}
+\paragraph{Benchmark}
+\newpage
+\begin{thebibliography}{9}
+
+   \bibitem{Docker}
+          Documentation Docker
+          \url{https://docs.docker.com/}.
+   \bibitem{HyperV Conteneurs}
+          Hyper-V Containers
+          \url{https://docs.microsoft.com/en-us/virtualization/windowscontainers}.
+   \bibitem{Linux containers}
+         Linux Containers
+         \url{https://linuxcontainers.org/fr/}.
+   \bibitem{Virtual Box}
+         Virtual Box
+         \url{ https://www.virtualbox.org/}.
+   \bibitem{Proxmox VE}
+         Proxmox VE
+         \url{https://www.proxmox.com/en/}.
+   \bibitem{VmWare}
+         VmWare
+         \url{ http://www.vmware.com/fr.html}.
+   \bibitem{QEMU}
+         QEMU
+         \url{http://www.qemu-project.org/   }.
+   \bibitem{Hyper-V}
+         Hyper-V
+         \url{https://www.microsoft.com/fr-fr/cloud-platform/server-virtualization}.      
+   \bibitem{KVM}
+         KVM
+         \url{https://www.linux-kvm.org/}.
+
+\end{thebibliography}
+
+
+\end{document}
