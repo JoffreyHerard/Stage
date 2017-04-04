@@ -11,6 +11,8 @@
 \newcommand{\xmark}{\ding{55}}%
 
 \newtheorem{post}{Postulat}
+\newtheorem{mydef}{Définition}
+
 \begin{document}
 \title{Résumé Journalier}
 \author{Joffrey Hérard}
@@ -45,6 +47,18 @@ Vagrant            & Qemu                                                       
 Hyper-V Containers & \begin{tabular}[c]{@{}l@{}}KVM\\ Proxmox(Basé sur KVM)\\ Oracle VM Server\\ Hyper-V\\\end{tabular} \\ \hline
 \end{tabular}
 \end{table}
+Tout d'abord avant de savoir ce que l'on retiendras on va déjà faire quelque définitions.
+\begin{mydef}
+Hyperviseur de type 1 : est un logiciel qui s'exécute directement sur une plateforme matérielle ; cette plateforme est alors considérée comme outil de contrôle de système d'exploitation. Un système d'exploitation secondaire peut, de ce fait, être exécuté au-dessus du matériel.
+\end{mydef}
+
+\begin{mydef}
+Hyperviseur de type 2 : Un hyperviseur de Type 2 est un logiciel qui s'exécute à l'intérieur d'un autre système d'exploitation. Un système d'exploitation invité s'exécutera donc en troisième niveau au-dessus du matériel. Les systèmes d'exploitation invités n'ayant pas conscience d'être virtualisés, ils n'ont pas besoin d'être adaptés.
+\end{mydef}
+
+\begin{mydef}
+Conteneur/ Isolateur : Un isolateur est un logiciel permettant d'isoler l'exécution des applications dans ce qui est appelé des contextes.L'isolateur permet ainsi de faire tourner plusieurs fois la même application dans un mode multi-instance, mais les environnements virtualisés ne sont pas complètement isolés.Cependant on ne peut pas vraiment parler de virtualisation de systèmes d’exploitation. 
+\end{mydef}
 
 \paragraph{Quoi garder?}
 Choix sur les différentes VM :  
@@ -57,10 +71,9 @@ Oracle VM Server \xmark & Proxmox  \cmark          & KVM \xmark    \\
 Hyper-V Containers \xmark          &  &
 \end{tabular}
 \end{table}
-\newpage
 Justification des choix cas par cas :
 \begin{post}
-LXC : Gestionnaire de Conteneurs Linux, utilisé aussi souvent que Docker (NB : Docker basé sur LXC)
+LXC : Gestionnaire de Conteneurs Linux, je l'ai utilisé aussi souvent que Docker (NB : Docker basé sur LXC)
 \end{post}
 
 
@@ -73,7 +86,7 @@ VirtualBox : Utilisé de manière courante aussi, de plus c'est un Hyperviseur c
 \end{post}
 
 \begin{post}
-Proxmox VE : Utilisé d'un point de vue utilisateurs, mais il complète la liste en étant un Hyperviseur de type 1.
+Proxmox VE : Utilisé d'un point de vue utilisateur, mais il complète la liste en étant un Hyperviseur de type 1.
 \end{post}
 
 \begin{post}
@@ -101,7 +114,7 @@ Hyper-V Containers : Jamais abordé .. ne connaissait pas son existence avant de
 Hyper-V : Jamais abordé.
 \end{post}
 
-
+\newpage
 \section{Les tests}
 \paragraph{Test de performance}
  Les informations recueillies concernent les temps de réponse utilisateurs, les temps de réponse réseau et les temps de traitement d’une requête.
@@ -114,16 +127,85 @@ Il s'agit d'un test au cours duquel on va simuler un nombre d'utilisateurs sans 
 \paragraph{Test aux limites} 
 Proche du test de capacité,
 \paragraph{Benchmark}
-
+Un benchmark est un logiciel "banc d'essai" permettant de mesurer les performances d'un système pour le comparer à un autre. Ces test doivent donc être équivalents, en conditions similaires, seul les résultats peuvent changer.
+\newpage
 \section{Retour sur la liste des choses à faire}
 
 \paragraph{Retour sur le point 3}
 
-En réalité, j'ai mis les use case a cette place, mais sur le schema de la page suivante on voit que il ce fait en "parallèle ".Mais effectivement on pourrais le mettre en première positions puis faire l'ensemble des autres tache à faire. 
+En réalité, j'ai mis les use case à cette place, mais sur le schéma de la page suivante on voit que il ce fait en "parallèle ".Mais effectivement on pourrais le mettre en première positions puis faire l'ensemble des autres tache à faire.
+J'ai donc mis à jour ce correctif dans le graphe du précédent rapport journalier. 
 \paragraph{Retour sur le point 6}
-Parce que à ma connaissance, il y a probablement plusieurs(A entendre différent services  )déjà installer, et sachant que l'on doit faire des test, il est nécéssaire de "nettoyer la machine" afin de n'avoir que ce qui est utile a nos besoins, et pas avoir des Démons qui s’exécutent et prennent donc des ressources. 
-\paragraph{Retour sur le point 8 a }
+Parce que à ma connaissance, il y a probablement plusieurs éléments (A entendre différent services  )déjà installer, et sachant que l'on doit faire des tests, il est nécessaire de "nettoyer la machine" afin de n'avoir que ce qui est utile à nos besoins, et pas avoir des Démons qui s’exécutent et donc utilisent des ressources. 
+\paragraph{Retour sur le point 7 } 
+\subparagraph{Pourquoi une sonde neutre}
+Car les relevés feront objets de statistique on pourrait en sortir des données aberrant si la sonde influe elle même sur son propre relevé. Statistiquement si cette influence est constante elle peut en être extraite. 
+\subparagraph{Pourquoi une sonde interne ?}
+La encore Interne a quoi ? interne a chaque machine virtuelle/ Conteneurs ?
+Si on part sur le fait que il y ai une sonde sur chaque machines virtuelles crée. 
+\begin{itemize}
+	\item Si le nombre des machines virtuelle/ conteneurs tend vers l'infinie ça veut dire que le nombre de sonde est infinie lui aussi ? Il y a donc un besoin de répartitions et de récupération des données fournies par les sondes.
+	\item Par contre si on exécute plusieurs machines virtuelles différentes, par exemple  50 Windows 20 Ubuntu 30 CentOS, il faut être capable de différencier les relevés d'une machine par rapport à une autre avec un ensemble d'informations qui reste à définir...
+	\item Différenciation point à point de chaque relevé $\rightarrow$ On peut faire une structure de distribution des relevés si on le fait ainsi par exemple en prenant une architecture de fat-tree
+Ceci dit on interpréterait chaque nœud, comme une sonde qui soit communique avec une autre sonde soit "sonde" justement une machines.
+\begin{figure}[!h]
+\centering
+\caption{Fat tree}
+	\includegraphics[scale=0.5]{fat.png}
+\end{figure}
+\end{itemize}
+\subparagraph{Pourquoi une sonde externe  ?}
+L’Intérêt serait d'avoir un seul gros amas de données en même endroit il ne resterait que à	en extraire les informations désiré, par contre le temps de recherche peut etre long, plus il y a de donnée enregistrés( encore une fois cela reste à définir) il y aurait cependant un enregistrement qui serait par transmission d'information, un aspect Moniteur d'informations pour chaque vm a mettre en place ? 
+
+\newpage
+\paragraph{Retour sur le point 8 a) }
+\subparagraph{Préparation de la machines physiques }
+Une remise a zéro pour ne pas faussez les résultats/comparaisons, il faut une base identique, pour une neutralité de la base il faut que l'on parte du même constat pour toutes les technologies aue on compareras . 
+\subparagraph{Préparation des machines virtuelles }
+Il faudra probablement préparé des scripts de lancement de machines virtuelles pour nous en donné une certaine quantités (A déterminé ).
 \paragraph{Retour sur le point 8 c }
+Si l'on suppose que tout est parfait, effectivement il n'y pas forcément besoin de surveiller régulièrement ! 
+Par contre savoir ou le test en ai si il y a eu un crash d'une VM, l'idée serait de mettre un message dans un fichier.log pour savoir si des services se sont arrêter et surtout que on avait pas prévu . 
+
+\paragraph{Listes des choses à faire Mis a jour 4/04/2017}
+\begin{enumerate}
+	\item Définitions des cas d'utilisations. 
+	\item Choix des Hyperviseurs de Type 1 ? Type 2 ? Conteneurs?
+	\item Choix cible des Tests.
+	\item Définitions des différents scenarios associé au différent schéma ..
+	\item Préparations des différents scripts associés aux scenarios pour les différent hyperviseur, conteneurs 
+	\item Remise à zero de la machine hôte.
+	\item Mise en place d'une << sonde >> pour effectué les relevés de sorte à être des plus neutre dans les enregistrements.
+	\item Mise en place des Tests 
+		\begin{enumerate}
+			\item Préparations de la machine physique et des machines virtuelles. 
+			\item Lancement des tests.
+			\item Surveillance régulière du bon déroulement des différents test.
+			\item Récupérations des données . 
+			\item Analyse des résultats sur la cohérence .
+			\begin{enumerate}
+				\item Établir des liens entre certain paramètres $\rightarrow $ les confirmers par d'autre test ? 
+				\item Analyse sur les différents hyperviseur/conteneurs sur les mêmes scenarios 
+			\end{enumerate}
+			\item Représentations des résultats pour chaque batterie de tests. (Courbes) et les interprétations.
+			\item Retour à l’étape (a) si nécessaire sinon étapes suivantes.
+		\end{enumerate}
+	\item Écriture du rapport au fur et mesure.	
+			
+\end{enumerate}
+
+
+
+
+\newpage
+\begin{figure}[!h]
+\centering
+\caption{Graphe des dépendances }
+\label{Graphe des dépendances }
+\includegraphics[scale=0.250]{GrapheDepends.png}
+\end{figure}
+
+
 \newpage
 \begin{thebibliography}{9}
 
@@ -159,9 +241,11 @@ Parce que à ma connaissance, il y a probablement plusieurs(A entendre différen
          \url{https://fr.wikipedia.org/wiki/Test_de_performance}.
    \bibitem{VMMark}
          VM Mark
-         \url{https://www.vmmark.com/products/vmark.html}.
-         
-         
+         \url{https://www.vmmark.com/products/vmark.html}. 
+   \bibitem{VM history}
+         VM history par IBM
+         \url{http://www.vm.ibm.com/history/ }.
+               
 \end{thebibliography}
 
 
