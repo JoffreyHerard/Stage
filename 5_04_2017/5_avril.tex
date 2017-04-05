@@ -1,0 +1,110 @@
+\documentclass[french]{article}
+\usepackage{amssymb, amsmath, mathtools} %pour les mathématiques
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage[a4paper]{geometry}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{pifont}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newtheorem{post}{Postulat}
+\newtheorem{mydef}{Définition}
+
+\begin{document}
+\title{Résumé Journalier}
+\author{Joffrey Hérard}
+\date{\today} 
+
+\maketitle
+
+\section{Mis à jour  des Définitions}
+\begin{mydef}
+Hyperviseurs :c'est une plate-forme de virtualisation qui permet à plusieurs systèmes d'exploitation de travailler sur une même machine physique en même temps.Il en existe deux catégories .
+	\begin{itemize}
+		\item La première bien nommée Type 1 :  est un logiciel de virtualisation installé directement sur le matériel informatique, il contrôle non seulement le matériel, mais aussi un ou plusieurs systèmes d'exploitation invités.
+		\item La deuxième bien nommée Type 2 : sont des applications de virtualisation qui s’exécutent non pas directement sur du hardware mais sur un système d’exploitation.
+	\end{itemize}
+\end{mydef}
+\begin{mydef}
+Benchmarking : Évaluation des performances d'un système par simulation des conditions réelles d'utilisation. 
+\end{mydef}
+\begin{mydef}
+Conteneurs : C'est de créer des instances dans un espace isolés au lieu. En d'autres termes, le partage du matériel est de rendre disponible de nombreux opérateurs sur le noyau lui-même plutôt que d'une autre couche. 
+\end{mydef}
+\section{Approfondissement sur les Postulats}
+Il est nécessaire pour être équitables. Et surtout au vues des différentes définitions apporté hier et aujourd'hui. De repartir nos tests sur l'ensemble de ces 3 technologies qui nous sont accessible. Par conséquent il faut être cohérent dans nos choix. De plus il y a aussi a considérer cet effet de mode sur le fait d'utiliser des conteneurs absolument partout et pour n'importe quoi par conséquent l’outil Docker et l'outil LXC qui sont assez populaires sont à étudié. Premièrement Docker, il est nécessaire d'évaluer si Docker a effectivement tout les points positif que on lui vente. Tout comme LXC, sachant de plus que Docker étant basé sur LXC. Il serait intéressant d’évaluer si cette technologie avec la couche qu'apporte docker a un vrai plus ou un moins.
+
+Donc on choisi d'évaluer la technologie de conteneurisation proposé par les conteneurs Linux LXC, et celle par Docker.
+
+Maintenant si on se penche sur le cas des Hyperviseur, si on part du même constat. Déjà il y a deux catégorie d'Hyperviseurs, comme dit plus haut, les types 1 \& 2. 
+Donc il faut établir des tests sur ces deux types d'hyperviseurs. On peut donc choisir tout comme Docker et LXC, partir sur la popularité de chacun. Il serait intéressant donc de prendre le logiciel d'Oracle VirtualBox. VirtualBox est un hyperviseurs de Type 2 . On peut notifié aussi que cet hyperviseur utilise des technologies comme celle de QEMU qui lui est de Type 2 aussi.Soit l'on peut choisir donc Virtualbox.
+
+Maintenant il reste à évaluer KVM, QEMU, Hyper-V, VMWare, si nous les avions a les choisir, VMWare et Hyper-V serait très intéressant à évaluer. Tout dépends des licences qui sont a notre dispositions mais il sont tout deux des acteurs important dans les hyperviseurs d'aujourd'hui. QEMU étant un Hyperviseurs de Types 2 il peut être intéressant de l'évaluer mis en face a face de VirtualBox.. KVM est un hyperviseur de type 1, intégré à Linux. Il est utilisé dans Proxmox VE
+
+En somme, il faut bien savoir discerner les différents hyperviseurs à notre dispositions, ainsi que de savoir discerner qu'est ce qui est pertinent. Je reviens donc, sur les choix émis hier. Il serait plus pertinent d'utiliser la technologies propre (Comme M.Flauzac l'as émis dans son mail ce matin 10 h 33 ) et non pas une surcouche. Un test est intéressant sur la technologies. Si on agrémente les technologie d'une surcouche, cela reste t-il tout aussi pertinent.    
+
+\section{Liste des objectifs à remplir durant le stage}
+\begin{enumerate}
+	\item Savoir évaluer les différentes solutions de virtualisation. 	
+	\item Effectuer une démarche scientifique cohérente.
+	\item Effectuer un travail collaboratif avec des personnes d’expériences sur le sujet, qui malgré tout est plus ou moins inédit pour moi (J’entends que la plupart des travaux réalisé ces dernières années on été fait avec des gens de mêmes expérience que moi ).
+	\item Établir des statistiques, sur les résultats qui seront obtenus . En ressortir des résultats des variables qui sortent du lot.
+\end{enumerate}
+\section{Détails sur chaque test}
+\subsection{Test CPU}
+\begin{itemize}
+\item Évaluation de la vitesse de la lecture Mémoire. 
+\item Évaluation de la vitesse de la écriture Mémoire. 
+\item Évaluation de la vitesse de la copie Mémoire. 
+\item Évaluation de la vitesse de calcul flottant a précision simple 
+\item Évaluation de la vitesse de calcul flottant a précision double 
+\item Évaluation des opération d'entrée sortie par seconde 
+\item Évaluation des opération de chiffrement. 
+\item Évaluation des opération de hachage.
+
+\end{itemize}
+\subsection{Test GPU}
+\begin{itemize}
+\item Évaluation de la vitesse de la lecture Mémoire. 
+\item Évaluation de la vitesse de la écriture Mémoire. 
+\item Évaluation de la vitesse de la copie Mémoire. 
+\item Évaluation de la vitesse de calcul flottant a précision simple 
+\item Évaluation de la vitesse de calcul flottant a précision double 
+\item Évaluation des opération d'entrée sortie par seconde 
+\item Évaluation des opération de chiffrement. 
+\item Évaluation des opération de hachage.
+
+\end{itemize}
+\subsection{Test HDD}
+
+\begin{itemize}
+\item Test de Performance en Écriture 
+		\begin{enumerate}
+		\item Évaluation des temps de réponses. 
+		\item Évaluation des Vitesse de transfert.
+		\item Évaluation de la meilleurs performance possible (Maximum en vitesse écriture )sur des fichiers de différente taille.
+		\end{enumerate}
+\item Test de Performance en Lecture 
+		\begin{enumerate}
+		\item Évaluation des temps de réponses. 
+		\item Évaluation de la meilleurs performance possible (Maximum en vitesse lecture ) sur des fichiers de différente taille. 
+		\end{enumerate}
+\item Évaluation des vitesse du cache.
+\end{itemize}
+
+\subsection{Test Network}
+\begin{itemize}
+\item Chaque test doit être réalisé avec des paquets de taille croissante avec le temps.
+\item Vitesse de Download à estimé .
+\item Vitesse d'Upload à estimé .
+\end{itemize}
+\subsection{Lien avec le Hardware}
+A voir 
+\subsection{Impact d'un Hyperviseur}
+A voir 
+
+
+\end{document}

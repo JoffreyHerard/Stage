@@ -1,0 +1,6 @@
+/* courtesy Ian Darwin and Geoff Collyer, Softquad Inc. */
+digraph unix {
+	size="6,6";
+	node [color=lightblue2, style=filled];
+	
+}
