@@ -1,0 +1,90 @@
+\documentclass[french]{article}
+\usepackage{amssymb, amsmath, mathtools} %pour les mathématiques
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage[a4paper]{geometry}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,shapes,positioning,shadows,trees}
+
+\tikzset{
+    basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
+    root/.style   = {basic, rounded corners=2pt, thin, align=center,
+                     fill=green!30},
+    onode/.style = {basic, thin, align=center, fill=green!60,text width=3cm,},
+    tnode/.style = {basic, thin, align=left, fill=pink!60, text width=6.5em},
+    edge from parent/.style={->, >={latex}, draw=black, edge from parent fork right}
+}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newtheorem{post}{Postulat}
+\newtheorem{mydef}{Définition}
+
+\begin{document}
+\title{Résumé Journalier}
+\author{Joffrey Hérard}
+\date{\today} 
+
+\maketitle
+
+\section{WBS}
+\begin{tikzpicture}[
+      every node/.style = {draw, rounded corners=3pt, semithick, drop shadow},
+            ROOT/.style = {top color=green!60!blue, bottom color=blue!60!green,
+                             inner sep=2mm, text=white, font=\bfseries},
+              L1/.style = {fill=blue!20},
+              L2/.style = {fill=orange!30},
+              L3/.style = {fill=green!30, grow=down, xshift=1em, anchor=west, 
+      edge from parent path={(\tikzparentnode.south) |- (\tikzchildnode.west)}},
+edge from parent/.style = {draw, thick},
+              LD/.style = {level distance=#1ex},
+             LD1/.style = {level distance=6ex},
+             LD2/.style = {level distance=12ex},
+             LD3/.style = {level distance=18ex},
+         level 1/.style = {sibling distance=32mm}
+                        ]
+    % Parents
+\node[ROOT] {root}
+    [edge from parent fork down]
+    child{node[L2] {AAA AAA AAA}
+      child[L3,LD1]   {node[L3]   {A1}}
+      child[L3,LD2]  {node[L3]   {A2}}
+      child[L3,LD3]   {node[L3]   {A3}}
+            }
+    child{node[L2] {BB  BB BB BB}
+      child[L3,LD1]  {node[L3]   {B1}}
+      child[L3,LD2]  {node[L3]   {B2}}
+            }
+    child {node[L2] {C CC CCC}
+      child[L3,LD1] {node[L3]   {C1}}
+      child[L3,LD2] {node[L3]   {C2 C2 C2}
+          child[L3,LD1] {node[L3,fill=red!30]   {C1}}
+          child[L3,LD2] {node[L3,fill=red!30]   {C2}} 
+                        }     
+      child[L3,LD=30]  {node[L3]   {C2 C2 C2}}
+            };
+\end{tikzpicture}
+\section{Détails sur chaque test}
+\subsection{Lien avec le Hardware}
+A voir 
+\subsection{Impact d'un Hyperviseur}
+Sachant que le monde des Hyperviseurs est assez vaste, chacun à une politique différentes ne seras-ce que par son choix sur le type de son hyperviseur (1 et 2). Par conséquent il y a forcement des Hyperviseurs qui vont avoir une politique différente sur l'accès concurrent à des ressources. Les hyperviseurs ont besoin d'isoler les interruptions et les accès à la mémoire. C'est très coûteux en termes de performances. Les surcoûts en termes de performances pour virtualiser un système comportent trois aspects principaux : la virtualisation du processeur, de la mémoire et des entrées/sorties.
+
+De plus, au delà de la manière de gérer, les limites imposée elle même par les hyperviseur/conteneurs. 
+\newpage
+\begin{thebibliography}{9}
+
+   \bibitem{Docker}
+          Performance des hyperviseurs.
+          \url{https://fr.wikipedia.org/wiki/Performances_des_hyperviseurs}.
+   \bibitem{Docker}
+          An Analysis of Performance Interference Effects in Virtual Environments
+          \url{http://ieeexplore.ieee.org/document/4211036/?arnumber=4211036}
+               
+\end{thebibliography}
+
+\end{document}
