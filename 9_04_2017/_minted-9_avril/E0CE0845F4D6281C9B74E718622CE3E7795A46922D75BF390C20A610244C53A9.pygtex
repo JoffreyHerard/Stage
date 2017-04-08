@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+ls \PYGZhy{}t \PYGZti{}/.phoronix\PYGZhy{}test\PYGZhy{}suite/test\PYGZhy{}results \PYG{p}{|} sed \PYGZhy{}n \PYG{l+s+s1}{\PYGZsq{}1p\PYGZsq{}}
+\end{Verbatim}

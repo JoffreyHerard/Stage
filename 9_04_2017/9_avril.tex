@@ -1,0 +1,56 @@
+\documentclass[french]{article}
+\usepackage{amssymb, amsmath, mathtools} %pour les mathématiques
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage[a4paper]{geometry}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{minted}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,shapes,positioning,shadows,trees}
+
+\tikzset{
+    basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
+    root/.style   = {basic, rounded corners=2pt, thin, align=center,
+                     fill=green!30},
+    onode/.style = {basic, thin, align=center, fill=green!60,text width=3cm,},
+    tnode/.style = {basic, thin, align=left, fill=pink!60, text width=6.5em},
+    edge from parent/.style={->, >={latex}, draw=black, edge from parent fork right}
+}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newtheorem{post}{Postulat}
+\newtheorem{mydef}{Définition}
+
+\begin{document}
+\title{Résumé Journalier}
+\author{Joffrey Hérard}
+\date{8 avril 2017} 
+
+\maketitle
+
+\section{Postulats}
+
+\begin{post}
+Chaque machines virtuelles qu'elle soit engendre d'un Hyperviseur ou d'un service de Conteneurisation seras une machine debian.  
+\end{post}
+\section{Scripts d'automatisation des taches}
+RAPPEL : 
+Lancement d'un test après configuration du batch-setup :
+
+\begin{minted}{bash}
+phoronix-test-suite batch-benchmark chess
+\end{minted}
+
+Trouver le nom du dernier test effectuer par Phoronix sur une debian : 
+\begin{minted}{bash}
+ls -t ~/.phoronix-test-suite/test-results | sed -n '1p'
+\end{minted}
+\newpage
+\begin{thebibliography}{9}
+\end{thebibliography}
+
+\end{document}
