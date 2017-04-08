@@ -1,0 +1,15 @@
+lxc.network.type = veth
+lxc.network.flags= up
+lxc.network.link= br
+lxc.network.veth.pair= br-ct1
+
+
+lxc.rootfs = /var/lib/lxc/ct1/root.fs
+lxc.include = /usr/share/lxc/config/debian.common.conf
+
+
+lxc.mount = /var/lib/lxc/ct1/fstab
+lxc.utname =ct1
+lxc.arch= amd64
+lxc.autodev = 1 
+lxc.ksmg =0

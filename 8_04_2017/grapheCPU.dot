@@ -1,0 +1,21 @@
+/* courtesy Ian Darwin and Geoff Collyer, Softquad Inc. */
+digraph unix {
+	size="20";
+	node [color=lightblue2, style=filled];
+	"Test CPU" -> "Environnemment";
+	"Environnemment" -> "Alimentation éléctrique ";
+	"Environnemment" -> "Autre Machines virtuelle/conteneur";
+	"Environnemment" -> "Température";
+	"Test CPU" -> "Évaluation de la vitesse en Mémoire.";
+	"Évaluation de la vitesse en Mémoire." -> "Ecriture ";
+	"Évaluation de la vitesse en Mémoire." -> "Lecture";
+	"Test CPU" -> "Évaluation de la vitesse de calcul flottant";
+	"Évaluation de la vitesse de calcul flottant"->"a précision simple";
+	"Évaluation de la vitesse de calcul flottant"->"a précision double";
+	"Test CPU" -> "Évaluation des opérations de chiffrement.";
+	"Évaluation des opérations de chiffrement." -> "RSA" ;
+	"Évaluation des opérations de chiffrement." -> "DES" ;
+    "Test CPU" -> "Évaluation des opérations de hachage.";
+    "Évaluation des opérations de hachage."-> "SHA-1";
+    "Évaluation des opérations de hachage."-> "SHA-256";
+}	

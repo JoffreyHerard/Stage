@@ -1,0 +1,24 @@
+/* courtesy Ian Darwin and Geoff Collyer, Softquad Inc. */
+digraph unix {
+	size="20";
+	node [color=lightblue2, style=filled];
+	"Test HDD" -> "Environnemment";
+	"Test HDD" -> "Lecture";
+	"Test HDD" -> "écriture";
+	"Environnemment" -> "Alimentation éléctrique ";
+	"Lecture"  -> "Aléatoire";
+	"Lecture"  -> "Séquentielle";
+	"écriture" -> "Aléatoire";
+	"écriture" -> "Séquentielle";
+	"Aléatoire" -> "Petits fichiers ";
+	"Aléatoire" -> "Moyens fichiers " ;
+	"Aléatoire" -> "Gros fichiers " ;
+	"Séquentielle" -> "Petits fichiers ";
+	"Séquentielle" -> "Moyens fichiers " ;
+	"Séquentielle" -> "Gros fichiers " ;
+	"Séquentielle" -> "Par Bloc ?";
+	"Par Bloc ?" -> "Taille des blocs ?";
+	"Par Bloc ?" -> "Formatage ?";
+	"Environnemment" -> "Autre Machines virtuelle/conteneur";
+	"Environnemment" -> "Température";
+}

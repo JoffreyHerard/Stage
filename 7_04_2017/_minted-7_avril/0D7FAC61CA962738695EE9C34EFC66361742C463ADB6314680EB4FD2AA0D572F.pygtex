@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/bin/bash}
+
+ip link add name br \PYG{n+nb}{type} bridge 
+
+ip addr add 192.168.10.1/24
+
+ip link \PYG{n+nb}{set} dev br up 
+
+iptables \PYGZhy{}t nat \PYGZhy{}A POSTROUTING \PYGZhy{}o eth0 \PYGZhy{}j MASQUERADE
+lxc\PYGZhy{}start \PYGZhy{}n ct2 \PYGZhy{}d 
+\end{Verbatim}

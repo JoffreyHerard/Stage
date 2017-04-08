@@ -1,0 +1,20 @@
+/* courtesy Ian Darwin and Geoff Collyer, Softquad Inc. */
+digraph unix {
+	size="20";
+	node [color=lightblue2, style=filled];
+	"Test Reseaux" -> "Environnemment";
+	"Environnemment" -> "Alimentation éléctrique ";
+	"Environnemment" -> "Congestion reseaux, Protocoles";
+	"Environnemment" -> "Autre Machines virtuelle/conteneur";
+	"Environnemment" -> "Température";
+	"Test Reseaux" -> "Protocoles";
+	"Protocoles" -> "UDP";
+	"Protocoles" -> "TCP";
+	"Protocoles" -> "HTTP";
+	"UDP"->"Tailles des paquets";
+	"TCP"->"Tailles des paquets";
+	"HTTP"->"Web";
+	"Tailles des paquets"->"Petit ?";
+	"Tailles des paquets"->"Moyen ?";
+	"Tailles des paquets"->"Gros ?";
+}	

@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/bin/bash}
+
+
+\PYG{n+nv}{piddhcp}\PYG{o}{=} \PYG{k}{\PYGZdl{}(}pgrep \PYGZhy{}f dhcp\PYG{k}{)}
+\PYG{n+nb}{kill} \PYGZhy{}9 \PYG{n+nv}{\PYGZdl{}piddhcp}
+ip link \PYG{n+nb}{set} dev eth0 down
+ip addr flush eth0
+ip link \PYG{n+nb}{set} dev eth0 up 
+ip link add name br \PYG{n+nb}{type} bridge 
+ip link \PYG{n+nb}{set} dev br up
+ip link \PYG{n+nb}{set} dev eth0 master br 
+dhclient br 
+lxc\PYGZhy{}start \PYGZhy{}n ct1 \PYGZhy{}d  
+\end{Verbatim}

@@ -1,0 +1,31 @@
+/* courtesy Ian Darwin and Geoff Collyer, Softquad Inc. */
+digraph unix {
+	size="20";
+	node [color=lightblue2, style=filled];
+	"Problématique" -> "Rédaction et mise en évidence de la Problématique";
+	"Rédaction et mise en évidence de la Problématique" -> "Virtualiser Comment?/Avec quoi?";
+	"Rédaction et mise en évidence de la Problématique" -> "Problématique" ;
+	"Virtualiser Comment?/Avec quoi?" ->"Rédaction";
+	"Virtualiser Comment?/Avec quoi?" -> "Quels hotes ?";
+	"Quels hotes ?" ->"Quels invites ?";
+	"Rédaction"-> "Virtualiser Comment?/Avec quoi?" ;
+	"Quels hotes ?"  -> "Rédaction";
+	"Quels invites ?"-> "Rédaction";
+	"Rédaction"  -> "Quels hotes ?";
+	"Rédaction"  -> "Quels invites ?";
+	"Quels invites ?" -> "Définitions des différents Tests ";
+	"On va tester quoi ?" ->"Définitions des différents Tests " ;
+	"Définitions des différents Tests "  -> "Test HDD BLOC 1";
+	"Définitions des différents Tests "  -> "Test CPU BLOC 2";
+	"Définitions des différents Tests "  -> "Test GPU BLOC 3";
+	"Définitions des différents Tests "  -> "Test network BLOC 4";
+	"Détails sur l'Environnement non mesuré, mais qui sont en capacité d'influer sur les résultats"  -> "On va tester quoi ?";"Détails sur l'Environnement non mesuré, mais qui sont en capacité d'influer sur les résultats"  -> "On va tester quoi ?";
+	
+	"Test HDD BLOC 1" -> "Voir graphe approprié";
+	"Test CPU BLOC 2" -> "Voir graphe approprié";
+	"Test GPU BLOC 3" -> "Voir graphe approprié";
+	"Test network BLOC 4" -> "Voir graphe approprié";
+
+}
+
+

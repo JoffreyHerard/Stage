@@ -1,0 +1,42 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+qemu\PYGZhy{}img 	create
+		convert
+		info
+		resize
+
+qemu\PYGZhy{}img create \PYGZhy{}f qcow2 mydeb.img \PYG{l+m}{10} G 
+qemu\PYGZhy{}img convert \PYGZhy{}f qcow2 mydeb.img \PYGZhy{}O raw mydeb.img2
+qemu\PYGZhy{}img info \PYGZhy{}f qcow2 mydeb.img
+qemu\PYGZhy{}img resize mydeb.img +5G
+qemu\PYGZhy{}img create \PYGZhy{}f qcow2 \PYGZhy{}b mydeb.img img1.qcow2
+
+
+
+qemu\PYGZhy{}system\PYGZhy{}x86\PYGZus{}64 
+	\PYG{n+nv}{k} \PYG{o}{=} definition du clavier \PYGZhy{}k fr 
+	\PYG{n+nv}{m} \PYG{o}{=} quantite de ram \PYGZhy{}m \PYG{l+m}{512} 
+	hda image disque utilise \PYGZhy{}hda mydeb.img 
+	boot gestion du demmarage c, f, n \PYGZhy{}boot d 
+	cdrom image iso ou cdrom utilise \PYGZhy{}cdrom xxx.iso
+
+carte graphgique : 
+
+	cirrus 
+	std
+	vmware
+	qx1
+
+mode user 
+
+qemu\PYGZhy{}system\PYGZhy{}x86\PYGZus{}64 \PYGZhy{}k fr \PYGZhy{}m \PYG{l+m}{512} \PYGZhy{}hda myDeb.img \PYG{p}{\PYGZam{}} 
+
+qemu\PYGZhy{}system\PYGZhy{}x86\PYGZus{}64 \PYGZhy{}k fr \PYGZhy{}m \PYG{l+m}{512} \PYGZhy{}hda myDeb.img \PYGZhy{}net nic \PYGZhy{}net user \PYG{p}{\PYGZam{}}
+
+qemu\PYGZhy{}system\PYGZhy{}x86\PYGZus{}64 \PYGZhy{}k fr \PYGZhy{}m \PYG{l+m}{512} \PYGZhy{}hda myDeb.img \PYGZhy{}netdev user, \PYG{n+nv}{id}\PYG{o}{=}network0 \PYGZhy{}device e1000, \PYG{n+nv}{netdev}\PYG{o}{=}network0 \PYG{p}{\PYGZam{}}
+
+redirection 
+
+qemu\PYGZhy{}system\PYGZhy{}x86\PYGZus{}64 \PYGZhy{}k fr \PYGZhy{}m \PYG{l+m}{512} \PYGZhy{}redir tcp:5555::80 \PYGZhy{}hda myDeb.img \PYG{p}{\PYGZam{}}
+
+ 
+\end{Verbatim}

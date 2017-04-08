@@ -1,0 +1,40 @@
+qemu-img 	create
+		convert
+		info
+		resize
+
+qemu-img create -f qcow2 mydeb.img 10 G 
+qemu-img convert -f qcow2 mydeb.img -O raw mydeb.img2
+qemu-img info -f qcow2 mydeb.img
+qemu-img resize mydeb.img +5G
+qemu-img create -f qcow2 -b mydeb.img img1.qcow2
+
+
+
+qemu-system-x86_64 
+	k = definition du clavier -k fr 
+	m = quantite de ram -m 512 
+	hda image disque utilise -hda mydeb.img 
+	boot gestion du demmarage c, f, n -boot d 
+	cdrom image iso ou cdrom utilise -cdrom xxx.iso
+
+carte graphgique : 
+
+	cirrus 
+	std
+	vmware
+	qx1
+
+mode user 
+
+qemu-system-x86_64 -k fr -m 512 -hda myDeb.img & 
+
+qemu-system-x86_64 -k fr -m 512 -hda myDeb.img -net nic -net user &
+
+qemu-system-x86_64 -k fr -m 512 -hda myDeb.img -netdev user, id=network0 -device e1000, netdev=network0 &
+
+redirection 
+
+qemu-system-x86_64 -k fr -m 512 -redir tcp:5555::80 -hda myDeb.img &
+
+ 

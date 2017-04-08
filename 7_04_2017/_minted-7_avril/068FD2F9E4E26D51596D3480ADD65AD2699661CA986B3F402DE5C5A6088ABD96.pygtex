@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+lxc\PYGZhy{}create
+lxc\PYGZhy{}start
+lxc\PYGZhy{}info
+lxc\PYGZhy{}ls
+lxc\PYGZhy{}console
+lxc\PYGZhy{}attach
+lxc\PYGZhy{}stop
+lxc\PYGZhy{}destroy
+
+
+lxc\PYGZhy{}cgroup \PYGZhy{}n ctn01 cpuset.spus 0,1
+
+lxc\PYGZhy{}cgroup \PYGZhy{}n ctn01 memory.soft\PYGZus{}limit\PYGZus{}in\PYGZus{}bytes 268435456
+lxc\PYGZhy{}cgroup \PYGZhy{}n ctn01 memory.limit\PYGZus{}in\PYGZus{}bytes 53687091
+
+fichier de \PYG{n+nv}{config} \PYG{o}{=} 
+
+lxc.cgroupe.cpuset.cpus\PYG{o}{=}0,1
+lxx.cgroup.memory.soft\PYGZus{}limit\PYGZus{}in\PYGZus{}bytes\PYG{o}{=}268435456
+lxc.cgroup.memory.limit\PYGZus{}in\PYGZus{}bytes\PYG{o}{=}53687091
+\end{Verbatim}

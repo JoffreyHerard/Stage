@@ -1,0 +1,8 @@
+sudo apt-get install qemu-kvm
+
+--enable-kvm === dans qemu
+
+
+egrep '(vmx|svm)' /proc/cpuinfo
+
+

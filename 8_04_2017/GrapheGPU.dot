@@ -1,0 +1,9 @@
+/* courtesy Ian Darwin and Geoff Collyer, Softquad Inc. */
+digraph unix {
+	size="20";
+	node [color=lightblue2, style=filled];
+	"Test GPU" -> "Environnemment";
+	"Environnemment" -> "Alimentation éléctrique ";
+	"Environnemment" -> "Autre Machines virtuelle/conteneur";
+	"Environnemment" -> "Température";
+}

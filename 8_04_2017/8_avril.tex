@@ -1,0 +1,303 @@
+\documentclass[french]{article}
+\usepackage{amssymb, amsmath, mathtools} %pour les mathématiques
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage[a4paper]{geometry}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{minted}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,shapes,positioning,shadows,trees}
+
+\tikzset{
+    basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
+    root/.style   = {basic, rounded corners=2pt, thin, align=center,
+                     fill=green!30},
+    onode/.style = {basic, thin, align=center, fill=green!60,text width=3cm,},
+    tnode/.style = {basic, thin, align=left, fill=pink!60, text width=6.5em},
+    edge from parent/.style={->, >={latex}, draw=black, edge from parent fork right}
+}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newtheorem{post}{Postulat}
+\newtheorem{mydef}{Définition}
+
+\begin{document}
+\title{Résumé Journalier}
+\author{Joffrey Hérard}
+\date{8 avril 2017} 
+
+\maketitle
+
+\section{Postulats}
+
+\begin{post}
+Chaque machines virtuelles qu'elle soit engendre d'un Hyperviseur ou d'un service de Conteneurisation seras une machine debian.  
+\end{post}
+\begin{post}
+Chaque machines virtuelles Debian qui seras donc cloner, seront considérer identiques. 
+\end{post}
+\begin{post}
+Chaque test seras réalise en interne de chaque machine virtualise et conteneurisé.
+\end{post}
+\begin{post}
+Chaque test seras réalise par la suite de test de Phoronix .
+\end{post}
+\begin{post}
+La version de la Debian utilise seras une version 8.7.1 .
+\end{post}
+\section{Phoronix}
+\subsubsection{Liste des Tests }
+Voici une liste exhaustive des test en capacité d’être réalise
+
+Premierement pour les CPU 
+
+Deuxiemement pour les GPU 
+
+Deuxiemement pour 
+
+\subsection{Configuration de Phoronix}
+Le fichier de configuration se trouve a cet endroit : \newline
+~/.phoronix-test-suite/user-config.xml
+
+On doit le configurer avec la commande suivante : phoronix-test-suite batch-setup 
+
+These are the default configuration options for when running the Phoronix Test Suite in a batch mode (i.e. running phoronix-test-suite batch-benchmark universe). Running in a batch mode is designed to be as autonomous as possible, except for where you'd like any end-user interaction.\\
+
+    Save test results when in batch mode (Y/n): y\\
+    Open the web browser automatically when in batch mode (y/N): n\\
+    Auto upload the results to OpenBenchmarking.org (Y/n): n\\
+    Prompt for test identifier (Y/n): n\\
+    Prompt for test description (Y/n): n\\
+    Prompt for saved results file-name (Y/n): n\\
+    Run all test options (Y/n): n\\
+Batch settings saved.\\
+
+Pourquoi cette configuration? et bien tout simplement pour permettre l'automatisation des test avec la commande suivante : \\ 
+
+phoronix-test-suite batch-benchmark <NOM\_TEST>
+
+\subsection{Ensemble des test disponibles}
+
+\subsubsection{Tests sur Disque}
+Voici la liste des test disponible pour le disque.\\
+\begin{enumerate}
+\item pts/aio-stress                 - AIO-Stress                          Disk    
+\item pts/blogbench                  - BlogBench                           Disk     
+\item pts/compilebench               - Compile Bench                       Disk     
+\item pts/dbench                     - Dbench                              Disk     
+\item pts/fio                        - Flexible IO Tester                  Disk    
+\item pts/fs-mark                    - FS-Mark                             Disk    
+\item pts/hdparm-read                - hdparm Timed Disk Reads             Disk     
+\item pts/iozone                     - IOzone                              Disk   
+\item pts/postmark                   - PostMark                            Disk   
+\item pts/smart                      - SMART Disk Self-Report              Disk    
+\item pts/sqlite                     - SQLite                              Disk     
+\item pts/tiobench                   - Threaded I/O Tester                 Disk   
+\item pts/unpack-linux               - Unpacking The Linux Kernel          Disk 
+
+\end{enumerate}
+
+
+\subsubsection{Test sur CPU}
+\begin{enumerate}
+\item pts/arrayfire                  - ArrayFire                           Processor
+\item pts/blake2                     - BLAKE2                              Processor
+\item pts/bork                       - Bork File Encrypter                 Processor
+\item pts/botan                      - Botan                               Processor
+\item pts/build-apache               - Timed Apache Compilation            Processor
+\item pts/build-boost-interprocess   - Timed Boost Interprocess Compilation Processor
+\item pts/build-eigen                - Timed Eigen Compilation             Processor
+\item pts/build-firefox              - Timed Firefox Compilation           Processor
+\item pts/build-imagemagick          - Timed ImageMagick Compilation       Processor
+\item pts/build-linux-kernel         - Timed Linux Kernel Compilation      Processor
+\item pts/build-mplayer              - Timed MPlayer Compilation           Processor
+\item pts/build-php                  - Timed PHP Compilation               Processor
+\item pts/build-webkitfltk           - Timed WebKitFLTK Compilation        Processor
+\item pts/bullet                     - Bullet Physics Engine               Processor
+\item pts/byte                       - BYTE Unix Benchmark                 Processor
+\item pts/c-ray                      - C-Ray                               Processor
+\item pts/cachebench                 - CacheBench                          Processor
+\item pts/clomp                      - CLOMP                               Processor
+\item pts/compress-7zip              - 7-Zip Compression                   Processor
+\item pts/compress-gzip              - Gzip Compression                    Processor
+\item pts/compress-lzma              - LZMA Compression                    Processor
+\item pts/compress-pbzip2            - Parallel BZIP2 Compression          Processor
+\item pts/crafty                     - Crafty                              Processor
+\item pts/dcraw                      - dcraw                               Processor
+\item pts/dolfyn                     - Dolfyn                              Processor
+\item pts/ebizzy                     - ebizzy                              Processor
+\item pts/espeak                     - eSpeak Speech Engine                Processor
+\item pts/ffmpeg                     - FFmpeg                              Processor
+\item pts/ffte                       - FFTE                                Processor
+\item pts/fftw                       - FFTW                                Processor
+\item pts/fhourstones                - Fhourstones                         Processor
+\item pts/gcrypt                     - Gcrypt Library                      Processor
+\item pts/gmpbench                   - GMPbench                            Processor
+\item pts/gnupg                      - GnuPG                               Processor
+\item pts/go-benchmark               - Go Benchmarks                       Processor
+\item pts/gpu-residency              - GPU Residency                       Processor
+\item pts/graphics-magick            - GraphicsMagick                      Processor
+\item pts/himeno                     - Himeno Benchmark                    Processor
+\item pts/hmmer                      - Timed HMMer Search                  Processor
+\item pts/hpcc                       - HPC Challenge                       Processor
+\item pts/hpcg                       - High Performance Conjugate Gradient Processor
+\item pts/java-scimark2              - Java SciMark                        Processor
+\item pts/jgfxbat                    - Java Graphics Basic Acceptance Test Processor
+\item pts/john-the-ripper            - John The Ripper                     Processor
+\item pts/lammps                     - LAMMPS Molecular Dynamics Simulator Processor
+\item pts/mafft                      - Timed MAFFT Alignment               Processor
+\item pts/mencoder                   - Mencoder                            Processor
+\item pts/minion                     - Minion                              Processor
+\item pts/mrbayes                    - Timed MrBayes Analysis              Processor
+\item pts/multichase                 - Multichase Pointer Chaser           Processor
+\item pts/n-queens                   - N-Queens                            Processor
+\item pts/nero2d                     - Open FMM Nero2D                     Processor
+\item pts/noise-level                - NoiseLevel                          Processor
+\item pts/npb                        - NAS Parallel Benchmarks             Processor
+\item pts/numpy                      - Numpy Benchmark                     Processor
+\item pts/open-porous-media          - Open Porous Media                   Processor
+\item pts/openssl                    - OpenSSL                             Processor
+\item pts/opm-git                    - Open Porous Media Git               Processor
+\item pts/parboil                    - Parboil                             Processor
+\item pts/perl-benchmark             - Perl Benchmarks                     Processor
+\item pts/polybench-c                - PolyBench-C                         Processor
+\item pts/povray                     - POV-Ray                             Processor
+\item pts/powertop-wakeups           - Powertop Wakeups                    Processor
+\item pts/primesieve                 - Primesieve                          Processor
+\item pts/psstop                     - PSSTOP Memory test                  Processor
+\item pts/rbenchmark                 - R Benchmark                         Processor
+\item pts/rodinia                    - Rodinia                             Processor
+\item pts/sample-program             - Sample Pi Program                   Processor
+\item pts/scimark2                   - SciMark                             Processor
+\item pts/smallpt                    - Smallpt                             Processor
+\item pts/stockfish                  - Stockfish                           Processor
+\item pts/stresscpu2                 - StressCPU2 Stress-Test              Processor
+\item pts/sudokut                    - Sudokut                             Processor
+\item pts/system-decompress-bzip2    - System BZIP2 Decompression          Processor
+\item pts/system-decompress-gzip     - System GZIP Decompression           Processor
+\item pts/system-decompress-tiff     - System Libtiff Decompression        Processor
+\item pts/system-decompress-xz       - System XZ Decompression             Processor
+\item pts/system-decompress-zlib     - System ZLIB Decompression           Processor
+\item pts/system-libjpeg             - System JPEG Library Decode          Processor
+\item pts/system-libxml2             - System Libxml2 Parsing              Processor
+\item pts/systemd-boot-kernel        - Systemd Kernel Boot Time            Processor
+\item pts/systemd-boot-total         - Systemd Total Boot Time             Processor
+\item pts/systemd-boot-userspace     - Systemd Userspace Boot Time         Processor
+\item pts/systester                  - SysTester                           Processor
+\item pts/tachyon                    - Tachyon                             Processor
+\item pts/tscp                       - TSCP                                Processor
+\item pts/ttsiod-renderer            - TTSIOD 3D Renderer                  Processor
+\item pts/vpxenc                     - VP8 libvpx Encoding                 Processor
+\item pts/x264                       - x264                                Processor
+\item pts/x264-opencl                - x264 OpenCL                         Processor
+\item system/gnupg                   - GnuPG                               Processor
+\end{enumerate}
+
+\subsubsection{Test sur GPU}
+\begin{enumerate}
+
+\item pts/apitest                    - APITest                             Graphics 
+\item pts/apitrace                   - APITrace                            Graphics 
+\item pts/askap                      - ASKAP tConvolveCuda                 Graphics 
+\item pts/bioshock-infinite          - BioShock Infinite                   Graphics 
+\item pts/cairo-demos                - Cairo Performance Demos             Graphics 
+\item pts/cairo-perf-trace           - cairo-perf-trace                    Graphics 
+\item pts/civbe                      - Civilization: Beyond Earth          Graphics 
+\item pts/civilization-vi            - Civilization VI                     Graphics 
+\item pts/cl-mem                     - cl-mem                              Graphics 
+\item pts/coh2                       - Company of Heroes 2                 Graphics 
+\item pts/corebreach                 - CoreBreach                          Graphics 
+\item pts/csgo                       - Counter-Strike: Global Offensive    Graphics 
+\item pts/cstrike                    - Counter-Strike Source               Graphics 
+\item pts/cuda-mini-nbody            - CUDA Mini-Nbody                     Graphics 
+\item pts/deus-exmd                  - Deus Ex: Mankind Divided            Graphics 
+\item pts/dirt-rally                 - DiRT Rally                          Graphics 
+\item pts/dirt-showdown              - DiRT Showdown                       Graphics 
+\item pts/doom3                      - Doom 3                              Graphics 
+\item pts/dota2                      - Dota 2                              Graphics 
+\item pts/et                         - Enemy Territory                     Graphics 
+\item pts/etlegacy                   - ET: Legacy                          Graphics 
+\item pts/etqw                       - ET: Quake Wars                      Graphics 
+\item pts/etqw-demo                  - ET: Quake Wars Demo                 Graphics 
+\item pts/etxreal                    - ETXreaL                             Graphics 
+\item pts/f12015                     - F1 2015                             Graphics 
+\item pts/financebench               - FinanceBench                        Graphics 
+\item pts/gfxbench                   - GFXBench                            Graphics 
+\item pts/glmark2                    - GLmark2                             Graphics 
+\item pts/gluxmark                   - gluxMark                            Graphics 
+\item pts/gputest                    - GpuTest                             Graphics 
+\item pts/gtkperf                    - GtkPerf                             Graphics 
+\item pts/hitman                     - HITMAN                              Graphics 
+\item pts/hl2lostcoast               - Half-Life 2 - Lost Coast            Graphics 
+\item pts/insurgency                 - Insurgency                          Graphics 
+\item pts/j2dbench                   - Java 2D Microbenchmark              Graphics 
+\item pts/jxrendermark               - JXRenderMark                        Graphics 
+\item pts/lightsmark                 - Lightsmark                          Graphics 
+\item pts/madmax                     - Mad Max                             Graphics 
+\item pts/metro2033-redux            - Metro 2033 Redux                    Graphics 
+\item pts/metroll-redux              - Metro: Last Light Redux             Graphics 
+\item pts/mixbench                   - Mixbench                            Graphics 
+\item pts/nexuiz                     - Nexuiz                              Graphics 
+\item pts/octanebench                - OctaneBench                         Graphics 
+\item pts/openarena                  - OpenArena                           Graphics 
+\item pts/padman                     - World of Padman                     Graphics 
+\item pts/portal                     - Portal                              Graphics 
+\item pts/ppracer                    - Planet Penguin Racer                Graphics 
+\item pts/prey                       - Prey                                Graphics 
+\item pts/qgears2                    - QGears2                             Graphics 
+\item pts/quake4                     - Quake 4                             Graphics 
+\item pts/qvdpautest                 - qVDPAUtest                          Graphics 
+\item pts/reaction                   - Reaction Quake 3                    Graphics 
+\item pts/render-bench               - Render Bench                        Graphics 
+\item pts/sam2017                    - Serious Sam Fusion 2017             Graphics 
+\item pts/shoc                       - SHOC Scalable HeterOgeneous Computing Graphics 
+\item pts/smokin-guns                - Smokin Guns                         Graphics 
+\item pts/specviewperf10             - SPECViewPerf 10.1                   Graphics 
+\item pts/specviewperf9              - SPECViewPerf 9                      Graphics 
+\item pts/supertuxkart               - SuperTuxKart                        Graphics 
+\item pts/talos-principle            - The Talos Principle                 Graphics 
+\item pts/tesseract                  - Tesseract                           Graphics 
+\item pts/tf2                        - Team Fortress 2                     Graphics 
+\item pts/tomb-raider                - Tomb Raider                         Graphics 
+\item pts/tremulous                  - Tremulous                           Graphics 
+\item pts/trislam                    - Triangle Slammer                    Graphics 
+\item pts/ue4-atlantis               - Atlantis Substance Demo             Graphics 
+\item pts/ue4-elemental              - Elemental Demo                      Graphics 
+\item pts/ue4-matinee                - Matinee Fight Scene Demo            Graphics 
+\item pts/ue4-mountains              - Landscape Mountains Demo            Graphics 
+\item pts/unigine-heaven             - Unigine Heaven                      Graphics 
+\item pts/unigine-sanctuary          - Unigine Sanctuary                   Graphics 
+\item pts/unigine-tropics            - Unigine Tropics                     Graphics 
+\item pts/unigine-valley             - Unigine Valley                      Graphics 
+\item pts/unvanquished               - Unvanquished                        Graphics 
+\item pts/urbanterror                - Urban Terror                        Graphics 
+\item pts/ut2004-demo                - Unreal Tournament 2004 Demo         Graphics 
+\item pts/vdrift                     - VDrift                              Graphics 
+\item pts/video-cpu-usage            - 1080p H.264 Video Playback          Graphics 
+\item pts/viennacl                   - ViennaCL                            Graphics 
+\item pts/warsow                     - Warsow                              Graphics 
+\item pts/x11perf                    - x11perf                             Graphics 
+\item pts/xonotic                    - Xonotic                             Graphics 
+\item pts/xplane9                    - X-Plane                             Graphics 
+\end{enumerate}
+\subsubsection{Test sur Network}
+\begin{itemize}
+\item pts/network-loopback           - Loopback TCP Network Performance    Network
+\end{itemize}
+\newpage
+\begin{thebibliography}{9}
+
+   \bibitem{Docimentation de PTS}
+         GitHub documentation de Phoronix test suite.
+          \url{https://gist.github.com/anshula/728a76297e4a4ee7688d#the-easy-way}.
+
+\subsection{Choix des tests disponibles}
+Comme on peut le remarquer, les tests mis a notre dispositions par la suite de test de Phoronix, est assez, gargantuesque, il va etre necessaire de prendre quelque un de chaque test.
+
+\end{thebibliography}
+
+\end{document}

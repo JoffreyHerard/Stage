@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+sudo apt\PYGZhy{}get install qemu\PYGZhy{}kvm
+
+\PYGZhy{}\PYGZhy{}enable\PYGZhy{}kvm \PYG{o}{===} dans qemu
+
+
+egrep \PYG{l+s+s1}{\PYGZsq{}(vmx|svm)\PYGZsq{}} /proc/cpuinfo
+\end{Verbatim}

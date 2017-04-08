@@ -1,0 +1,20 @@
+lxc-create
+lxc-start
+lxc-info
+lxc-ls
+lxc-console
+lxc-attach
+lxc-stop
+lxc-destroy
+
+
+lxc-cgroup -n ctn01 cpuset.spus 0,1
+
+lxc-cgroup -n ctn01 memory.soft_limit_in_bytes 268435456
+lxc-cgroup -n ctn01 memory.limit_in_bytes 53687091
+
+fichier de config = 
+
+lxc.cgroupe.cpuset.cpus=0,1
+lxx.cgroup.memory.soft_limit_in_bytes=268435456
+lxc.cgroup.memory.limit_in_bytes=53687091

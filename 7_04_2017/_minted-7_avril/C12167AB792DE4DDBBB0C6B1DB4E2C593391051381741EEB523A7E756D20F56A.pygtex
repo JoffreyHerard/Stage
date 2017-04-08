@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/bin/bash}
+
+lxc\PYGZhy{}stop \PYGZhy{}n ct2
+
+lxc\PYGZhy{}stop \PYGZhy{}n ct1
+
+ip link delete dev br 
+\end{Verbatim}

@@ -1,0 +1,31 @@
+#######################################################
+# network interface settings
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet manual
+
+iface eth1 inet manual
+
+iface eth2 inet manual
+
+iface eth3 inet manual
+
+auto vmbr0
+iface vmbr0 inet static
+	address  172.18.10.1
+	netmask  255.255.255.0
+	bridge_ports eth0.1020
+	bridge_stp off
+	bridge_fd 0
+
+auto vmbr1
+iface vmbr1 inet static
+	address  10.22.9.17
+	netmask  255.255.255.0
+	gateway  10.22.9.254
+	bridge_ports eth0
+	bridge_stp off
+	bridge_fd 0
+#######################################################

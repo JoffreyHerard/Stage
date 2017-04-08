@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+lxc.network.type \PYG{o}{=} veth
+lxc.network.flags\PYG{o}{=} up
+lxc.network.link\PYG{o}{=} br
+lxc.network.veth.pair\PYG{o}{=} br\PYGZhy{}ct1
+
+
+lxc.rootfs \PYG{o}{=} /var/lib/lxc/ct1/root.fs
+lxc.include \PYG{o}{=} /usr/share/lxc/config/debian.common.conf
+
+
+lxc.mount \PYG{o}{=} /var/lib/lxc/ct1/fstab
+lxc.utname \PYG{o}{=}ct1
+lxc.arch\PYG{o}{=} amd64
+lxc.autodev \PYG{o}{=} \PYG{l+m}{1} 
+lxc.ksmg \PYG{o}{=}0
+\end{Verbatim}

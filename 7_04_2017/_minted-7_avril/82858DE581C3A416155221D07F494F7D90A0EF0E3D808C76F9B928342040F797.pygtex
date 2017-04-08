@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/bin/bash}
+
+
+ip link add name br \PYG{n+nb}{type} bridge
+
+ip link \PYG{n+nb}{set} dev br up 
+
+lxc\PYGZhy{}start \PYGZhy{}n ct1 \PYGZhy{}d
+ 
+lxc\PYGZhy{}start \PYGZhy{}n ct2 \PYGZhy{}d 
+\end{Verbatim}
