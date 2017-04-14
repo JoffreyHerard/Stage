@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+root@debJo:/home/jo\PYGZsh{} phoronix\PYGZhy{}test\PYGZhy{}suite start\PYGZhy{}phoromatic\PYGZhy{}server
+Port \PYG{l+m}{8477} chosen as random port \PYG{k}{for} this instance. Change the default port via the Phoronix
+ Test Suite user configuration file.
+Phoronix Test Suite v7.0.1 \PYG{o}{(}Ringsaker\PYG{o}{)} starting Phoromatic Server
+Phoronix Test Suite User\PYGZhy{}Data Directory Path: /var/lib/phoronix\PYGZhy{}test\PYGZhy{}suite/
+Phoronix Test Suite Configuration File: /etc/phoronix\PYGZhy{}test\PYGZhy{}suite.xml
+Phoromatic Server Log File: /var/log/phoromatic.log
+
+Launching with PHP built\PYGZhy{}in web server.
+
+WebSocket Server Active: localhost:8126
+The Phoromatic Web Interface Is Accessible At: http://localhost:8477
+\end{Verbatim}

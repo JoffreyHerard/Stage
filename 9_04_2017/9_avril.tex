@@ -8,6 +8,12 @@
 \usepackage{pifont}
 \usepackage{minted}
 \usepackage{tikz}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
 \usetikzlibrary{arrows.meta,shapes,positioning,shadows,trees}
 
 \tikzset{
@@ -28,15 +34,12 @@
 \begin{document}
 \title{Résumé Journalier}
 \author{Joffrey Hérard}
-\date{8 avril 2017} 
+\date{9 avril 2017} 
 
 \maketitle
 
 \section{Postulats}
 
-\begin{post}
-Chaque machines virtuelles qu'elle soit engendre d'un Hyperviseur ou d'un service de Conteneurisation seras une machine debian.  
-\end{post}
 \section{Scripts d'automatisation des taches}
 RAPPEL : 
 Lancement d'un test après configuration du batch-setup :
@@ -49,8 +52,78 @@ Trouver le nom du dernier test effectuer par Phoronix sur une debian :
 \begin{minted}{bash}
 ls -t ~/.phoronix-test-suite/test-results | sed -n '1p'
 \end{minted}
+
+
+
+\begin{lstlisting}[language=bash,caption={install.sh},frame=single]
+#!/bin/bash
+
+sudo apt-get install phoronix-test-suite
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=bash,caption={launchJob.sh},frame=single]
+#!/bin/bash
+phoronix-test-suite batch-benchmark $1
+\end{lstlisting}
+\newpage
+\begin{lstlisting}[language=bash,caption={packResult.sh},frame=single]
+#!/bin/bash
+
+chemin=".phoronix-test-suite/test-results"
+dernier_test=$(ls -t ~/.phoronix-test-suite/test-results|sed -n '1p' )
+echo dossier = "$dernier_test"
+echo chemin = "$chemin"
+
+new_path=$chemin/
+cd 
+home=`pwd`
+echo home = $home
+cd $new_path
+
+zip -r RT.zip $dernier_test
+mv RT.zip $home
+
+#Envoyer a l'hote
+\end{lstlisting}
+
+Le dernier élément a concevoir, reste évidemment la mise en place de l'envoi des résultats il y a plusieurs manière de faire, la première serait de mettre en place un réseaux avec L’Hôte, puis de lui envoyer de quelque manière que ce soit : \newline
+SCP, SFTP, FTP .
+A la rigueur on peut donc mettre en place pour automatiser tout cela, un serveur externe à L’Hôte pour donner l'intégralité des performances aux machines virtuelles et donc empêcher un paramètre supplémentaire de corrompre d’éventuel résultats. Dans ce cas chaque machines virtuelles devras-être connecté a Internet, par conséquent on doit mettre en place un serveur joignable depuis les machines invités.
+
+
+\paragraph{Envoie des JOB a tout les invités}  
+\subparagraph{SaltStack}
+Pour l'automatisation des taches il est assez aisé de pouvoir envoyer des commandes d’exécution à chaque machines virtuelle "invités" ou encore esclaves. La machine hôte serait doté d'un salt master, et l'ensemble des invités serais des salt-minions. 
+ 
+\paragraph{Réception des JOB à tout les invités}  
+\subparagraph{SCP}
+Mise en place de clé privé/publique pour automatisation des échanges. Mis en place d'un serveur SSH sur l'hote $\rightarrow$ Ressource supplémentaires de Saltstack ; ou externe à la machine.
+\subparagraph{FTP}
+Mise en place d'un serveur FTP externe $\rightarrow$ Ressource supplémentaire avec Saltstack 
+\subparagraph{SFTP}
+Mise en place d'un serveur SFTP externe $\rightarrow$ Ressource supplémentaire avec Saltstack 
+\subparagraph{SaltStack}
+
+Il est possible avec les fonctions 
+salt.modules.cp.get\_file(path, dest, saltenv='base', makedirs=False, template=None, gzip=None, **kwargs)
+\begin{lstlisting}[language=bash,caption={Salt copy },frame=single]
+salt '*' cp.get_file salt://path/to/file /minion/dest
+\end{lstlisting}
+
+\section{Test en local}
+
+Aujourd'hui, test sur l'hyperviseur VirtualBox, de simuler une machine hôte debian 8.7.1 avec des invité LXC avec SaltStack pour la gestions des différents script.
 \newpage
 \begin{thebibliography}{9}
+
+   \bibitem{Site de SaltStack}
+        Site officiel de SaltStack
+          \url{https://saltstack.com/}.
+
+   \bibitem{Documentation de SaltStack}
+         Documentation de SaltStack.
+          \url{https://docs.saltstack.com/en/latest/}.
 \end{thebibliography}
 
 \end{document}

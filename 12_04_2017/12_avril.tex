@@ -1,0 +1,109 @@
+\documentclass[french]{article}
+\usepackage{amssymb, amsmath, mathtools} %pour les mathématiques
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage[a4paper]{geometry}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{minted}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
+\usetikzlibrary{arrows.meta,shapes,positioning,shadows,trees}
+
+\tikzset{
+    basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
+    root/.style   = {basic, rounded corners=2pt, thin, align=center,
+                     fill=green!30},
+    onode/.style = {basic, thin, align=center, fill=green!60,text width=3cm,},
+    tnode/.style = {basic, thin, align=left, fill=pink!60, text width=6.5em},
+    edge from parent/.style={->, >={latex}, draw=black, edge from parent fork right}
+}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newtheorem{post}{Postulat}
+\newtheorem{mydef}{Définition}
+
+\begin{document}
+\title{Résumé Journalier}
+\author{Joffrey Hérard}
+\date{12 avril 2017} 
+
+\maketitle
+\section{Test local avec des conteneurs Docker}
+Installation de docker sur une debian 8 
+\begin{minted}{bash}
+$ sudo apt-get install \
+     apt-transport-https \
+     ca-certificates \
+     curl \
+     software-properties-common
+     
+$ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+$ sudo apt-key fingerprint 0EBFCD88
+$ sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/debian \
+   $(lsb_release -cs) \
+   stable"
+$ apt-get update
+apt-get install docker-ce 
+docker run hello-world
+docker run -it debian bash
+#Dans chaque conteneurs a voir avec docker exec
+apt-get install php5-cli php5-gd iputils-ping wget 
+
+apt-get -f install 
+wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb
+
+dpkg -i phoronix-test-suite_7.0.1_all.deb
+#Le reste est exactement comme pour les LXCs par exemple
+docker exec ff9e2f236f6c figlet toto
+ _        _        
+| |_ ___ | |_ ___  
+| __/ _ \| __/ _ \ 
+| || (_) | || (_) |
+ \__\___/ \__\___/ 
+                   
+
+\end{minted}   
+\newpage
+DockerFile (dans un dossier myDebP)de la debian 8 avec les outils qu'il faut
+\begin{minted}{bash}  
+FROM debian:latest
+RUN apt-get -y update
+&& apt-get install -y wget php5-cli php5-gd iputils-ping
+&& apt-get -f install
+&& wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb
+&& dpkg -i phoronix-test-suite_7.0.1_all.deb	
+CMD echo Bonjour ceci un est Docker-Perso	
+\end{minted} 
+On build l'images avec la commande suivante 
+\begin{minted}{bash} 
+docker build -t docker-phoronix -f myDebP.
+\end{minted} 
+On vérifie que notre build a bien fonctionner avec la commande docker images -a 
+\begin{minted}{bash} 
+ docker images -a
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+docker-phoronix     latest              f8203414aeb0        7 minutes ago       249 MB
+debian              latest              8cedef9d7368        2 weeks ago         123 MB
+hello-world         latest              48b5124b2768        2 months ago        1.84 kB
+docker/whalesay     latest              6b362a9f73eb        22 months ago       247 MB
+\end{minted} 
+Sur la machine hote : 
+\begin{minted}{bash} 
+apt-get install php5-sqlite
+phoronix-test-suite start-phoromatic-server
+#Et on est reparti !
+\end{minted} 
+\newpage
+
+
+\end{document}

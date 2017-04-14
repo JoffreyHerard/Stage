@@ -1,0 +1,725 @@
+Présentation
+	- Alaaban - Aras - Àntôrsioa - Empire Ikien
+		* Nord profond
+		* Nord
+		* Centre
+		* Sud
+		* Extrême Sud
+		* Peuples libres
+		* Empire Akonien
+		* Dévonie
+	
+	- Origines
+		* Diégèse
+		* Réel
+		
+	- Idées principales
+		* Oral
+		* Contextuel
+		* Contracté
+		* Rapide
+		* Adapatable
+		
+Phonologie
+	- EAP
+	- Liberté phonétique
+	- Tendance
+	- Rythmées
+	- Rythmantes
+	
+Ryck
+	- Systèmes de forces
+		* Fortes
+		* Faibles
+		* Sous-Faibles
+		* Auxiliaires
+		* Accès
+		* Sur-fortes
+		
+	- Couples
+		* A/O
+		* A/Ê
+		* É/I
+		* É/È
+		* Û
+		* Forte/Faible rythmées
+		
+	- Particularitées
+		* Forte-Forte
+		* Faible-Faible
+		* Â
+		* ÛÛ/ÛHÛ
+		
+	- Dérivées
+		* Nord profond
+		* Nord
+		* Centre
+		* Sud
+		* Extrême Sud
+		* Peuples libres
+		* Empire Akonien
+		* Dévonie
+		
+Composants
+	- Level 1
+		* Clefs primaires
+		* Clefs secondaires
+		* Post-clefs
+	
+	- Level 2
+		* Noyaux
+		* Composés
+		* Unions
+		* Décomposés
+		
+	- Level 3
+		* Clefs complexes
+		* Mots filiables
+			~ Filiens
+			~ Enfiliens
+			~ Impurs
+			~ Mots en "o"
+			~ Mots dynamiques filiables
+		* Mots non-filiables
+		
+	- Level 4
+		* Synthétiseurs
+			~ Synthétiseurs naturels
+			~ Mots adarans
+			~ Mots de Phark
+		*  Marques
+			~ Marques temporelles
+			~ Marques de précision
+			~ Marques d'accentuation
+			~ Marques synthétiseurs
+			
+	- Level 5
+		* Corchetages
+		* Mots dynamiques forts
+		* Imports
+		
+	- Level 6
+		* Contextués
+		* Imports forts
+		
+Composition
+	- Expression / Fait
+	
+	- CCCOR / CC[CO](R)
+	
+	- Contexte
+	
+	- Cible
+	
+	- Coeur
+	
+	- Objectif
+	
+	- Réaction
+	
+	- Expressions nues
+		* Expressions libres
+		* Expressions communes
+		* Expressions sans portées
+	
+Synthèse
+	- Rappel mineur
+	
+	- Synthèse naturelle
+		* Mots tolérants
+			~ Marques naturelles simples
+				| Pluriel
+					* Pluriel simple
+					* Pluriel éclaté
+					* Pluriel groupé
+					* Pluriel fortement groupé
+					* Pluriel pronominal
+					* Pluriel dual / Validation
+					* Pluriel reconnu / Approbation
+					* Pluriel de complexité / Récupération
+					* Pluriel factuel / Demande
+					
+				| Forme filienne
+					* Comparatif
+						~ -itohos
+						~ -otohos
+						
+					* Superlatif
+						~ -itohos
+						~ -otohos
+						
+					* Substantif
+						~ -am
+						~ -ias
+						~ -itahas
+						
+				| Marques factuelles
+					* Marques factuelles simples
+						~ -pa
+						~ -pôn
+						~ -prôn
+						~ -pèrprôn
+						
+					* Marques factuelles complexes
+						~ -ho
+						~ -hô
+						~ -ha
+						~ -hâ
+						~ -po
+						~ -ko
+						~ -pso
+						~ -ssé
+						
+			~ Marques naturelles complexes
+				| Synthèse par objectif
+				| Fermeture
+				| Opposition
+				| Forme marienne
+					* Forme marienne naturelle
+					* Forme marienne brutale
+					* Cassage de forme marienne
+					* Mariage
+						~ Réction
+						~ Hyperdynamisme
+						~ Contextualisation
+						~ Hypercontextualisation
+					* Lien naturel
+			
+			~ Synthèse grammatical
+				| Passif simple
+				| Passif persistant
+				| Passif fort
+				| Passif polymorphe
+			
+			~ Synthèse syntaxique
+				| Oiseau d'or
+				| Novatif
+				| Sèrgatif
+				| Amotif
+				| L'O
+				
+			~ Mathématiques
+				| Les unités mathémtiques
+					* Unité du premier monde
+					* Unité de modelage
+					* Unité d'Ano
+				| Mathématiques de base
+					* Base 10
+					* Base 12
+					* Base 18
+					* Base X
+						~ Base nulle
+						~ Base infinie
+				| Mathématiques calculatoires
+					* Base 10
+					* Base 12
+					* Base 18
+					* Base X
+						~ Base nulle
+						~ Base infinie
+				| Mathématiques dimensionnelles
+					* Première dimension
+					* Seconde dimension
+					* Troisième dimension
+					* Quatrième dimension
+					* Cinquième dimension
+					* Sixième dimension
+					* Septième dimension
+					* Dimension N
+	
+	- Synthèse adarane
+		* Da
+		
+		* Di
+			~ Le comparatif
+			~ Le passif
+			~ Le passif-comparatif
+			~ La subordonnée 
+
+		* Tûs
+
+		* Lôr'/Ôr'
+
+		* Ta
+			~ Ta
+			~ At
+			~ To
+			~ Ot
+			~ Tô
+			~ Ôt
+			
+		* Ajûl/Acûr
+			~ Ajûl
+			~ Acûr
+			
+		* Les clefs
+			~ Simplistes/Faibles
+				| Nav'
+				| Sôj'
+				| Côl'
+				| Mon'
+				| Yôc'
+				| Sôr'
+				| Raç'
+				| Rôn'
+				| Fôm'
+				| Tôr'
+				| Taf'
+				| Sal'
+				| Sol'
+				| Sôl'
+				| Man'
+				| Kap'
+				| Pag'
+				| Pôj'
+				| Kôz'
+				| Faj'
+				| Koµ'
+				| Nôn'
+				
+			~ Auxiliaires/Neutres
+				| Kanroc'
+				| Sôlzôm'
+				| Sokyam'
+				| Martas'
+				| Fanrac'
+				| Môrzan'
+				
+			~ Fortes/Complexes
+				| Matalès'
+				| Kavzèv'
+				| Côlkinas'
+				| Parzarim'
+				| Nalkiz'
+				| Nolkiz'
+				| Natzérov'
+				| Molgas'
+				
+		* Nutri
+			~ Nutri
+			~ Nustri
+			~ Notri
+			~ Nostri
+			~ Natri
+			~ Nastri
+
+		* Ûn
+			~ Ûn
+			~ Ûm
+			~ Ûr
+			~ Ûl
+			~ Ûp
+			~ Ûz
+			~ Ût
+			~ Ûf
+			~ Ûv
+			~ Ûc
+			~ Ûn + Èn
+			~ Dérivations
+				| W
+				| Y
+				| µ
+			
+		* Ca**gû*
+
+		* Ihimbo
+
+		* Sa/So
+			~ Oui/Non
+			~ Similitude/Différence
+			~ Contraste
+			~ Emphase
+			~ Constat
+
+		* Uidji
+			~ Uidji
+			~ Ui
+			~ Dji
+			~ Ûd
+
+		* Û
+			~ Élûka
+			~ Élûta
+			~ Élûma
+			~ Élûsa
+			~ Û
+		
+		* Yôs
+		
+		* Katala
+
+		* Huqè
+		
+		* Môl
+
+		* Naléma
+
+		* Tcimôd
+
+		* Aynwa
+
+		* Kasi
+			~ Kasi
+			~ Kasim
+			~ Kasin
+			~ Kosi
+			~ Dérivations
+
+		* Bûidji
+
+		* Dondo
+
+		* Kondo
+
+		* Kah
+
+		* Tôr'
+
+		* -sµi	
+			~ sµa	
+				| sµaa
+				| sµèa
+				| sµoa
+				| sµéa
+				| sµûa
+				| sµua
+			~ sfa
+				| sfaa
+				| sfèa
+				| sfoa
+				| sféa
+				| sfûa
+				| sfua
+			~ sca
+				| scaa
+				| scèa
+				| scoa
+				| scéa
+				| scûa
+				| scua
+			~ spa
+				| spaa
+				| spèa
+				| spoa
+				| spéa
+				| spûa
+				| spua
+			~ ska
+				| skaa
+				| skèa
+				| skoa
+				| skéa
+				| skûa
+				| skua
+
+		* Zûnis
+
+		* Tayé
+
+		* No...o...o....
+
+		* Bûl-
+
+		* Dja-
+
+		* Bui
+
+		* Djidé
+		
+		* Hyu
+			~ Hyû
+			~ Hya
+			~ Hyo
+			~ Hyé
+			~ Hyè
+			~ Hyaû
+			~ Hyô
+			~ Hyi
+		
+		* Var
+		
+		* Vor
+		
+		* â
+		
+		* Nassé
+		
+		* Nèh
+		
+		* Dè
+	
+	- Synthèse Pharkienne
+		* Mi
+		
+		* Mé
+			~ Dèr
+			~ Dès
+			~ Dèm
+			~ Dèn
+			~ Dèf
+			~ Rèd
+			~ Sèd
+			~ Mèd
+			~ Nèd
+			~ Fèd
+		
+		* No
+		
+		* Èn
+			~Nè
+			~Ni
+			~Na
+		
+		* O'nd
+			~ Nôd
+			~ Môd
+			~ Nid
+			~ Nad
+			~ Mid
+			~ Mad
+			~ Ono'nd
+				| Onônd/Onôd
+				| Omônd
+				| Onind
+				| Omind
+				| Onand
+				| Omand
+		
+	
+Tolérance
+	- Mots tolérants
+	
+	- Tolérance directe
+		* Ôr'
+		
+		* Lôr'
+		
+		* Insertion
+		
+	- Tolérance indirecte
+		* Clef har'
+		
+		* Acceptation
+		
+		* Insertion
+		
+		* Fusion
+		
+Contractions
+	- Contractions usuelles
+		* an
+		* is
+		* in	
+		* i
+		* it/ot
+	
+	- Contractions de voyelles
+		* i
+		* a
+		* o
+		* û
+		* é
+		
+	- Marquages de fait
+		* Faits simples
+			~ Vèyli
+			~ Démo
+			~ Kréi
+			~ Safa
+		* Faits complexes
+			~ Kohos
+			~ Kèrkéi
+			~ Fio
+			~ Afio
+			
+	- Persistance
+		* Persistance temporelle
+		* Persistance personnelle
+		* Persistance contextuelle
+		* Persistance factuelle
+		* Persistance poussée
+	
+	- Pertes et accélérations
+		* Pertes
+		* Accélération
+	
+	- Anticontractions
+	
+	- Décontraction
+		
+Deyryck rapide
+	- Le dialogue
+		* Destruction sémantique programmée
+		* Evolution de la densité syllabique
+		* Atteinte du rapide
+		
+	- La rythmique
+		* Retour sur le ryck
+		* La poésie
+		* L'hyper contraction
+		
+	- Le rapide
+		* Deyryck rapide analytique
+		* Deyryck rapide analytique lent
+		* Le rapide
+		
+	- Accentuation
+		* Rapide rythmé
+		* Rythme transposé au lent
+		* Accentuation
+		
+Accentuation
+	- Accentuation de base
+		* Accent d'accentuation
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent Quantitatif
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent Tolérant
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent de Mouvement
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		
+	- Accents du FDD
+		* Fikji Dèr Dèyrik
+			~ Origine
+			~ Utilisation
+			~ Non-utilisation
+		* Accent du Possible
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent auxiliaire
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent d'opposition
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent d'application
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent de Convergence
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent d'actualité
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent de Reception
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent du Passé
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent du Futur
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent du Présent
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent de Relativisation
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent Absolu
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent d'ouverture
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+		* Accent de Précision
+			~ Accentuation naturelle
+			~ Accentuation adarane
+			~ Accentuation Pharkienne
+			
+	- Désaccentuation
+		* Accentuation de crochetage
+		* Crochetage d'accentuation
+		* Accentuation par crochetage
+	
+	- Accentuation dynamique
+	
+	- Accentuation complexe
+		* Suraccentuation
+		* Sousaccentuation
+		* Accentuation complexe généralisée
+
+	- Accentuation multiple
+		* Accentuation superposée
+		* Accentuation décomposée
+		* Accentuation multiple généralisée
+		
+Deyryck poussé
+	- Usages
+		* Nord profond
+		* Nord
+		* Centre
+		* Sud
+		* Extrême Sud
+		* Peuples libres
+		* Empire Akonien
+		* Dévonie
+	
+	- Niveaux de langages
+		* Nord profond
+		* Nord
+		* Centre
+		* Sud
+		* Extrême Sud
+		* Peuples libres
+		* Empire Akonien
+		* Dévonie
+	
+	- Valuation
+		* Accentuation VS Crochetage
+		* Contraction VS Hyperprécision
+	
+	- Maîtrise du vocabulaire
+		* Retour sur les utilisations de marques
+		* Retour sur la compréhesion des filiens
+		* Retour sur les usages mathématiques
+		* Utilisation correcte des mots adarans avec les mots de Phark
+	
+Deyryck avancé
+	- Adaptation
+	
+	- Convergence
+	
+	- Divergence
+	
+	- Dynamisme
+	
+	- Fusion
+	
+Pour aller plus loins
+	- Introduction au Dèyrik mé Iki
+	
+	- Exemples de texte
+	
+	- Apprentissage
+	
+	- Outils d'approfondissement général
+	
+Annexes
+	- Lexique des clefs
+	
+	- Lexique des mots en "o"
+	
+	- Lexique des filiens

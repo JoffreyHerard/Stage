@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+FROM debian:latest
+RUN apt\PYGZhy{}get \PYGZhy{}y update
+\PYG{o}{\PYGZam{}\PYGZam{}} apt\PYGZhy{}get install \PYGZhy{}y wget php5\PYGZhy{}cli php5\PYGZhy{}gd iputils\PYGZhy{}ping
+\PYG{o}{\PYGZam{}\PYGZam{}} apt\PYGZhy{}get \PYGZhy{}f install
+\PYG{o}{\PYGZam{}\PYGZam{}} wget http://phoronix\PYGZhy{}test\PYGZhy{}suite.com/releases/repo/pts.debian/files/phoronix\PYGZhy{}test\PYGZhy{}suite\PYGZus{}7.0.1\PYGZus{}all.deb
+\PYG{o}{\PYGZam{}\PYGZam{}} dpkg \PYGZhy{}i phoronix\PYGZhy{}test\PYGZhy{}suite\PYGZus{}7.0.1\PYGZus{}all.deb
+CMD \PYG{n+nb}{echo} Bonjour ceci un est Docker\PYGZhy{}Perso
+\end{Verbatim}

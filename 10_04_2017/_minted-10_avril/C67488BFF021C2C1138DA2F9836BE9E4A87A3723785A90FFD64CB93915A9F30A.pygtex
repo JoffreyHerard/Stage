@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+salt \PYG{l+s+s1}{\PYGZsq{}*\PYGZsq{}} cmd.run \PYG{l+s+s1}{\PYGZsq{}wget http://phoronix\PYGZhy{}test\PYGZhy{}suite.com/releases/repo/pts.debian/f}
+\PYG{l+s+s1}{iles/phoronix\PYGZhy{}test\PYGZhy{}suite\PYGZus{}7.0.1\PYGZus{}all.deb\PYGZsq{}}
+\end{Verbatim}

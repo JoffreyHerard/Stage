@@ -1,0 +1,32 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYGZdl{} sudo apt\PYGZhy{}get install \PYG{l+s+se}{\PYGZbs{}}
+     apt\PYGZhy{}transport\PYGZhy{}https \PYG{l+s+se}{\PYGZbs{}}
+     ca\PYGZhy{}certificates \PYG{l+s+se}{\PYGZbs{}}
+     curl \PYG{l+s+se}{\PYGZbs{}}
+     software\PYGZhy{}properties\PYGZhy{}common
+
+\PYGZdl{} curl \PYGZhy{}fsSL https://download.docker.com/linux/debian/gpg \PYG{p}{|} sudo apt\PYGZhy{}key add \PYGZhy{}
+\PYGZdl{} sudo apt\PYGZhy{}key fingerprint 0EBFCD88
+\PYGZdl{} sudo add\PYGZhy{}apt\PYGZhy{}repository \PYG{l+s+se}{\PYGZbs{}}
+   \PYG{l+s+s2}{\PYGZdq{}deb [arch=amd64] https://download.docker.com/linux/debian \PYGZbs{}}
+\PYG{l+s+s2}{   }\PYG{k}{\PYGZdl{}(}lsb\PYGZus{}release \PYGZhy{}cs\PYG{k}{)}\PYG{l+s+s2}{ \PYGZbs{}}
+\PYG{l+s+s2}{   stable\PYGZdq{}}
+\PYGZdl{} apt\PYGZhy{}get update
+apt\PYGZhy{}get install docker\PYGZhy{}ce
+docker run hello\PYGZhy{}world
+docker run \PYGZhy{}it debian bash
+\PYG{c+c1}{\PYGZsh{}Dans chaque conteneurs a voir avec docker exec}
+apt\PYGZhy{}get install php5\PYGZhy{}cli php5\PYGZhy{}gd iputils\PYGZhy{}ping wget
+
+apt\PYGZhy{}get \PYGZhy{}f install
+wget http://phoronix\PYGZhy{}test\PYGZhy{}suite.com/releases/repo/pts.debian/files/phoronix\PYGZhy{}test\PYGZhy{}suite\PYGZus{}7.0.1\PYGZus{}all.deb
+
+dpkg \PYGZhy{}i phoronix\PYGZhy{}test\PYGZhy{}suite\PYGZus{}7.0.1\PYGZus{}all.deb
+\PYG{c+c1}{\PYGZsh{}Le reste est exactement comme pour les LXCs par exemple}
+docker \PYG{n+nb}{exec} ff9e2f236f6c figlet toto
+ \PYGZus{}        \PYGZus{}
+\PYG{p}{|} \PYG{p}{|}\PYGZus{} \PYGZus{}\PYGZus{}\PYGZus{} \PYG{p}{|} \PYG{p}{|}\PYGZus{} \PYGZus{}\PYGZus{}\PYGZus{}
+\PYG{p}{|} \PYGZus{}\PYGZus{}/ \PYGZus{} \PYG{l+s+se}{\PYGZbs{}|} \PYGZus{}\PYGZus{}/ \PYGZus{} \PYG{l+s+se}{\PYGZbs{}}
+\PYG{p}{|} \PYG{o}{||} \PYG{o}{(}\PYGZus{}\PYG{o}{)} \PYG{p}{|} \PYG{o}{||} \PYG{o}{(}\PYGZus{}\PYG{o}{)} \PYG{p}{|}
+ \PYG{l+s+se}{\PYGZbs{}\PYGZus{}}\PYGZus{}\PYG{l+s+se}{\PYGZbs{}\PYGZus{}}\PYGZus{}\PYGZus{}/ \PYG{l+s+se}{\PYGZbs{}\PYGZus{}}\PYGZus{}\PYG{l+s+se}{\PYGZbs{}\PYGZus{}}\PYGZus{}\PYGZus{}/
+\end{Verbatim}

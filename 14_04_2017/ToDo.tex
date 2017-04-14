@@ -1,0 +1,82 @@
+\documentclass[french]{article}
+\usepackage{amssymb, amsmath, mathtools} %pour les mathématiques
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage[a4paper]{geometry}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{minted}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
+\usetikzlibrary{arrows.meta,shapes,positioning,shadows,trees}
+
+\tikzset{
+    basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
+    root/.style   = {basic, rounded corners=2pt, thin, align=center,
+                     fill=green!30},
+    onode/.style = {basic, thin, align=center, fill=green!60,text width=3cm,},
+    tnode/.style = {basic, thin, align=left, fill=pink!60, text width=6.5em},
+    edge from parent/.style={->, >={latex}, draw=black, edge from parent fork right}
+}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newtheorem{post}{Postulat}
+\newtheorem{mydef}{Définition}
+
+\begin{document}
+\title{To Do List}
+\author{Joffrey Hérard}
+\date{\today} 
+\maketitle
+\section{Today}
+\begin{enumerate}
+\item Mise en Place d'un Planning
+\item Définitions des termes du sujet
+\item Définitions des cas d'utilisations.
+\item Recherche Bibliographique 
+\item Recherche sur les technologies existantes
+\item Choix des Hyperviseurs et Conteneurs
+\item Choix de ce qui va être testé . 
+\item Mise en place machines physiques et préparation des tests .
+\item Lancement des tests
+\item Analyse Résultats
+\item Rédaction
+\end{enumerate}
+\newpage
+\section{Archives}
+\paragraph{Listes des choses à faire Mis a jour 4/04/2017}
+\begin{enumerate}
+	\item Définitions des cas d'utilisations. 
+	\item Choix des Hyperviseurs de Type 1 ? Type 2 ? Conteneurs?
+	\item Choix cible des Tests.
+	\item Définitions des différents scenarios associé au différent schéma ..
+	\item Préparations des différents scripts associés aux scenarios pour les différent hyperviseur, conteneurs 
+	\item Remise à zero de la machine hôte.
+	\item Mise en place d'une << sonde >> pour effectué les relevés de sorte à être des plus neutre dans les enregistrements.
+	\item Mise en place des Tests 
+		\begin{enumerate}
+			\item Préparations de la machine physique et des machines virtuelles. 
+			\item Lancement des tests.
+			\item Surveillance régulière du bon déroulement des différents test.
+			\item Récupérations des données . 
+			\item Analyse des résultats sur la cohérence .
+			\begin{enumerate}
+				\item Établir des liens entre certain paramètres $\rightarrow $ les confirmers par d'autre test ? 
+				\item Analyse sur les différents hyperviseur/conteneurs sur les mêmes scenarios 
+			\end{enumerate}
+			\item Représentations des résultats pour chaque batterie de tests. (Courbes) et les interprétations.
+			\item Retour à l’étape (a) si nécessaire sinon étapes suivantes.
+		\end{enumerate}
+	\item Écriture du rapport au fur et mesure.	
+			
+\end{enumerate}
+
+\end{document}

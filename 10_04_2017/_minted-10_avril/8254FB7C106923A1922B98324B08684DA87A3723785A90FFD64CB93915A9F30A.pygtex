@@ -1,0 +1,88 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{}Preparation pour l\PYGZsq{}hote}
+\PYG{n+nb}{echo} \PYG{l+s+s1}{\PYGZsq{}deb http://httpredir.debian.org/debian jessie\PYGZhy{}backports main\PYGZsq{}} \PYGZgt{}\PYGZgt{} /etc/apt/sources.list
+\PYG{n+nb}{echo} \PYG{l+s+s1}{\PYGZsq{}deb http://httpredir.debian.org/debian stretch main\PYGZsq{}} \PYGZgt{}\PYGZgt{} /etc/apt/sources.list
+apt\PYGZhy{}get update
+apt\PYGZhy{}get install python\PYGZhy{}zmq python\PYGZhy{}systemd/jessie\PYGZhy{}backports python\PYGZhy{}tornado/jessie\PYGZhy{}backports \PYG{l+s+se}{\PYGZbs{}}
+salt\PYGZhy{}common/stretch bridge\PYGZhy{}utils libvirt\PYGZhy{}bin debootstrap iproute2
+
+apt\PYGZhy{}get install lxc lxctl
+apt\PYGZhy{}get install salt\PYGZhy{}master salt\PYGZhy{}minion
+lxc\PYGZhy{}checkconfig
+
+\PYG{c+c1}{\PYGZsh{}Pour creer des machines virtuelles debian 8}
+\PYG{c+c1}{\PYGZsh{} repeter l\PYGZsq{}operations autant de fois que ce faire}
+lxc\PYGZhy{}create \PYGZhy{}n deb102 \PYGZhy{}t debian \PYGZhy{}\PYGZhy{} \PYGZhy{}r jessie
+lxc\PYGZhy{}create \PYGZhy{}n deb103 \PYGZhy{}t debian \PYGZhy{}\PYGZhy{} \PYGZhy{}r jessie
+
+
+\PYG{c+c1}{\PYGZsh{}Creation du brige :}
+ip link add name br0 \PYG{n+nb}{type} bridge
+ip link \PYG{n+nb}{set} eth0 down
+ip addr flush dev eth0
+ip link \PYG{n+nb}{set} eth0 up
+ip addr add 10.0.2.15/24 broadcast 10.0.2.255 dev br0
+ip link \PYG{n+nb}{set} dev br0 up
+ip link \PYG{n+nb}{set} eth0 master br0
+bridge link
+
+\PYG{c+c1}{\PYGZsh{}Configuration des machines Debians respective}
+
+\PYG{c+c1}{\PYGZsh{} Template used to create this container: /usr/share/lxc/templates/lxc\PYGZhy{}debian}
+\PYG{c+c1}{\PYGZsh{} Parameters passed to the template: \PYGZhy{}r jessie}
+\PYG{c+c1}{\PYGZsh{} Template script checksum (SHA\PYGZhy{}1): 2ad4d9cfe8988ae453172bd4fe3b06cf91756168}
+\PYG{c+c1}{\PYGZsh{} For additional config options, please look at lxc.container.conf(5)}
+
+\PYG{c+c1}{\PYGZsh{} Uncomment the following line to support nesting containers:}
+\PYG{c+c1}{\PYGZsh{}lxc.include = /usr/share/lxc/config/nesting.conf}
+\PYG{c+c1}{\PYGZsh{} (Be aware this has security implications)}
+
+
+lxc.rootfs \PYG{o}{=} /var/lib/lxc/deb103/rootfs
+lxc.rootfs.backend \PYG{o}{=} dir
+
+\PYG{c+c1}{\PYGZsh{} Common configuration}
+lxc.include \PYG{o}{=} /usr/share/lxc/config/debian.common.conf
+
+\PYG{c+c1}{\PYGZsh{} Container specific configuration}
+lxc.tty \PYG{o}{=} 4
+lxc.utsname \PYG{o}{=} deb103
+lxc.arch \PYG{o}{=} amd64
+lxc.network.type \PYG{o}{=} veth
+lxc.network.flags \PYG{o}{=} up
+lxc.rootfs \PYG{o}{=} /var/lib/lxc/deb10X/rootfs
+lxc.network.link \PYG{o}{=} br0
+lxc.network.hwaddr \PYG{o}{=} 00:FF:AA:00:00:01
+lxc.network.ipv4 \PYG{o}{=} 10.0.2.21/24
+lxc.network.ipv4.gateway \PYG{o}{=} 10.0.2.15
+
+\PYG{c+c1}{\PYGZsh{}Ne pas oublier de faire la modif du fichier}
+nano /etc/sysctl.conf
+\PYG{c+c1}{\PYGZsh{}uncomment ipv4 forward =1}
+
+\PYG{c+c1}{\PYGZsh{}Sur les conteneurs LXC}
+lxc\PYGZhy{}attach \PYGZhy{}n deb102 apt\PYGZhy{}get install salt\PYGZhy{}minion iputils\PYGZhy{}ping wget
+lxc\PYGZhy{}attach \PYGZhy{}n deb103 apt\PYGZhy{}get install salt\PYGZhy{}minion iputils\PYGZhy{}ping wget
+lxc\PYGZhy{}attach \PYGZhy{}n deb102 apt\PYGZhy{}get \PYGZhy{}f install
+lxc\PYGZhy{}attach \PYGZhy{}n deb103 apt\PYGZhy{}get \PYGZhy{}f install
+
+lxc\PYGZhy{}attach \PYGZhy{}n deb102 apt\PYGZhy{}get  install php5\PYGZhy{}cli php5\PYGZhy{}gd
+lxc\PYGZhy{}attach \PYGZhy{}n deb103 apt\PYGZhy{}get  install php5\PYGZhy{}cli php5\PYGZhy{}gd
+lxc\PYGZhy{}attach \PYGZhy{}n deb102 \PYG{n+nb}{echo} \PYG{l+s+s2}{\PYGZdq{}master: 10.0.2.15\PYGZdq{}} \PYGZgt{}\PYGZgt{} /etc/salt/minion
+lxc\PYGZhy{}attach \PYGZhy{}n deb103 \PYG{n+nb}{echo} \PYG{l+s+s2}{\PYGZdq{}master: 10.0.2.15\PYGZdq{}} \PYGZgt{}\PYGZgt{} /etc/salt/minion
+lxc\PYGZhy{}attach \PYGZhy{}n deb102 \PYG{n+nb}{echo} salt\PYGZhy{}minion start
+lxc\PYGZhy{}attach \PYGZhy{}n deb103 \PYG{n+nb}{echo} salt\PYGZhy{}minion start
+\PYG{c+c1}{\PYGZsh{}Sur la debian Hote}
+salt\PYGZhy{}master start \PYG{p}{\PYGZam{}}
+salt\PYGZhy{}key \PYGZhy{}\PYGZhy{}accept\PYGZhy{}all
+
+\PYG{c+c1}{\PYGZsh{}Maintenant on peut faire ce que l\PYGZsq{}on veut par exemple}
+salt \PYG{l+s+s1}{\PYGZsq{}*\PYGZsq{}} test.ping
+deb103:
+    True
+debJo:
+    True
+deb102:
+    True
+salt \PYG{l+s+s1}{\PYGZsq{}*\PYGZsq{}} network.interfaces
+\end{Verbatim}

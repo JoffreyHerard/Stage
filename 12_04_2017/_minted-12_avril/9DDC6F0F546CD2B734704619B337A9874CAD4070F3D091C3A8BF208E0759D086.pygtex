@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+ docker images \PYGZhy{}a
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+docker\PYGZhy{}phoronix     latest              f8203414aeb0        \PYG{l+m}{7} minutes ago       \PYG{l+m}{249} MB
+debian              latest              8cedef9d7368        \PYG{l+m}{2} weeks ago         \PYG{l+m}{123} MB
+hello\PYGZhy{}world         latest              48b5124b2768        \PYG{l+m}{2} months ago        1.84 kB
+docker/whalesay     latest              6b362a9f73eb        \PYG{l+m}{22} months ago       \PYG{l+m}{247} MB
+\end{Verbatim}

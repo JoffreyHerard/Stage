@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+salt \PYG{l+s+s1}{\PYGZsq{}*\PYGZsq{}} cmd.run \PYG{l+s+s1}{\PYGZsq{} dpkg \PYGZhy{}i phoronix\PYGZhy{}test\PYGZhy{}suite\PYGZus{}7.0.1\PYGZus{}all.deb\PYGZsq{}}
+\end{Verbatim}

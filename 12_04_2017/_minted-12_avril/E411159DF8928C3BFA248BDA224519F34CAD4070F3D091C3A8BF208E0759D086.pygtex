@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+apt\PYGZhy{}get install php5\PYGZhy{}sqlite
+phoronix\PYGZhy{}test\PYGZhy{}suite start\PYGZhy{}phoromatic\PYGZhy{}server
+\PYG{c+c1}{\PYGZsh{}Et on est reparti !}
+\end{Verbatim}

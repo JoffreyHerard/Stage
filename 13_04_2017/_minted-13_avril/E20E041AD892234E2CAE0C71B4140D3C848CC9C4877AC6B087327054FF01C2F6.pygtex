@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{}Sur l\PYGZsq{}hote}
+egrep \PYG{l+s+s1}{\PYGZsq{}\PYGZca{}flags.*(vmx|svm)\PYGZsq{}} /proc/cpuinfo
+\PYG{c+c1}{\PYGZsh{}Si on a pas un rendu vide on peut virtualiser}
+
+apt\PYGZhy{}get install kvm qemu\PYGZhy{}kvm
+qemu\PYGZhy{}img create hda.deb.raw 2G
+\PYG{c+c1}{\PYGZsh{}ou on peut faire aussi}
+kvm\PYGZhy{}img create hda.deb.raw 2G
+kvm hda.deb.raw \PYGZhy{}m \PYG{l+m}{512} \PYGZhy{}cdrom ../deb/debian.iso \PYGZhy{}boot d
+kvm hda.deb.raw \PYGZhy{}m \PYG{l+m}{512} \PYGZhy{}vnc :\PYGZlt{}PORT\PYGZgt{} \PYGZhy{}daemonize
+
+\PYG{c+c1}{\PYGZsh{}Controle distant}
+sudo apt install xtightvncviewer
+xtightvncviewer \PYGZlt{}ADRESSE\PYGZhy{}MACHINE\PYGZgt{}:PORT
+\PYG{c+c1}{\PYGZsh{}Par contre pour la gestion massive on va utiliser un ensemble d\PYGZsq{}outils les deux installer sur les machines hote et distante(Controle)}
+sudo apt\PYGZhy{}get install libvirt\PYGZhy{}bin virtinst
+
+sudo usermod \PYGZhy{}a \PYGZhy{}G libvirtd user
+sudo usermod \PYGZhy{}a \PYGZhy{}G kvm user
+
+virsh \PYGZhy{}c qemu:///system list
+\PYG{c+c1}{\PYGZsh{}Non vide = tableau afficher vide == OK}
+sudo apt\PYGZhy{}get install virt\PYGZhy{}manager
+\end{Verbatim}
