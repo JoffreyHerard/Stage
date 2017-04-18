@@ -1,45 +1,73 @@
 \chapter{Analyse de l'existant}
 
-Intro
+Dans ce chapitre, il va être question de voir ce qu'il existe comme technologie à même de répondre a notre problématique, notamment rappelons-le 
 
-\section{Partie 1}
+\section{Virtualisation}
 
-Intro
 
-\subsection{Sous-partie 1}
 
-Bla
+\subsection{Hyperviseurs}
+\begin{mydef}
+Hyperviseurs :c'est une plate-forme de virtualisation qui permet à plusieurs systèmes d'exploitation de travailler sur une même machine physique en même temps.Il en existe deux catégories .
+	\begin{itemize}
+		\item La première bien nommée Type 1 :  est un logiciel de virtualisation installé directement sur le matériel informatique, il contrôle non seulement le matériel, mais aussi un ou plusieurs systèmes d'exploitation invités.
+		\item La deuxième bien nommée Type 2 : sont des applications de virtualisation qui s’exécutent non pas directement sur du hardware mais sur un système d’exploitation.
+	\end{itemize}
+\end{mydef}
+Il existe un ensemble d'Hyperviseur de type 1, que l'on peut lister de manière non exhaustive : 
 
-\subsection{Sous-partie 2}
+\begin{itemize}
+\item CP
+\item XEN
+\item ESX Server
+\item LPAR
+\item Hyper-V
+\item Proxmox
+\item KVM
+\end{itemize}
 
-Bla\\
+Il existe un ensemble d'Hyperviseur de type 2, que l'on peut lister de manière non exhaustive : 
 
-Transition
+\begin{itemize}
+\item VMWare Server
+\item VMWARE Workstation
+\item QEMU
+\item Hyper-V
+\item Parallels Workstation
+\item Parallels Dekstop
+\item VirtualBox
+\end{itemize}
+\subsection{Conteneurs}
 
-\section{Partie 2}
+\begin{mydef}
+Conteneurs : C'est de créer des instances dans un espace isolés au lieu. En d'autres termes, le partage du matériel est de rendre disponible de nombreux opérateurs sur le noyau lui-même plutôt que d'une autre couche. 
+\end{mydef}
 
-Bla\\
+Il existe un ensemble de gestion de conteneurs, que l'on peut lister de manière non exhaustive : 
+\begin{itemize}
 
-Transition
+\item LXC
+\item Docker
+\end{itemize}
+\section{Provisionning}
+ 
+\begin{mydef}
+Provisionning : C'est l'approvisionnement de machines, afin de mettre en place des configuration, des allocaton automatiques de ressources, voir même des installation de logiciel, gestion de configuration, maintenance système. Globalement il sert à faire de  la gestion de groupe de machines. 
+\end{mydef}
+Initialement le provisioning était du scripting manuel, voir même des solutions Client/Serveur, avec un serveur de configuration et un ensemble d'agent de gestion placés sur les machines à administrer. On appelle cela un framework d’exécution distantes depuis une station de gestion.
+Le scripting a malgré tout des limites, cela représente un travail fastidieux, il fait souvent face a un problème d'hétérogénéité. On peut se retrouvé face un script spécifique pour une opération, par serveur, par service.
+Voici une liste :
+\begin{itemize}
 
-\section{Bilan récapitulatif}
+\item Ansible
+\item Vagrant
+\item Saltstack
+\item Libvirt
+\end{itemize}
+\section{Benchmarking}
+Une évaluation des performances c'est appelé souvent dans le monde anglophone un Benchmark. Ce terme est définit comme suit.
+\begin{mydef}
+Benchmarking : Évaluation des performances d'un système par simulation des conditions réelles d'utilisations. 
+\end{mydef}
+Il existe un certain nombre de benchmark référence en majeur partie par OpenBenchmark.com, la source de ces benchmark sont réalisé avec l’outil célèbre nommé Phoronix tests suite .
 
-Voici un tableau (cf. fig. 2.1) récapitulatif de notre analyse de l'existant...\\
-
-%tableau centré à taille variable qui s'ajuste automatiquement suivant la longueur du contenu
-\begin{figure}[!h]
-\begin{center}
-\begin{tabular}{|l|l|l|l|l|}
-  \hline
-  Solution & Critère 1 & Critère 2 & Critère 3 & Critère 4\\
-  \hline
-  Solution 1(cf. ref. \cite{cite0}) & Oui & Oui & Oui & Oui \\
-  Solution 2(cf. ref. \cite{cite1}) & Oui & Oui & Oui & Non \\
-  Solution 3(cf. ref. \cite{cite2}) & Oui (sauf telle chose) & Non & Non & Oui\\
-  Solution 4(cf. ref. \cite{cite3}) & Oui& Non & Oui & Non\\
-  Solution 5(cf. ref. \cite{cite4}) & Oui (uniquement ceux-ci) & Non & Oui & Non\\
-  \hline
-\end{tabular}
-\end{center}
-\caption{Tableau récapitulatif des solutions}
-\end{figure}

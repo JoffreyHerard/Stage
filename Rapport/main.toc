@@ -5,20 +5,61 @@
 \contentsline {section}{\numberline {1.3}Problématique soulevée}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Hypothèse de solution}{2}{section.1.4}
 \contentsline {chapter}{\numberline {2}Analyse de l'existant}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Partie 1}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Sous-partie 1}{3}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Sous-partie 2}{3}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Partie 2}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Bilan récapitulatif}{3}{section.2.3}
-\contentsline {chapter}{\numberline {3}Analyse des besoins}{4}{chapter.3}
-\contentsline {section}{\numberline {3.1}Besoins fonctionnels}{4}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Sous-partie 1}{4}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Sous-partie 2}{4}{subsection.3.1.2}
-\contentsline {section}{\numberline {3.2}Besoins non-fonctionnels}{5}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Sous-partie 1}{5}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Sous-partie 2}{5}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Développement}{6}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Tâches}{6}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Tests}{6}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Bilan}{7}{section.3.4}
-\contentsline {section}{\numberline {3.5}Annexes}{8}{section.3.5}
+\contentsline {section}{\numberline {2.1}Virtualisation}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Hyperviseurs}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Conteneurs}{3}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Provisionning}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Benchmarking}{4}{section.2.3}
+\contentsline {chapter}{\numberline {3}Analyse des besoins}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Plan d'expériences}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Expérimentation disque dur}{5}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Expérimentation processeur}{5}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Expérimentation carte graphique}{5}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Expérimentation réseaux}{5}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Choix sur les outils de virtualisation}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Hyperviseurs}{6}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Conteneurs}{7}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Choix d'outils d’évaluation}{8}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Outils d'évaluation personnel}{8}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Phoronix}{8}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Choix d'outils d'orchestration}{8}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Saltstack}{8}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Phoromatic}{8}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Libvirt}{8}{subsection.3.4.3}
+\contentsline {chapter}{\numberline {4}Résultats}{9}{chapter.4}
+\contentsline {section}{\numberline {4.1}Partie processeurs}{9}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Scénario 1 : bla bla }{9}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Scénario 2 : bla bla }{9}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Scénario 3 : bla bla }{9}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Partie Disque dur }{9}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Scénario 1 : bla bla }{9}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Scénario 2 : bla bla }{10}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Scénario 3 : bla bla }{10}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Partie Réseaux }{10}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Scénario 1 : bla bla }{10}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Scénario 2 : bla bla }{11}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Scénario 3 : bla bla }{11}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Partie d'utilisation différentes}{11}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Scénario 1 : bla bla }{11}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Scénario 2 : bla bla }{12}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Scénario 3 : bla bla }{12}{subsection.4.4.3}
+\contentsline {section}{\numberline {4.5}Bilan}{13}{section.4.5}
+\contentsline {chapter}{\numberline {5}Bilan}{14}{chapter.5}
+\contentsline {section}{\numberline {5.1}Annexes}{16}{section.5.1}
+\contentsline {part}{Annexes}{18}{part*.14}
+\contentsline {chapter}{Annexe 1}{18}{chapter*.15}
+\contentsline {section}{\numberline {1}Partie 1}{18}{section.5.1}
+\contentsline {subsection}{\numberline {1.1}Sous-partie 1}{18}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {1.2}Sous-partie 2}{18}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {1.3}Sous-partie 3}{18}{subsection.5.1.3}
+\contentsline {section}{\numberline {2}Partie 2}{18}{section.5.2}
+\contentsline {subsection}{\numberline {2.1}Sous-partie 1}{18}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {2.2}Sous-partie 2}{18}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {2.3}Sous-partie 3}{18}{subsection.5.2.3}
+\contentsline {chapter}{Annexe 2}{19}{chapter*.16}
+\contentsline {section}{Prérequis}{19}{section*.17}
+\contentsline {section}{\numberline {1}Partie 1}{19}{section.5.1}
+\contentsline {subsection}{\numberline {1.1}Sous-parie 1}{19}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {1.2}Sous-parie 2}{19}{subsection.5.1.2}
+\contentsline {section}{\numberline {2}Partie 2}{19}{section.5.2}
+\contentsline {section}{\numberline {3}Partie 3}{20}{section.5.3}

@@ -12,21 +12,7 @@ Tout d'abord les solutions de virtualisation c'est quoi ?
 Solutions de virtualisation : La virtualisation consiste à faire fonctionner un ou plusieurs systèmes d'exploitation / applications comme un simple logiciel, sur un ou plusieurs ordinateurs. Actuellement sépare en deux grand domaine, l’hyper-vision(eux meme divisé en deux type : Type 1 et type 2) et la conteneurisation.
 \end{mydef}
 
-\begin{mydef}
-Hyperviseurs :c'est une plate-forme de virtualisation qui permet à plusieurs systèmes d'exploitation de travailler sur une même machine physique en même temps.Il en existe deux catégories .
-	\begin{itemize}
-		\item La première bien nommée Type 1 :  est un logiciel de virtualisation installé directement sur le matériel informatique, il contrôle non seulement le matériel, mais aussi un ou plusieurs systèmes d'exploitation invités.
-		\item La deuxième bien nommée Type 2 : sont des applications de virtualisation qui s’exécutent non pas directement sur du hardware mais sur un système d’exploitation.
-	\end{itemize}
-\end{mydef}
-
-\begin{mydef}
-Conteneurs : C'est de créer des instances dans un espace isolés au lieu. En d'autres termes, le partage du matériel est de rendre disponible de nombreux opérateurs sur le noyau lui-même plutôt que d'une autre couche. 
-\end{mydef}
-Finalement une fois les termes des solution de virtualisation définie en détails, il est nécessaires de donner une définition de ce que c'est de faire une évaluation des performances. Une évaluation des performances c'est appelé souvent dans le monde anglophone un Benchmark. Ce terme est définit comme suit.
-\begin{mydef}
-Benchmarking : Évaluation des performances d'un système par simulation des conditions réelles d'utilisations. 
-\end{mydef}
+Finalement une fois les termes des solution de virtualisation définie en détails, il est nécessaires de donner une définition de ce que c'est de faire une évaluation des performances. 
 \newpage
 \section{Objectifs}
 \begin{enumerate}
@@ -34,34 +20,16 @@ Benchmarking : Évaluation des performances d'un système par simulation des con
 	\item Effectuer une démarche scientifique cohérente.
 	\item Effectuer un travail collaboratif avec des personnes d’expériences sur le sujet, qui malgré tout est plus ou moins inédit pour moi (J’entends que la plupart des travaux réalisé ces dernières années on été fait avec des gens de mêmes expérience que moi ).
 	\item Établir des statistiques, sur les résultats qui seront obtenus . En ressortir des résultats des variables qui sortent du lot.
+	\item Établir un tableau récapitulatif afin de pouvoir résumé toutes les données obtenus .
+	
 \end{enumerate}
 \section{Problématique soulevée}
 
 \begin{center} 
+Comment mettre en œuvre des scénarios afin d'évaluer de manière efficace et juste sans interférer dans les résultats, les différentes solutions de virtualisation et de conteneurisation sur le plan du HDD, CPU, GPU, Réseaux ? 
 \end{center}
 
 \section{Hypothèse de solution}
 
 %Quoi :
-Bla\\
-
-Voici une liste :
-\begin{itemize}
-\item item 1;
-\item item 2;
-\item item 3;
-\item item 4.
-\end{itemize}
-
-Bla\\
-
-%Comment :
-Bla
-
-Bla\footnotemark\\
-
-%Detail :
-Bla(cf. ref. \cite{cite6}).
-%citation référencé dans le document "bibliographie.bib" inclus à la fin du document
-
-\footnotetext{Note bas de page "bla"}
+Il existe un ensemble de logiciel type pour le provisionning de machine virtuelle, ainsi que d'outils afin de benchmark qui sont neutre dans leur prise de ressource.
