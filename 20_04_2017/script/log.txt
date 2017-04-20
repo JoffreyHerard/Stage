@@ -1,0 +1,7 @@
+      lxc-start 1492686357.106 ERROR    lxc_conf - failed to create br-deb101-vethP2YDI0 : File exists
+      lxc-start 1492686357.169 ERROR    lxc_conf - failed to create netdev
+      lxc-start 1492686357.169 ERROR    lxc_start - failed to create the network
+      lxc-start 1492686357.169 ERROR    lxc_start - failed to spawn 'debLXC103'
+      lxc-start 1492686362.174 ERROR    lxc_start_ui - The container failed to start.
+      lxc-start 1492686362.174 ERROR    lxc_start_ui - To get more details, run the container in foreground mode.
+      lxc-start 1492686362.174 ERROR    lxc_start_ui - Additional information can be obtained by setting the --logfile and --logpriority options.

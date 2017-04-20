@@ -20,17 +20,7 @@ pts/scimark2-1.2.1               - SciMark
 pts/build-linux-kernel-1.7.0     - Timed Linux Kernel Compilation     
 pts/compress-7zip-1.6.2          - 7-Zip Compression                  
 pts/scimark2-1.2.0               - SciMark                            
-pts/gnupg-1.3.2                  - GnuPG                              
-
-Graphics Tests
-
-pts/etlegacy-1.0.0               - ET: Legacy                         
-pts/openarena-1.5.3              - OpenArena                          
-pts/gputest-1.3.1                - GpuTest                            
-pts/bioshock-infinite-1.0.1      - BioShock Infinite                  
-pts/apitest-1.1.0                - APITest                            
-pts/cairo-demos-1.0.1            - Cairo Performance Demos            
-pts/xonotic-1.4.0                - Xonotic                            
+pts/gnupg-1.3.2                  - GnuPG                                           
 
 Memory Tests
 

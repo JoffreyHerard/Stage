@@ -1,0 +1,593 @@
+\documentclass[french]{article}
+\usepackage{amssymb, amsmath, mathtools} %pour les mathématiques
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage[a4paper]{geometry}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{minted}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
+\usetikzlibrary{arrows.meta,shapes,positioning,shadows,trees}
+
+\tikzset{
+    basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
+    root/.style   = {basic, rounded corners=2pt, thin, align=center,
+                     fill=green!30},
+    onode/.style = {basic, thin, align=center, fill=green!60,text width=3cm,},
+    tnode/.style = {basic, thin, align=left, fill=pink!60, text width=6.5em},
+    edge from parent/.style={->, >={latex}, draw=black, edge from parent fork right}
+}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newtheorem{post}{Postulat}
+\newtheorem{mydef}{Définition}
+
+\begin{document}
+\title{Résumé Journalier}
+\author{Joffrey Hérard}
+\date{10 avril 2017} 
+
+\maketitle
+\section{Mis en place réseaux des anciens bridges}
+
+
+\begin{lstlisting}[language=bash,caption={}]
+
+  GNU nano 2.2.6                    Fichier : /etc/network/interfaces                                              
+
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+auto lo vmbr0
+auto lo vmbr1
+
+# The primary network interface
+allow-hotplug eth0
+iface eth0 inet manual
+#       address 10.22.9.17
+#       netmask 255.255.255.0
+#       network 10.22.9.0
+#       broadcast 10.22.9.255
+#       gateway 10.22.9.254
+#       # dns-* options are implemented by the resolvconf package, if installed
+#       dns-nameservers 8.8.8.8
+iface eth1 inet manual
+iface eth2 inet manual
+iface eth3 inet manual
+
+iface vmbr0 inet static
+        address 172.18.10.1
+        netmask 255.255.255.0
+        bridge_ports eth0.1020
+        bridge_stp off
+        bridge_fd 0
+
+iface vmbr1 inet static
+        address 10.22.9.17
+        netmask 255.255.255.0
+        gateway 10.22.9.254
+        broadcast 10.22.9.255
+        bridge_ports eth0
+        bridge_stp off
+        bridge_fd 0
+        dns-nameservers 8.8.8.8
+
+
+
+\end{lstlisting}
+Commande de mise en place des bridges
+\begin{lstlisting}[language=bash,caption={}]
+brctl addbr vmbr0
+brctl addbr vmbr1
+ip addr show
+brctl addif vmbr0 eth1 
+brctl addif vmbr eth0
+ifup vmbr0
+ifup vmbr1
+ip addr show 
+
+#modifier fichier /etc/network/interfaces
+#relance avec 
+service networking restart
+ifconfig
+
+docker0   Link encap:Ethernet  HWaddr 02:42:8f:20:17:d9  
+          inet adr:172.17.0.1  Bcast:0.0.0.0  Masque:255.255.0.0
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 lg file transmission:0 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+eth0      Link encap:Ethernet  HWaddr d0:67:e5:e9:09:4a  
+          inet adr:10.22.9.17  Bcast:10.22.9.255  Masque:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:2446 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:903 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 lg file transmission:1000 
+          RX bytes:230205 (224.8 KiB)  TX bytes:130751 (127.6 KiB)
+
+eth1      Link encap:Ethernet  HWaddr d0:67:e5:e9:09:4c  
+          inet adr:10.22.9.156  Bcast:10.22.9.255  Masque:255.255.255.0
+          adr inet6: 2001:660:4601:7008:d267:e5ff:fee9:94c/64 Scope:Global
+          adr inet6: fe80::d267:e5ff:fee9:94c/64 Scope:Lien
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1497 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:30 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 lg file transmission:1000 
+          RX bytes:125366 (122.4 KiB)  TX bytes:4192 (4.0 KiB)
+
+eth2      Link encap:Ethernet  HWaddr d0:67:e5:e9:09:4e  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 lg file transmission:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+eth3      Link encap:Ethernet  HWaddr d0:67:e5:e9:09:50  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 lg file transmission:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+lo        Link encap:Boucle locale  
+          inet adr:127.0.0.1  Masque:255.0.0.0
+          adr inet6: ::1/128 Scope:Hôte
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:42 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:42 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 lg file transmission:0 
+          RX bytes:3093 (3.0 KiB)  TX bytes:3093 (3.0 KiB)
+
+vmbr0     Link encap:Ethernet  HWaddr 32:69:8d:a4:0e:9a  
+          inet adr:172.18.10.1  Bcast:172.18.10.255  Masque:255.255.255.0
+          adr inet6: fe80::3069:8dff:fea4:e9a/64 Scope:Lien
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:11 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 lg file transmission:0 
+          RX bytes:0 (0.0 B)  TX bytes:774 (774.0 B)
+
+vmbr1     Link encap:Ethernet  HWaddr d0:67:e5:e9:09:4a  
+          inet adr:10.22.9.17  Bcast:10.22.9.255  Masque:255.255.255.0
+          adr inet6: 2001:660:4601:7008:d267:e5ff:fee9:94a/64 Scope:Global
+          adr inet6: fe80::d267:e5ff:fee9:94a/64 Scope:Lien
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:2368 errors:0 dropped:1 overruns:0 frame:0
+          TX packets:904 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 lg file transmission:0 
+          RX bytes:177707 (173.5 KiB)  TX bytes:127475 (124.4 KiB)
+
+\end{lstlisting}
+\newpage
+\section{Mis en place machine LXC}
+
+
+\begin{lstlisting}[language=bash,caption={Creation conteneurs}]
+#!/bin/bash
+echo Creation des conteneurs LXC
+
+lxc-create -n debLXC101 -t debian -- -r jessie
+lxc-create -n debLXC102 -t debian -- -r jessie
+lxc-create -n debLXC103 -t debian -- -r jessie
+lxc-create -n debLXC104 -t debian -- -r jessie
+lxc-create -n debLXC105 -t debian -- -r jessie
+lxc-create -n debLXC106 -t debian -- -r jessie
+lxc-create -n debLXC107 -t debian -- -r jessie
+lxc-create -n debLXC108 -t debian -- -r jessie
+lxc-create -n debLXC109 -t debian -- -r jessie
+lxc-create -n debLXC110 -t debian -- -r jessie
+lxc-create -n debLXC111 -t debian -- -r jessie
+lxc-create -n debLXC112 -t debian -- -r jessie
+lxc-create -n debLXC113 -t debian -- -r jessie
+lxc-create -n debLXC114 -t debian -- -r jessie
+lxc-create -n debLXC115 -t debian -- -r jessie
+lxc-create -n debLXC116 -t debian -- -r jessie
+lxc-create -n debLXC117 -t debian -- -r jessie
+lxc-create -n debLXC118 -t debian -- -r jessie
+lxc-create -n debLXC119 -t debian -- -r jessie
+lxc-create -n debLXC120 -t debian -- -r jessie
+lxc-create -n debLXC121 -t debian -- -r jessie
+lxc-create -n debLXC122 -t debian -- -r jessie
+lxc-create -n debLXC123 -t debian -- -r jessie
+lxc-create -n debLXC124 -t debian -- -r jessie
+lxc-create -n debLXC125 -t debian -- -r jessie
+
+echo 'Fin de creation des conteneurs LXC'
+
+\end{lstlisting}
+
+\begin{lstlisting}[language=bash,caption={Destruction conteneurs}]
+lxc-destroy -n debLXC101 
+lxc-destroy -n debLXC102 
+lxc-destroy -n debLXC103 
+lxc-destroy -n debLXC104 
+lxc-destroy -n debLXC105 
+lxc-destroy -n debLXC106 
+lxc-destroy -n debLXC107 
+lxc-destroy -n debLXC108 
+lxc-destroy -n debLXC109 
+lxc-destroy -n debLXC110 
+lxc-destroy -n debLXC111 
+lxc-destroy -n debLXC112 
+lxc-destroy -n debLXC113 
+lxc-destroy -n debLXC114 
+lxc-destroy -n debLXC115 
+lxc-destroy -n debLXC116 
+lxc-destroy -n debLXC117 
+lxc-destroy -n debLXC118 
+lxc-destroy -n debLXC119 
+lxc-destroy -n debLXC120 
+lxc-destroy -n debLXC121 
+lxc-destroy -n debLXC122 
+lxc-destroy -n debLXC123 
+lxc-destroy -n debLXC124 
+lxc-destroy -n debLXC125 
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=bash,caption={Obtenion d'info sur les conteneurs}]
+#!/bin/bash
+
+lxc-info -n debLXC101 
+lxc-info -n debLXC102 
+lxc-info -n debLXC103 
+lxc-info -n debLXC104 
+lxc-info -n debLXC105 
+lxc-info -n debLXC106 
+lxc-info -n debLXC107 
+lxc-info -n debLXC108 
+lxc-info -n debLXC109 
+lxc-info -n debLXC110 
+lxc-info -n debLXC111 
+lxc-info -n debLXC112 
+lxc-info -n debLXC113 
+lxc-info -n debLXC114 
+lxc-info -n debLXC115 
+lxc-info -n debLXC116 
+lxc-info -n debLXC117 
+lxc-info -n debLXC118 
+lxc-info -n debLXC119 
+lxc-info -n debLXC120 
+lxc-info -n debLXC121 
+lxc-info -n debLXC122 
+lxc-info -n debLXC123 
+lxc-info -n debLXC124 
+lxc-info -n debLXC125 
+\end{lstlisting}
+
+\begin{lstlisting}[language=bash,caption={}]
+#!/bin/bash
+echo 'LAUNCH CONTAINERS'
+lxc-start -d -n debLXC101 
+lxc-start -d -n debLXC102 
+lxc-start -d -n debLXC103 
+lxc-start -d -n debLXC104 
+lxc-start -d -n debLXC105 
+lxc-start -d -n debLXC106 
+lxc-start -d -n debLXC107 
+lxc-start -d -n debLXC108 
+lxc-start -d -n debLXC109 
+lxc-start -d -n debLXC110 
+lxc-start -d -n debLXC111 
+lxc-start -d -n debLXC112 
+lxc-start -d -n debLXC113 
+lxc-start -d -n debLXC114 
+lxc-start -d -n debLXC115 
+lxc-start -d -n debLXC116 
+lxc-start -d -n debLXC117 
+lxc-start -d -n debLXC118 
+lxc-start -d -n debLXC119 
+lxc-start -d -n debLXC120 
+lxc-start -d -n debLXC121 
+lxc-start -d -n debLXC122 
+lxc-start -d -n debLXC123 
+lxc-start -d -n debLXC124 
+lxc-start -d -n debLXC125 
+echo 'END LAUNCH CONTAINERS'
+\end{lstlisting}
+
+\begin{lstlisting}[language=bash,caption={}]
+#!/bin/bash
+
+sed -i".bak10" '/lxc.network/d' /var/lib/lxc/debLXC101/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC101/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC101/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC101/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC101/config
+
+echo 'lxc.network.veth.pair = br-deb101' >> /var/lib/lxc/debLXC101/config
+
+
+
+sed -i".bak11" '/lxc.network/d' /var/lib/lxc/debLXC102/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC102/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC102/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC102/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC102/config
+
+echo 'lxc.network.veth.pair = br-deb102' >> /var/lib/lxc/debLXC102/config
+
+sed -i".bak12" '/lxc.network/d' /var/lib/lxc/debLXC103/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC103/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC103/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC103/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC103/config
+
+echo 'lxc.network.veth.pair = br-deb103' >> /var/lib/lxc/debLXC103/config
+
+
+sed -i".bak13" '/lxc.network/d' /var/lib/lxc/debLXC104/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC104/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC104/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC104/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC104/config
+
+echo 'lxc.network.veth.pair = br-deb104' >> /var/lib/lxc/debLXC104/config
+
+
+sed -i".bak14" '/lxc.network/d' /var/lib/lxc/debLXC105/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC105/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC105/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC105/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC105/config
+
+echo 'lxc.network.veth.pair = br-deb105' >> /var/lib/lxc/debLXC105/config
+
+
+sed -i".bak15" '/lxc.network/d' /var/lib/lxc/debLXC106/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC106/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC106/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC106/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC106/config
+
+echo 'lxc.network.veth.pair = br-deb106' >> /var/lib/lxc/debLXC106/config
+
+
+sed -i".bak16" '/lxc.network/d' /var/lib/lxc/debLXC107/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC107/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC107/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC107/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC107/config
+
+echo 'lxc.network.veth.pair = br-deb107' >> /var/lib/lxc/debLXC107/config
+
+
+sed -i".bak17" '/lxc.network/d' /var/lib/lxc/debLXC108/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC108/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC108/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC108/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC108/config
+
+echo 'lxc.network.veth.pair = br-deb108' >> /var/lib/lxc/debLXC108/config
+
+
+sed -i".bak18" '/lxc.network/d' /var/lib/lxc/debLXC109/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC109/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC109/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC109/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC109/config
+
+echo 'lxc.network.veth.pair = br-deb109' >> /var/lib/lxc/debLXC109/config
+
+
+sed -i".bak19" '/lxc.network/d' /var/lib/lxc/debLXC110/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC110/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC110/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC110/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC110/config
+
+echo 'lxc.network.veth.pair = br-deb110' >> /var/lib/lxc/debLXC110/config
+
+
+sed -i".bak20" '/lxc.network/d' /var/lib/lxc/debLXC111/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC111/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC111/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC111/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC111/config
+
+echo 'lxc.network.veth.pair = br-deb111' >> /var/lib/lxc/debLXC111/config
+
+
+sed -i".bak21" '/lxc.network/d' /var/lib/lxc/debLXC112/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC112/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC112/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC112/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC112/config
+
+echo 'lxc.network.veth.pair = br-deb112' >> /var/lib/lxc/debLXC112/config
+
+
+sed -i".bak22" '/lxc.network/d' /var/lib/lxc/debLXC113/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC113/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC113/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC113/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC113/config
+
+echo 'lxc.network.veth.pair = br-deb113' >> /var/lib/lxc/debLXC113/config
+
+
+sed -i".bak23" '/lxc.network/d' /var/lib/lxc/debLXC114/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC114/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC114/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC114/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC114/config
+
+echo 'lxc.network.veth.pair = br-deb114' >> /var/lib/lxc/debLXC114/config
+
+
+sed -i".bak24" '/lxc.network/d' /var/lib/lxc/debLXC115/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC115/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC115/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC115/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC115/config
+
+echo 'lxc.network.veth.pair = br-deb115' >> /var/lib/lxc/debLXC115/config
+
+
+sed -i".bak25" '/lxc.network/d' /var/lib/lxc/debLXC116/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC116/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC116/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC116/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC116/config
+
+echo 'lxc.network.veth.pair = br-deb116' >> /var/lib/lxc/debLXC116/config
+
+
+sed -i".bak26" '/lxc.network/d' /var/lib/lxc/debLXC117/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC117/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC117/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC117/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC117/config
+
+echo 'lxc.network.veth.pair = br-deb117' >> /var/lib/lxc/debLXC117/config
+
+
+sed -i".bak27" '/lxc.network/d' /var/lib/lxc/debLXC118/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC118/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC118/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC118/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC118/config
+
+echo 'lxc.network.veth.pair = br-deb118' >> /var/lib/lxc/debLXC118/config
+
+
+sed -i".bak28" '/lxc.network/d' /var/lib/lxc/debLXC119/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC119/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC119/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC119/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC119/config
+
+echo 'lxc.network.veth.pair = br-deb119' >> /var/lib/lxc/debLXC119/config
+
+
+sed -i".bak29" '/lxc.network/d' /var/lib/lxc/debLXC120/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC120/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC120/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC120/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC120/config
+
+echo 'lxc.network.veth.pair = br-deb120' >> /var/lib/lxc/debLXC120/config
+
+
+sed -i".bak30" '/lxc.network/d' /var/lib/lxc/debLXC121/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC121/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC121/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC121/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC121/config
+
+echo 'lxc.network.veth.pair = br-deb121' >> /var/lib/lxc/debLXC121/config
+
+
+sed -i".bak31" '/lxc.network/d' /var/lib/lxc/debLXC122/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC122/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC122/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC122/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC122/config
+
+echo 'lxc.network.veth.pair = br-deb122' >> /var/lib/lxc/debLXC122/config
+
+
+sed -i".bak32" '/lxc.network/d' /var/lib/lxc/debLXC123/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC123/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC123/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC123/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC123/config
+
+echo 'lxc.network.veth.pair = br-deb123' >> /var/lib/lxc/debLXC123/config
+
+
+sed -i".bak33" '/lxc.network/d' /var/lib/lxc/debLXC124/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC124/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC124/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC124/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC124/config
+
+echo 'lxc.network.veth.pair = br-deb124' >> /var/lib/lxc/debLXC124/config
+
+
+sed -i".bak34" '/lxc.network/d' /var/lib/lxc/debLXC125/config
+echo 'lxc.tty = 4' >> /var/lib/lxc/debLXC125/config
+echo 'lxc.network.type = veth' >> /var/lib/lxc/debLXC125/config
+echo 'lxc.network.flags = up' >> /var/lib/lxc/debLXC125/config
+echo 'lxc.network.link = vmbr1' >> /var/lib/lxc/debLXC125/config
+
+echo 'lxc.network.veth.pair = br-deb125' >> /var/lib/lxc/debLXC125/config
+
+
+\end{lstlisting}
+
+\begin{lstlisting}[language=bash,caption={}]
+lxc-attach -n debLXC101 -- apt-get -y update && lxc-attach -n debLXC101 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC101 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC101 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC101 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC102 -- apt-get -y update && lxc-attach -n debLXC102 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC102 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC102 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC102 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC103 -- apt-get -y update && lxc-attach -n debLXC103 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC103 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC103 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC103 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ & 
+lxc-attach -n debLXC104 -- apt-get -y update && lxc-attach -n debLXC104 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC104 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC104 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC104 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC105 -- apt-get -y update && lxc-attach -n debLXC105 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC105 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC105 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC105 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC106 -- apt-get -y update && lxc-attach -n debLXC106 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC106 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC106 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC106 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC107 -- apt-get -y update && lxc-attach -n debLXC107 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC107 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC107 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC107 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC108 -- apt-get -y update && lxc-attach -n debLXC108 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC108 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC108 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC108 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC109 -- apt-get -y update && lxc-attach -n debLXC109 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC109 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC109 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC109 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC110 -- apt-get -y update && lxc-attach -n debLXC110 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC110 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC110 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC110 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC111 -- apt-get -y update && lxc-attach -n debLXC111 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC111 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC111 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC111 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC112 -- apt-get -y update && lxc-attach -n debLXC112 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC112 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC112 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC112 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC113 -- apt-get -y update && lxc-attach -n debLXC113 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC113 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC113 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC113 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC114 -- apt-get -y update && lxc-attach -n debLXC114 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC114 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC114 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC114 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC115 -- apt-get -y update && lxc-attach -n debLXC115 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC115 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC115 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC115 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC116 -- apt-get -y update && lxc-attach -n debLXC116 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC116 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC116 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC116 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC117 -- apt-get -y update && lxc-attach -n debLXC117 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC117 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC117  --dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC117 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC118 -- apt-get -y update && lxc-attach -n debLXC118 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC118 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC118  --dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC118 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC119 -- apt-get -y update && lxc-attach -n debLXC119 -- apt-get install -y php5-cli php5-gd wget  && lxc-attach -n debLXC119 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC119 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC119 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC120 -- apt-get -y update && lxc-attach -n debLXC120 -- apt-get install -y php5-cli php5-gd wget  && lxc-attach -n debLXC120 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb&& lxc-attach -n debLXC120  --dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC120 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC121 -- apt-get -y update && lxc-attach -n debLXC121 -- apt-get install -y php5-cli php5-gd wget  && lxc-attach -n debLXC121 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC121 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC121 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC122 -- apt-get -y update && lxc-attach -n debLXC122 -- apt-get install -y php5-cli php5-gd wget  && lxc-attach -n debLXC122 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC122 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC122 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC123 -- apt-get -y update && lxc-attach -n debLXC123 -- apt-get install -y php5-cli php5-gd wget  && lxc-attach -n debLXC123 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC123 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC123 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC124 -- apt-get -y update && lxc-attach -n debLXC124 -- apt-get install -y php5-cli php5-gd wget  && lxc-attach -n debLXC124 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC124 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC124 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC125 -- apt-get -y update && lxc-attach -n debLXC125 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC125 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC125  --dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC125 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=bash,caption={}]
+#!/bin/bash
+lxc-attach -n debLXC101 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC102 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC103 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ & 
+lxc-attach -n debLXC104 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC105 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC106 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC107 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC108 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC109 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC110 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC111 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC112 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC113 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC114 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC115 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC116 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC117 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC118 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC119 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC120 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC121 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC122 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC123 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC124 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC125 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+\end{lstlisting}
+\end{document}

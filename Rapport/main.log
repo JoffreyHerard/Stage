@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2016.12.26)  14 APR 2017 14:31
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2016.12.26)  20 APR 2017 23:04
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -840,12 +840,7 @@ File: ./logo.jpg Graphic file (type QTm)
 Missing character: There is no ’ in font ecbx2074!
  [1
 
-]) [1] (./abstract.tex
-Missing character: There is no ’ in font ecrm1000!
-Missing character: There is no œ in font ecrm1000!
- [1]) (./main.toc
-Missing character: There is no ’ in font ecrm1000!
-
+]) [1] (./abstract.tex [1]) (./main.toc
 [1
 
 ])
@@ -854,16 +849,14 @@ Missing character: There is no ’ in font ecrm1000!
 
  [0] [0] (./presentation.tex
 Chapitre 1.
-Missing character: There is no ’ in font ecrm1000!
 Package hyperref Info: bookmark level for unknown mydef defaults to 0 on input 
-line 12.
+line 10.
 Missing character: There is no ’ in font ecti1000!
 [1
 
 ]
 Missing character: There is no ’ in font ecrm1000!
 Missing character: There is no ’ in font ecrm1000!
-Missing character: There is no œ in font ecrm1000!
 ) (./existant.tex [2]
 Chapitre 2.
 Missing character: There is no ’ in font ecti1000!
@@ -871,59 +864,33 @@ Missing character: There is no ’ in font ecti1000!
 Missing character: There is no ’ in font ecrm1000!
 [3
 
-]
-Missing character: There is no ’ in font ecrm1000!
-) (./besoins.tex [4]
+]) (./besoins.tex [4]
 Chapitre 3.
+Missing character: There is no ’ in font ecrm1000!
+Missing character: There is no ’ in font ecrm1000!
+Missing character: There is no ’ in font ecrm1000!
+Missing character: There is no ’ in font ecrm1000!
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 31--32
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
-
- []
-
-[7]
-Missing character: There is no ’ in font ecbx1440!
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-)
-Underfull \hbox (badness 10000) in paragraph at lines 69--98
-
- []
-
-(./resultats.tex [8]
+Missing character: There is no ’ in font ecrm1000!
+Missing character: There is no ’ in font ecrm1000!
+ [6] [7]
+Missing character: There is no ’ in font ecrm1000!
+Missing character: There is no ’ in font ecrm1000!
+Missing character: There is no ’ in font ecrm1000!
+ [8]
+Missing character: There is no ’ in font ecrm1000!
+Missing character: There is no ’ in font ecrm1000!
+ [9]
+Missing character: There is no ’ in font ecrm1000!
+ [10]
+Missing character: There is no œ in font ecrm1000!
+) (./resultats.tex [11]
 Chapitre 4.
-[9
+[12
 
-] [10] [11]) [12] (./bilan.tex [13]
+] [13] [14]) [15] (./bilan.tex
 Chapitre 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
@@ -940,18 +907,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-[14
+[16
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 33--34
 
  []
 
-) [15] (./annexes.tex [16] [17
+) [17] (./annexes.tex [18] [19
 
-] (./annexe1.tex) (./annexe2.tex [18
+] (./annexe1.tex) (./annexe2.tex [20
 
-] [19
+] [21
 
 ]
 File: presentation/schema.png Graphic file (type QTm)
@@ -971,22 +938,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
 
-)) [20]
-No file main.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
-(./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 116.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 116.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
+)) [22]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 114.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Missing character: There is no ‎ in font ectt1000!
+Missing character: There is no – in font ectt1000!
+
+Overfull \hbox (95.21902pt too wide) in paragraph at lines 154--155
+[][]$\T1/cmtt/m/n/10 WeiHuang ,[] JiuxingLiu ,[] BulentAbalietDhabaleswarK . Pa
+nda ,[] «ACaseforHighPerformanceComputingwithVirtualMachines» ,[]
+ []
+
+
+Overfull \hbox (126.71133pt too wide) in paragraph at lines 156--157
+[][]$\T1/cmtt/m/n/10 PiotrLuszczek ,[] EricMeek ,[] ShirleyMooreetDanTerpstra ,
+[] EvaluationoftheHPCChallengeBenchmarksinVirtualizedenvironments ,[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
+[]\T1/cmr/m/n/10 GitHub do-cu-men-ta-tion de Pho-ro-nix test suite. []$\T1/cmtt
+/m/n/10 https : / / gist . github . com / anshula /
+ []
+
+[23
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
+ (./main.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 179.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 179.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
  ) 
 Here is how much of TeX's memory you used:
- 22479 strings out of 493589
- 395846 string characters out of 6145555
- 468745 words of memory out of 5000000
- 25491 multiletter control sequences out of 15000+600000
- 16240 words of font info for 33 fonts, out of 8000000 for 9000
+ 22526 strings out of 493589
+ 396877 string characters out of 6145555
+ 470893 words of memory out of 5000000
+ 25535 multiletter control sequences out of 15000+600000
+ 16553 words of font info for 34 fonts, out of 8000000 for 9000
  1347 hyphenation exceptions out of 8191
- 62i,6n,96p,982b,622s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,8n,96p,1157b,619s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (26 pages).
+Output written on main.pdf (29 pages).

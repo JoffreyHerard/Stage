@@ -1,0 +1,84 @@
+Mémoire_test - 2017-04-18
+A Phoromatic run.
+
+
+debHV - Mémoire_test - 2017-04-18: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Chipset: Intel 5520 I/O + ICH9, Memory: 18 x 16384 MB DDR3-1333MHz, Disk: 3999GB Virtual Disk, Graphics: Matrox s MGA G200eW WPCM450, Network: Broadcom NetXtreme II BCM5709 Gigabit
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4
+
+debHV - Network_physique - 2017-04-18: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Chipset: Intel 5520 I/O + ICH9, Memory: 18 x 16384 MB DDR3-1333MHz, Disk: 3999GB Virtual Disk, Graphics: Matrox s MGA G200eW WPCM450, Network: Broadcom NetXtreme II BCM5709 Gigabit
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4
+
+debHV - Web - 2017-04-18: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Chipset: Intel 5520 I/O + ICH9, Memory: 18 x 16384 MB DDR3-1333MHz, Disk: 3999GB Virtual Disk, Graphics: Matrox s MGA G200eW WPCM450, Network: Broadcom NetXtreme II BCM5709 Gigabit
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4
+
+debHV -  - povray: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Chipset: Intel 5520 I/O + ICH9, Memory: 18 x 16384 MB DDR3-1333MHz, Disk: 3999GB Virtual Disk, Graphics: Matrox s MGA G200eW WPCM450, Network: Broadcom NetXtreme II BCM5709 Gigabit
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4
+
+debHV - DOCKER_CPU_RACINE - jherard - Manual Test Run - 14:28 18 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Chipset: Intel 5520 I/O + ICH9, Memory: 18 x 16384 MB DDR3-1333MHz, Disk: 3999GB Virtual Disk, Graphics: Matrox s MGA G200eW WPCM450, Network: Broadcom NetXtreme II BCM5709 Gigabit
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4
+
+RAMspeed SMP 3.5.0
+Type: Copy - Benchmark: Integer
+  MB/s
+    debHV - Mémoire_test - 2017-04-18 ......................................... 12379.49 |
+
+Stream 2013-01-17
+Type: Copy
+  MB/s
+    debHV - Mémoire_test - 2017-04-18 ......................................... 12540.92 |
+
+t-test1 2017-01-13
+Threads: 1
+  Seconds
+    debHV - Mémoire_test - 2017-04-18 ......................................... 29.16 |
+
+Loopback TCP Network Performance 
+Time To Transfer 10GB Via Loopback
+  Seconds
+    debHV - Network_physique - 2017-04-18 ...................................... 3.01 |
+
+Apache Benchmark 2.4.7
+Static Web Page Serving
+  Requests Per Second
+    debHV - Web - 2017-04-18 ................................................... 15929.79 |
+
+PHPBench 0.8.1
+PHP Benchmark Suite
+  Score
+    debHV - Web - 2017-04-18 ................................................... 65381 |
+
+POV-Ray 3.7.0
+Total Time
+  Seconds
+    debHV -  - povray .......................................................... 154.99 |
+
+TSCP 1.81
+AI Chess Performance
+  Nodes Per Second
+    debHV - DOCKER_CPU_RACINE - jherard - Manual Test Run - 14:28 18 Apr 2017 .. 490714 |
+
+7-Zip Compression 9.20.1
+Compress Speed Test
+  MIPS
+    debHV - DOCKER_CPU_RACINE - jherard - Manual Test Run - 14:28 18 Apr 2017 .. 17140 |
+
+Crafty 23.4
+Elapsed Time
+  Seconds
+    debHV - DOCKER_CPU_RACINE - jherard - Manual Test Run - 14:28 18 Apr 2017 .. 127.50 |
+

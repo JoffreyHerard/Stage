@@ -1,6 +1,6 @@
 \chapter{Analyse de l'existant}
 
-Dans ce chapitre, il va être question de voir ce qu'il existe comme technologie à même de répondre a notre problématique, notamment rappelons-le 
+Dans ce chapitre, nous verrons quelles technologies existent pour répondre à notre problématique.
 
 \section{Virtualisation}
 
@@ -8,9 +8,9 @@ Dans ce chapitre, il va être question de voir ce qu'il existe comme technologie
 
 \subsection{Hyperviseurs}
 \begin{mydef}
-Hyperviseurs :c'est une plate-forme de virtualisation qui permet à plusieurs systèmes d'exploitation de travailler sur une même machine physique en même temps.Il en existe deux catégories .
+Hyperviseurs : C'est une plate-forme de virtualisation qui permet à plusieurs systèmes d'exploitation de travailler sur une même machine physique en même temps. Il en existe deux catégories : 
 	\begin{itemize}
-		\item La première bien nommée Type 1 :  est un logiciel de virtualisation installé directement sur le matériel informatique, il contrôle non seulement le matériel, mais aussi un ou plusieurs systèmes d'exploitation invités.
+		\item La première bien nommée Type 1 : est un logiciel de virtualisation installé directement sur le matériel informatique, il contrôle non seulement le matériel, mais aussi un ou plusieurs systèmes d'exploitation invités.
 		\item La deuxième bien nommée Type 2 : sont des applications de virtualisation qui s’exécutent non pas directement sur du hardware mais sur un système d’exploitation.
 	\end{itemize}
 \end{mydef}
@@ -40,7 +40,7 @@ Il existe un ensemble d'Hyperviseur de type 2, que l'on peut lister de manière 
 \subsection{Conteneurs}
 
 \begin{mydef}
-Conteneurs : C'est de créer des instances dans un espace isolés au lieu. En d'autres termes, le partage du matériel est de rendre disponible de nombreux opérateurs sur le noyau lui-même plutôt que d'une autre couche. 
+Conteneurs : C'est de créer des instances dans un espace isolé au lieu. En d'autres termes, le partage du matériel est de rendre disponible de nombreux opérateurs sur le noyau lui-même plutôt que d'une autre couche. 
 \end{mydef}
 
 Il existe un ensemble de gestion de conteneurs, que l'on peut lister de manière non exhaustive : 
@@ -52,10 +52,10 @@ Il existe un ensemble de gestion de conteneurs, que l'on peut lister de manière
 \section{Provisionning}
  
 \begin{mydef}
-Provisionning : C'est l'approvisionnement de machines, afin de mettre en place des configuration, des allocaton automatiques de ressources, voir même des installation de logiciel, gestion de configuration, maintenance système. Globalement il sert à faire de  la gestion de groupe de machines. 
+Provisionning : C'est l'approvisionnement de machines, afin de mettre en place des configurations, des allocations automatiques de ressources, voir même des installations de logiciel, gestions de configuration, maintenance système. Globalement il sert à faire de la gestion de groupe de machines. 
 \end{mydef}
-Initialement le provisioning était du scripting manuel, voir même des solutions Client/Serveur, avec un serveur de configuration et un ensemble d'agent de gestion placés sur les machines à administrer. On appelle cela un framework d’exécution distantes depuis une station de gestion.
-Le scripting a malgré tout des limites, cela représente un travail fastidieux, il fait souvent face a un problème d'hétérogénéité. On peut se retrouvé face un script spécifique pour une opération, par serveur, par service.
+Initialement le provisioning était du scripting manuel, voir même des solutions Client/Serveur, avec un serveur de configuration et un ensemble d'agents de gestion placés sur les machines à administrer. On appelle cela un framework d’exécution distantes depuis une station de gestion.
+Le scripting a malgré tout des limites, cela représente un travail fastidieux, il fait souvent face à un problème d'hétérogénéité. On peut se retrouver face un script spécifique pour une opération, par serveur, par service.
 Voici une liste :
 \begin{itemize}
 
@@ -65,9 +65,9 @@ Voici une liste :
 \item Libvirt
 \end{itemize}
 \section{Benchmarking}
-Une évaluation des performances c'est appelé souvent dans le monde anglophone un Benchmark. Ce terme est définit comme suit.
+Une évaluation des performances est appelée souvent dans le monde anglophone un Benchmark. Ce terme est défini comme suit.
 \begin{mydef}
 Benchmarking : Évaluation des performances d'un système par simulation des conditions réelles d'utilisations. 
 \end{mydef}
-Il existe un certain nombre de benchmark référence en majeur partie par OpenBenchmark.com, la source de ces benchmark sont réalisé avec l’outil célèbre nommé Phoronix tests suite .
+Il existe un certain nombre de benchmark référence en majeur partie par OpenBenchmark.com, les sources de ces benchmark sont réalisées avec le célèbre outil nommé Phoronix tests suite.
 

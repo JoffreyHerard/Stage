@@ -1,69 +1,185 @@
 \chapter{Analyse des besoins}
 
-Intro
+Dans cette troisième partie, il va être abordé l'ensemble des besoins qui permettront d'émettre un début de réponse par rapport au sujet et à la problématique.
+
 
 \section{Plan d'expériences}
 
-Après une analyse des besoins fonctionnels du projet, nous avons défini deux sous catégories. D'un côté, les besoins [...], de l'autre, les besoins [...].
+Après une analyse des besoins fonctionnels du projet, il va être détaillé chaque étapes du test.
 
+\subsection{Sur les tests}
+Lors des tests qui seront exécutés il sera nécessaire de choisir précisément quoi et comment évaluer chaque composants, on l'a dit auparavant il y a un ensemble de scénarios à définir. Pour autant de ces scénarios effectuer différentes variantes de tests pour chaque 
+technologies de virtualisation, et de conteneurisation. Afin d'avoir des résultats cohérents, la neutralité de la sonde doit être importante. Définir la composante environnementale pour chaque tests, ce qui est appelé environnement est ce qui ne serait pas juger comme influent à travers mes tests pourtant il le sera, je peut citer par exemple la vitesse du processeur, sa température, ou encore la vitesse de connexion pour les tests réseaux, bien entendu l'alimentation des composants qui peut varier, la politique de gestion des ressource vis à vis de chaque technologies de conteneurisation et d’hypervisions.
+Pour chaque composant la question sera toujours la même, à savoir : 
+\begin{center}
+Pourquoi tester et tester quoi ?
+\end{center} 
+Pour chaque composants détaillés ci dessous, un schéma est en annexes concernant le détail du cheminement de chaque tests possibles pour chaque éléments.
 \subsection{Expérimentation disque dur}
-
-Bla
-
+\subsubsection{Pourquoi tester le disque dur ? }
+Le disque dur peut être utilisé lors d'enregistrement de fichiers, assez simplement du téléchargement de fichier, de l’écriture pure, de l'enregistrement d'évènements locaux. Il est le membre de la machine le plus important pour le stockage de données.
+\subsubsection{Tester le disque dur sur quoi ?  }
+Dans la façon de voir, l'architecture de l’ordinateur pour les tests, est importante, notamment la taille des blocs pour l’écriture ou la lecture. L'évaluation sur le test, doit-il se faire avec un accès en séquentielle ou en aléatoire ?  On peut résumer de manière textuelle ainsi : 
+\begin{itemize}
+\item Test de Performance en Écriture 
+		\begin{enumerate}
+		\item Évaluation des temps de réponses. 
+		\item Évaluation des Vitesse de transfert.
+		\item Évaluation de la meilleurs performance possible (Maximum en vitesse écriture )sur des fichiers de différente taille.
+		\end{enumerate}
+\item Test de Performance en Lecture 
+		\begin{enumerate}
+		\item Évaluation des temps de réponses. 
+		\item Évaluation de la meilleurs performance possible (Maximum en vitesse lecture ) sur des fichiers de différente taille. 
+		\end{enumerate}
+\item Évaluation des vitesse du cache.
+\end{itemize}
+%% FIGURE
 \subsection{Expérimentation processeur}
 
-Bla
+\subsubsection{Pourquoi tester le processeur ? }
+Le processeur peut être sollicité lors de calculs, notamment dans le cadre des hautes performances.
+\subsubsection{Tester le processeur sur quoi ?  }
+Un CPU peut être testé sur cette ensemble de choses-ci : 
+
+\begin{itemize}
+\item Évaluation de la vitesse de la lecture Mémoire. 
+\item Évaluation de la vitesse de la écriture Mémoire. 
+\item Évaluation de la vitesse de la copie Mémoire. 
+\item Évaluation de la vitesse de calcul flottant à précision simple. 
+\item Évaluation de la vitesse de calcul flottant à précision double.
+\item Évaluation des opérations d'entrée sortie par secondes.
+\item Évaluation des opérations de chiffrement. 
+\item Évaluation des opérations de hachage.
+
+\end{itemize}
+
 
 \subsection{Expérimentation carte graphique}
 
-Bla
+\subsubsection{Pourquoi tester la carte graphique ? }
+
+\subsubsection{Tester la carte graphique sur quoi ?  }
+
+\begin{itemize}
+\item Évaluation de la vitesse de la lecture Mémoire. 
+\item Évaluation de la vitesse de la écriture Mémoire. 
+\item Évaluation de la vitesse de la copie Mémoire. 
+\item Évaluation de la vitesse de calcul flottant à précision simple. 
+\item Évaluation de la vitesse de calcul flottant à précision double. 
+\item Évaluation des opérations d'entrée sortie par secondes. 
+\item Évaluation des opérations de chiffrement. 
+\item Évaluation des opérations de hachage.
+
+\end{itemize}
+
 \subsection{Expérimentation réseaux}
 
-Bla
-\newpage
+\subsubsection{Pourquoi tester le réseaux ? }
+
+\subsubsection{Tester le réseaux sur quoi ?  }
+
+\begin{itemize}
+\item Chaque tests doit être réalisés avec des paquets de taille croissante avec le temps.
+\item Vitesse de Download à estimer.
+\item Vitesse d'Upload à estimer.
+\end{itemize}
 
 \section{Choix sur les outils de virtualisation}
 
 Comme précédemment, nous avons choisi de distinguer deux catégories pour les besoins non-fonctionnels. D'une part, nous avons les besoins non-fonctionnels pour les [...], et d'autre part ceux pour [...]. Nous avons aussi pris en compte les contraintes de développement, que nous détaillerons à la fin de cette partie.
 
-\subsection{Hyperviseurs}
 
-Bla\\
+Il est nécessaire pour être équitable. Et surtout au vue des différentes définitions apportées hier et aujourd'hui. De repartir nos tests sur l'ensemble de ces 3 technologies qui nous sont accessibles. Par conséquent il faut être cohérent dans nos choix. De plus il y a aussi à considérer cet effet de mode sur le fait d'utiliser des conteneurs absolument partout et pour n'importe quoi par conséquent l’outil Docker et l'outil LXC qui sont assez populaires sont à étudier. Premièrement Docker, il est nécessaire d'évaluer si Docker a effectivement tous les points positifs que on lui vente. Tout comme LXC, sachant de plus que Docker est basé sur LXC. Il serait intéressant d’évaluer si cette technologie avec la couche qu'apporte docker a un vrai plus ou un moins.
 
+Donc on choisi d'évaluer la technologie de conteneurisation proposée par les conteneurs Linux LXC, et celle par Docker.
 
+Maintenant si on se penche sur le cas des Hyperviseur, si on part du même constat. Déjà il y a deux catégorie d'Hyperviseurs, comme dit plus haut, les types 1 \& 2. 
+Donc il faut établir des tests sur ces deux types d'hyperviseurs. On peut donc choisir tout comme Docker et LXC, partir sur la popularité de chacun. Il serait intéressant donc de prendre le logiciel d'Oracle VirtualBox. VirtualBox est un hyperviseurs de Type 2 . On peut notifier aussi que cet hyperviseur utilise des technologies comme celles de QEMU qui lui est de Type 2 aussi. Soit l'on peut choisir donc Virtualbox.
+
+Maintenant il reste à évaluer KVM, QEMU, Hyper-V, VMWare, si nous les avions à les choisir, VMWare et Hyper-V serait très intéressant à évaluer. Tout dépend des licences qui sont à notre disposition mais ils sont tout deux des acteurs importants dans les hyperviseurs d'aujourd'hui. QEMU étant un Hyperviseurs de Types 2 il peut être intéressant de l'évaluer mis en face à face de VirtualBox.. KVM est un hyperviseur de type 1, intégré à Linux. Il est utilisé dans Proxmox VE
+
+En somme, il faut bien savoir discerner les différents hyperviseurs à notre disposition, ainsi que de savoir discerner qu'est ce qui est pertinent. Je reviens donc, sur les choix émis hier. Il serait plus pertinent d'utiliser la technologie propre (Comme M.Flauzac l'a émis dans son mail ce matin 10 h 33 ) et non pas une surcouche. Un test est intéressant sur la technologie. Si on agrémente les technologies d'une surcouche, cela reste t-il tout aussi pertinent. 
+
+Par conséquent le choix s'oriente sur :
+\begin{itemize}
+\item LXC
+\item Docker
+\item KVM
+\item QEMU
+\item Hyper-V
+\item VMWARE 
+\end{itemize}
+\begin{table}[h]
+\centering
+\caption{Solutions de virtualisations}
+\label{Solution de virtualisations}
+\begin{tabular}{|l|l|}
+\hline
+Conteneur & Hyperviseur \\ \hline
+LXC       & KVM         \\
+Docker    & QEMU        \\
+          & Hyper-V     \\
+          & VMWARE      \\ \hline
+\end{tabular}
+\end{table}
 \newpage
-\subsection{Conteneurs}
 
-Bla\\
+\section{Choix d'outils d'évaluation}
 
-
-\newpage
-
-\section{Choix d'outils d’évaluation}
-
-Intro
+Autrement dit cette section va parler des outils que l'on a auparavant appelé "sonde" dans les paragraphes précédents. On va parler d'outils permettant la répartition des tâches à faire pour ainsi exécuter une évaluation, ensuite on va parler de la récupération de ces données et de ce qui va être prélevé.
 
 \subsection{Outils d'évaluation personnel}
 
-Bla\\
+Dans un premier temps après avoir observer ce qui existait comme technologie de Provisionning et de tests. La question c'est pose, si il était intéressant de devoir développer un outils de d’évaluations. Après avoir vu l’outil Phoronix, on se rend rapidement compte qu'il est compliquer de développer cet outil personnel et d'avoir des résultats a exploite sur la fin avant la fin du stages.
 
 \subsection{Phoronix}
 
-Bla\\
-
+Par conséquent, il est nécessaire de choisir un outils d’évaluations conséquent, Phoronix est un outils de suite de tests réputée et assez âgées, il n'est plus a sa version d'essai, il est déjà a ça septième version, plus précisément la 7.0.1 . Historiquement, le 5 juin 2008, la version 1.0 du Phoronix Test Suite a été annoncé. Ce logiciel a été publié sous licence GPLv3 et est conçu pour permettre aux utilisateurs de partager leur tests de logiciels et de matériel informatiques via une interface graphique.
+\newpage
 \section{Choix d'outils d'orchestration}
-
-Intro
-
-Bla\\
+Durant ce stages, il allait être question de pouvoir gérer un ensemble de machines. Un ensemble suffisamment grand qui rendrait le travail de scripting suffisamment fastidieux. Il fallait pouvoir gérer le déploiement des machines virtuelle rappelons le qui sont KVM/QEMU, LXC/Docker. et provoquer l’exécution d'un ensemble de test puis de les rapatrier sur la machines dites maître. Il y a un ensemble d'outils qui on ete utilise durant ce stages Saltstack, Libvirt, Phoromatic.
 \subsection{Saltstack}
+Saltstack est un outils qui fonctionne avec une architecture Client/serveur, utilisant la technologies d'une file de message ZeroMQ (une autre technologies bien connu est celle de RabbitMQ).Il est dépendant,vis a vis de sont modèle client/serveur d'une écoute de port, il fallait donc envisager la possibilité de port bloquer. On appelle le serveur principale qui émet les ordres un <<salt master>> et les machines qui subissent les ordres des <<salt minion>>
+\subsubsection{Configuration Maitre}
+Il est nécessaire sur le serveur, de modifier les fichiers correspondant a la location /etc/salt/master, pour si on le souhaite modifier un ensemble de choses tels que, le réseaux, les ressources, la sécurité, les modules, l'architectures des fichiers, et les logs éventuels. 
+Pour le réseaux on peut y paramétrer les interfaces, les ports d’écoutes, les timeouts.
+Pour les ressources on peut configurer le nombre de fichiers ouverts, le nombre de travaux, le cache, etc...
+ 
+\subsubsection{Configuration Minion}
 
-Bla\\
+Il est nécessaire sur le client, de modifier les fichiers correspondant a la location /etc/salt/minion, on doit y paramétrer le nom du serveur, et son adresse. On peut y gérer comme sur le master un ensemble d'architecture de fichier, une gestion des modules, la sécurité et les logs.
 
+\subsubsection{Détails sur le fonctionnement général}
+
+Un minion/client doit s'enregistrer auprès du serveur/master, pour pouvoir en subir les ordres. Pour cela le serveur doit être en mode acceptation. L'ensemble des opérations une fois les machines clientes accepter. Ce déroule avec la commande salt, en désignant les machines cibles, et une commande, une fonction personnel, un module a exécuter. 
 \subsection{Phoromatic}
-
-Bla\\
+Phoromatic, comme l'on peu aisément le devine est un outils propose par la suite Phoronix. C'est un serveur d'orchestration de lancement de test, réalise en PHP, utilisant les web-sockets. Typiquement il nécessite un lancement sur la machine que l'on souhaite, puis chaque machines visant a être évaluer doit avoir la suite de test phoronix préalablement installe et ensuite ce connecter au serveur avec une ligne de commande particulières en lui spécifiant l'adresse, le port, le token associe. Avec cet outils on choisi la programmations des test, sur quel support, sur quel machines, sur quel composant, a l'heure que l'on souhaite. 
 
 \subsection{Libvirt}
+Libvirt est a lui tout seul un ensemble d'outils de gestions de machines virtuelles, et d'actions sur des machines virtuelles. Libvirt est capable d'effectuer une gestion du stockage, du reseaux, d'une installation, de clonage, de sauvegarde. 
+Dans libvirt, l'hote des machines virtuelle, donc la machines physique est appele un noeud. l'hyperviseur est une couche logicielle de virtualisation avec des propriete generiques et specifique, s'executant sur un noeud. Libvirt est capable de gerer un ensemble d'hyperviseur tel que : 
+\begin{itemize}
+\item XEN
+\item Qemu/KVM
+\item LXC
+\item OpenVz
+\item VirtualBox
+\item VMware ESX Workstation Player
+\item Hyper-V
+\item IBM PowerVM
+\item Virtuozzo
+\item Bhyve
+\end{itemize}
+Le principe de Libvirt, c'est qu'il réalise des opérations sur les domaine, la connexion a un hyperviseur ce fait par URL, n'ayant besoin que de l'hyperviseur et l'adresse. L’exécution des commandes ce fait en shell spécifique, ou en commande shell paramétré avec un fichier XML . Libvirt est fonde sur une API ecrites en : C, C++, C\#, Java, PHP, Python, Ruby.
+\newpage
+\section{Impact des services de virtualisation sur les performances et donc les résultats}
+\subsection{Impact d'un Hyperviseur}
+Sachant que le monde des Hyperviseurs est assez vaste, chacun à une politique différentes ne seras-ce que par son choix sur le type de son hyperviseur (1 et 2). Par conséquent il y a forcement des Hyperviseurs qui vont avoir une politique différente sur l'accès concurrent à des ressources. Les hyperviseurs ont besoin d'isoler les interruptions et les accès à la mémoire. C'est très coûteux en termes de performances. Les surcoûts en termes de performances pour virtualiser un système comportent trois aspects principaux : la virtualisation du processeur, de la mémoire et des entrées/sorties.
 
-Bla\\
+\subparagraph{Processeur}
+L'utilisation d'un hyperviseur au-dessous du système d'exploitation diffère du schéma habituel où le système d'exploitation est l'entité la plus privilégiée dans le système.De nombreuses architectures de processeur ne fournissent que deux niveaux de privilèges. Dans une virtualisation efficace.L'utilisation du processeur a des implications critiques sur les performances des autres caractéristiques du système.Dans l'évaluation des performances d'une machine virtuelle, les processus sont gérés par la machine virtuelle à la place du système d'exploitation sous-jacent. Les threads émulés des environnements multi-thread, en dehors des capacités du système d'exploitation d'origine, sont gérés dans l'espace utilisateur à la place de l'espace noyau, permettant le travail avec des environnements sans support natif des threads. De bonnes performances sur un microprocesseur multi-cœur sont obtenues grâce à l'implémentation de threads natifs pouvant attribuer automatiquement le travail à plusieurs processeurs, ils permettent un démarrage plus rapide de processus sur certaines machines virtuelles.
+
+\subsection{Impact d'un conteneur}
+A la base, le concept de conteneurisation permet aux instances virtuelles de partager un système d'exploitation hôte unique, avec ses fichiers binaires, bibliothèques ou pilotes. 
+Cette approche réduit le gaspillage des ressources car chaque conteneur ne renferme que l'application et les fichiers binaires ou bibliothèques associés. On utilise donc le même système d'exploitation (OS) hôte pour plusieurs conteneurs, au lieu d'installer un OS (et d'en acheter la licence) pour chaque VM invitée.Le conteneur de chaque application étant libéré de la charge d'un OS, il est nettement plus petit, plus facile à migrer ou à télécharger, plus rapide à sauvegarder ou à restaurer. Enfin, il exige moins de mémoire. La conteneurisation permet au serveur d'héberger potentiellement beaucoup plus de conteneurs que s'il s'agissait de machines virtuelles. La différence en termes d'occupation peut être considérable, car un serveur donné accueillera de 10 à 100 fois plus d'instances de conteneur que d'instances d'application sur VM.

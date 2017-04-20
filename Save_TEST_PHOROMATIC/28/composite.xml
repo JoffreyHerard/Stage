@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.0.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>Network - jherard - Manual Test Run - 16:23 19 Apr 2017</Title>
+    <LastModified>2017-04-19 14:24:19</LastModified>
+    <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
+    <Description>A Phoromatic run.</Description>
+    <Notes></Notes>
+    <InternalTags></InternalTags>
+    <ReferenceID></ReferenceID>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>jherard - Manual Test Run - 16:23 19 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-19 14:24:04</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+  </System>
+  <Result>
+    <Identifier>pts/network-loopback-1.0.1</Identifier>
+    <Title>Loopback TCP Network Performance</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Transfer 10GB Via Loopback</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>jherard - Manual Test Run - 16:23 19 Apr 2017</Identifier>
+        <Value>3.01</Value>
+        <RawString>3.0066850185394:3.0068621635437:3.0073099136353</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

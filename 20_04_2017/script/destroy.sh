@@ -1,0 +1,26 @@
+#!/bin/bash
+lxc-destroy -n debLXC101 
+lxc-destroy -n debLXC102 
+lxc-destroy -n debLXC103 
+lxc-destroy -n debLXC104 
+lxc-destroy -n debLXC105 
+lxc-destroy -n debLXC106 
+lxc-destroy -n debLXC107 
+lxc-destroy -n debLXC108 
+lxc-destroy -n debLXC109 
+lxc-destroy -n debLXC110 
+lxc-destroy -n debLXC111 
+lxc-destroy -n debLXC112 
+lxc-destroy -n debLXC113 
+lxc-destroy -n debLXC114 
+lxc-destroy -n debLXC115 
+lxc-destroy -n debLXC116 
+lxc-destroy -n debLXC117 
+lxc-destroy -n debLXC118 
+lxc-destroy -n debLXC119 
+lxc-destroy -n debLXC120 
+lxc-destroy -n debLXC121 
+lxc-destroy -n debLXC122 
+lxc-destroy -n debLXC123 
+lxc-destroy -n debLXC124 
+lxc-destroy -n debLXC125 

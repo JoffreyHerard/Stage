@@ -1,0 +1,54 @@
+
+#!/bin/bash
+lxc-start -d -n debLXC101 
+lxc-start -d -n debLXC102 
+lxc-start -d -n debLXC103 
+lxc-start -d -n debLXC104 
+lxc-start -d -n debLXC105 
+lxc-start -d -n debLXC106 
+lxc-start -d -n debLXC107 
+lxc-start -d -n debLXC108 
+lxc-start -d -n debLXC109 
+lxc-start -d -n debLXC110 
+lxc-start -d -n debLXC111 
+lxc-start -d -n debLXC112 
+lxc-start -d -n debLXC113 
+lxc-start -d -n debLXC114 
+lxc-start -d -n debLXC115 
+lxc-start -d -n debLXC116 
+lxc-start -d -n debLXC117 
+lxc-start -d -n debLXC118 
+lxc-start -d -n debLXC119 
+lxc-start -d -n debLXC120 
+lxc-start -d -n debLXC121 
+lxc-start -d -n debLXC122 
+lxc-start -d -n debLXC123 
+lxc-start -d -n debLXC124 
+lxc-start -d -n debLXC125 
+
+lxc-attach -n debLXC101 -- apt-get -y update && lxc-attach -n debLXC101 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC101 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC101 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC101 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC102 -- apt-get -y update && lxc-attach -n debLXC102 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC102 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC102 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC102 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC103 -- apt-get -y update && lxc-attach -n debLXC103 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC103 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC103 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC103 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ & 
+lxc-attach -n debLXC104 -- apt-get -y update && lxc-attach -n debLXC104 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC104 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC104 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC104 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC105 -- apt-get -y update && lxc-attach -n debLXC105 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC105 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC105 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC105 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC106 -- apt-get -y update && lxc-attach -n debLXC106 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC106 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC106 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC106 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC107 -- apt-get -y update && lxc-attach -n debLXC107 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC107 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC107 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC107 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC108 -- apt-get -y update && lxc-attach -n debLXC108 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC108 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC108 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC108 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC109 -- apt-get -y update && lxc-attach -n debLXC109 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC109 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC109 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC109 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC110 -- apt-get -y update && lxc-attach -n debLXC110 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC110 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC110 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC110 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC111 -- apt-get -y update && lxc-attach -n debLXC111 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC111 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC111 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC111 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC112 -- apt-get -y update && lxc-attach -n debLXC112 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC112 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC112 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC112 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC113 -- apt-get -y update && lxc-attach -n debLXC113 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC113 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC113 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC113 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC114 -- apt-get -y update && lxc-attach -n debLXC114 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC114 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC114 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC114 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC115 -- apt-get -y update && lxc-attach -n debLXC115 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC115 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC115 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC115 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC116 -- apt-get -y update && lxc-attach -n debLXC116 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC116 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC116 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC116 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC117 -- apt-get -y update && lxc-attach -n debLXC117 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC117 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC117  --dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC117 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC118 -- apt-get -y update && lxc-attach -n debLXC118 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC118 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC118  --dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC118 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC119 -- apt-get -y update && lxc-attach -n debLXC119 -- apt-get install -y php5-cli php5-gd wget  && lxc-attach -n debLXC119 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC119 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC119 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC120 -- apt-get -y update && lxc-attach -n debLXC120 -- apt-get install -y php5-cli php5-gd wget  && lxc-attach -n debLXC120 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb&& lxc-attach -n debLXC120  --dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC120 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC121 -- apt-get -y update && lxc-attach -n debLXC121 -- apt-get install -y php5-cli php5-gd wget  && lxc-attach -n debLXC121 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC121 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC121 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC122 -- apt-get -y update && lxc-attach -n debLXC122 -- apt-get install -y php5-cli php5-gd wget  && lxc-attach -n debLXC122 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC122 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC122 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC123 -- apt-get -y update && lxc-attach -n debLXC123 -- apt-get install -y php5-cli php5-gd wget  && lxc-attach -n debLXC123 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC123 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC123 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC124 -- apt-get -y update && lxc-attach -n debLXC124 -- apt-get install -y php5-cli php5-gd wget  && lxc-attach -n debLXC124 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC124 -- dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC124 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+lxc-attach -n debLXC125 -- apt-get -y update && lxc-attach -n debLXC125 -- apt-get install -y php5-cli php5-gd wget && lxc-attach -n debLXC125 wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC125  --dpkg -i phoronix-test-suite_7.0.1_all.deb && lxc-attach -n debLXC125 phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ &
+

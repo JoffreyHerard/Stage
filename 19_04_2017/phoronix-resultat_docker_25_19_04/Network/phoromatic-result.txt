@@ -1,0 +1,183 @@
+Network - jherard - Manual Test Run - 16:23 19 Apr 2017
+A Phoromatic run.
+
+
+Docker 15: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 10: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 4: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 19: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 2: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 9: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 12: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 25: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 3: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 20: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 24: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 21: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 22: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 17 : jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 16: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+docker 23: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 14: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 11: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 7: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 5: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 18: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 6 : jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 1: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 13: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 8: jherard - Manual Test Run - 16:23 19 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Loopback TCP Network Performance 
+Time To Transfer 10GB Via Loopback
+  Seconds
+    Docker 15: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 10: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 4: jherard - Manual Test Run - 16:23 19 Apr 2017 .... 3.01 |========
+    Docker 19: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 2: jherard - Manual Test Run - 16:23 19 Apr 2017 .... 3.01 |========
+    Docker 9: jherard - Manual Test Run - 16:23 19 Apr 2017 .... 3.01 |========
+    Docker 12: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 25: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 3: jherard - Manual Test Run - 16:23 19 Apr 2017 .... 3.01 |========
+    Docker 20: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 24: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 21: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 22: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.04 |========
+    Docker 17 : jherard - Manual Test Run - 16:23 19 Apr 2017 .. 3.01 |========
+    Docker 16: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    docker 23: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 14: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 11: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 7: jherard - Manual Test Run - 16:23 19 Apr 2017 .... 3.01 |========
+    Docker 5: jherard - Manual Test Run - 16:23 19 Apr 2017 .... 3.01 |========
+    Docker 18: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 6 : jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 1: jherard - Manual Test Run - 16:23 19 Apr 2017 .... 3.01 |========
+    Docker 13: jherard - Manual Test Run - 16:23 19 Apr 2017 ... 3.01 |========
+    Docker 8: jherard - Manual Test Run - 16:23 19 Apr 2017 .... 3.01 |========
+
