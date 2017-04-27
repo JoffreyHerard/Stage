@@ -1,0 +1,1 @@
+sed -i".bak" '/cdrom/d' /etc/apt/sources.list && apt-get  install -y php5-cli php5-gd && wget http://phoronix-test-suite.com/releases/repo/pts.debian/files/phoronix-test-suite_7.0.1_all.deb && dpkg -i phoronix-test-suite_7.0.1_all.deb && phoronix-test-suite phoromatic.connect 10.22.9.17:8080/IVENVZ

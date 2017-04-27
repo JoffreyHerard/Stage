@@ -1,0 +1,30 @@
+CPU_KVM_1 - jherard - Manual Test Run - 17:45 25 Apr 2017
+A Phoromatic run.
+
+
+debianKVM1: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4000 MB RAM QEMU, Disk: 4GB, Graphics: Red Hat QXL paravirtual graphic card, Audio: Intel 82801FB/FBM/FR/FW/FRW, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM
+
+TSCP 1.81
+AI Chess Performance
+  Nodes Per Second
+    debianKVM1 .. 487588 |=====================================================
+
+7-Zip Compression 9.20.1
+Compress Speed Test
+  MIPS
+    debianKVM1 .. 2176 |=======================================================
+
+Crafty 23.4
+Elapsed Time
+  Seconds
+    debianKVM1 .. 130.73 |=====================================================
+
+POV-Ray 3.7.0
+Total Time
+  Seconds
+    debianKVM1 .. 1446.78 |====================================================
+

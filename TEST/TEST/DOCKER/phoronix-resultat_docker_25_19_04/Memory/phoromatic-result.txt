@@ -1,0 +1,241 @@
+MEMOIRE_docker - 2017-04-19
+A Phoromatic run.
+
+
+Docker 13: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 5: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 1: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+docker 23: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 24: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 20: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 9: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 12: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 4: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 10: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 15: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 8: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 7: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 18: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 3: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 14: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 6 : 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 11: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 17 : 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 22: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 21: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 25: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 2: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 19: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+Docker 16: 2017-04-19: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), File-System: aufs
+
+RAMspeed SMP 3.5.0
+Type: Copy - Benchmark: Integer
+  MB/s
+    Docker 13: 2017-04-19 ... 627.01  |======
+    Docker 5: 2017-04-19 .... 632.53  |======
+    Docker 1: 2017-04-19 .... 629.09  |======
+    docker 23: 2017-04-19 ... 773.67  |=======
+    Docker 24: 2017-04-19 ... 676.45  |======
+    Docker 20: 2017-04-19 ... 661.11  |======
+    Docker 9: 2017-04-19 .... 673.60  |======
+    Docker 12: 2017-04-19 ... 692.16  |======
+    Docker 4: 2017-04-19 .... 670.22  |======
+    Docker 10: 2017-04-19 ... 684.13  |======
+    Docker 15: 2017-04-19 ... 709.63  |=======
+    Docker 8: 2017-04-19 .... 705.50  |=======
+    Docker 7: 2017-04-19 .... 808.82  |=======
+    Docker 18: 2017-04-19 ... 1123.15 |==========
+    Docker 3: 2017-04-19 .... 766.22  |=======
+    Docker 14: 2017-04-19 ... 939.30  |=========
+    Docker 6 : 2017-04-19 ... 661.22  |======
+    Docker 11: 2017-04-19 ... 660.37  |======
+    Docker 17 : 2017-04-19 .. 660.05  |======
+    Docker 22: 2017-04-19 ... 656.35  |======
+    Docker 21: 2017-04-19 ... 662.99  |======
+    Docker 25: 2017-04-19 ... 938.11  |=========
+    Docker 2: 2017-04-19 .... 682.84  |======
+    Docker 19: 2017-04-19 ... 4340.95 |========================================
+    Docker 16: 2017-04-19 ... 3909.19 |====================================
+
+Stream 2013-01-17
+Type: Copy
+  MB/s
+    Docker 13: 2017-04-19 ... 1304.92 |========================================
+    Docker 5: 2017-04-19 .... 1221.85 |=====================================
+    Docker 1: 2017-04-19 .... 1311.21 |========================================
+    docker 23: 2017-04-19 ... 1108.72 |==================================
+    Docker 24: 2017-04-19 ... 1065.93 |=================================
+    Docker 20: 2017-04-19 ... 956.30  |=============================
+    Docker 9: 2017-04-19 .... 1020.67 |===============================
+    Docker 12: 2017-04-19 ... 970.88  |==============================
+    Docker 4: 2017-04-19 .... 877.24  |===========================
+    Docker 10: 2017-04-19 ... 876.83  |===========================
+    Docker 15: 2017-04-19 ... 838.03  |==========================
+    Docker 8: 2017-04-19 .... 753.74  |=======================
+    Docker 7: 2017-04-19 .... 737.38  |======================
+    Docker 18: 2017-04-19 ... 772.39  |========================
+    Docker 3: 2017-04-19 .... 703.94  |=====================
+    Docker 14: 2017-04-19 ... 681.60  |=====================
+    Docker 6 : 2017-04-19 ... 1078.13 |=================================
+    Docker 11: 2017-04-19 ... 1228.78 |=====================================
+    Docker 17 : 2017-04-19 .. 1051.24 |================================
+    Docker 22: 2017-04-19 ... 1062.19 |================================
+    Docker 21: 2017-04-19 ... 1094.05 |=================================
+    Docker 25: 2017-04-19 ... 956.81  |=============================
+    Docker 2: 2017-04-19 .... 1020.65 |===============================
+    Docker 19: 2017-04-19 ... 635.42  |===================
+    Docker 16: 2017-04-19 ... 570.76  |=================
+
+t-test1 2017-01-13
+Threads: 1
+  Seconds
+    Docker 13: 2017-04-19 ... 93.88  |=============
+    Docker 5: 2017-04-19 .... 95.24  |=============
+    Docker 1: 2017-04-19 .... 94.41  |=============
+    docker 23: 2017-04-19 ... 96.84  |=============
+    Docker 24: 2017-04-19 ... 101.94 |==============
+    Docker 20: 2017-04-19 ... 102.65 |==============
+    Docker 9: 2017-04-19 .... 103.46 |==============
+    Docker 12: 2017-04-19 ... 103.64 |==============
+    Docker 4: 2017-04-19 .... 107.28 |==============
+    Docker 10: 2017-04-19 ... 108.49 |==============
+    Docker 15: 2017-04-19 ... 111.47 |===============
+    Docker 8: 2017-04-19 .... 112.90 |===============
+    Docker 7: 2017-04-19 .... 114.26 |===============
+    Docker 18: 2017-04-19 ... 113.63 |===============
+    Docker 3: 2017-04-19 .... 117.35 |================
+    Docker 14: 2017-04-19 ... 127.64 |=================
+    Docker 6 : 2017-04-19 ... 118.18 |================
+    Docker 11: 2017-04-19 ... 120.04 |================
+    Docker 17 : 2017-04-19 .. 121.66 |================
+    Docker 22: 2017-04-19 ... 121.88 |================
+    Docker 21: 2017-04-19 ... 120.96 |================
+    Docker 25: 2017-04-19 ... 122.38 |================
+    Docker 2: 2017-04-19 .... 121.83 |================
+    Docker 19: 2017-04-19 ... 261.37 |===================================
+    Docker 16: 2017-04-19 ... 306.97 |=========================================
+

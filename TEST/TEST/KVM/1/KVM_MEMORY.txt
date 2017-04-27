@@ -1,0 +1,25 @@
+MEMORY_KVM_1 - jherard - Manual Test Run - 16:47 25 Apr 2017
+A Phoromatic run.
+
+
+debianKVM1: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4000 MB RAM QEMU, Disk: 4GB, Graphics: Red Hat QXL paravirtual graphic card, Audio: Intel 82801FB/FBM/FR/FW/FRW, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM
+
+RAMspeed SMP 3.5.0
+Type: Copy - Benchmark: Integer
+  MB/s
+    debianKVM1 .. 6074.51 |====================================================
+
+Stream 2013-01-17
+Type: Copy
+  MB/s
+    debianKVM1 .. 6315.67 |====================================================
+
+t-test1 2017-01-13
+Threads: 1
+  Seconds
+    debianKVM1 .. 31.64 |======================================================
+

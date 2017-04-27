@@ -1,139 +1,93 @@
-\chapter{Autre partie}
+\chapter{Prise de positions}
 
-Dans cette partie nous cherchons à décrire dans un premier temps [...], puis, c[...].
+Dans cette quatrième partie, nous allons expliquer le choix de certaines prises de positions pour les hyperviseurs, l'environnement, les tests et les différents scénarios. 
 
-\section{Partie 1}
+\section{Postulats}
 
-Intro
+Pour commencer, nous allons développer l'ensemble des postulats. 
 
-\subsection{Sous-partie 1}
 
-\begin{figure}[!ht]
-\begin{center}
-\includegraphics[height=12cm]{autre_partie/image1}
-\end{center}
-\caption[autre partie générale]{autre partie image 1\protect\footnotemark}
-%\floatfoot{Source: (Citation command)}
-% avec le package "floatrow"
-\end{figure}
 
-%footnote protected pour apparaitre dans la légende d'une image
-\footnotetext{Schéma d'après : \textit{Auteur 1 \& Propriétaire image}, LICENCE (cf. ref. \cite{cite4})}
+\subsection{Les hyperviseurs}
+Comme nous l'avons mentionné auparavant, il existe plusieurs types d'hyperviseurs : les hyperviseurs de type un et deux, et les conteneurs. Bien que nous soyons limités dans le temps il était tout de même important de tester au moins un hyperviseur de chaque type. Dès lors, les licences nécessaires à la mise en place d'un hyperviseur comme Hyper-V, VMWare, ORACLE VM Server n'étant pas libres et gratuites comme d'autres, nous avons faire un choix. Nous avons donc utilisé KVM, un hyperviseur de type 1, et QEMU, un hyperviseur de type 2 souvent associé à notre premier choix. Dans le cas des conteneurs, nous avons choisi LXC et Docker, abordés plus haut. Pour conclure, voici un tableau récapitulatif : 
+\begin{table}[h]
+\centering
+\begin{tabular}{lll}
+LXC   \checkmark \par           & Docker  \checkmark \par            &  HyperV   $\approx$ \\
+VMWare  $\approx$         & VirtualBox   \xmark \par       & Qemu \checkmark   \\
+Oracle VM Server \xmark & Proxmox  \xmark         & KVM \checkmark    \\
+Hyper-V Containers   $\approx$          &  &
+\end{tabular}
+\end{table}
+\\
+Comme nous pouvons le remarquer sur le tableau ci-dessus, nous avons quelques incertitudes concernant les Hyper-V de Microsoft et l'hyperviseur VMWare. Il y a deux raisons à cela, la première étant qu'il faudrait pouvoir passer du temps sur chaque technologies de virtualisations pour que les tests puissent être rigoureux et la seconde demeurant sur le fait qu'il est signalé qu'inclure la même procédure de test sur ces hyperviseurs serait intéressant. 
+\subsection{L'environnement}
+Lorsque l'on fait des évaluations très précises il y a toujours un problème récurrent lié à ce que l'on appelle "l'environnement de test". Afin d'expliquer cela simplement nous pouvons illustrer notre idée de départ : Si on réalise un test sur une machine et qu'on lui donne 16 GB de RAM avec une fréquence X, on lui fait subire un changement matériel tel que, par exemple, une réduction de sa fréquence. La situation serait la même sur une machine équipée d'une même RAM mais pas à la même cadence. De part cet exemple il est évident que la réalisation de test, sur un état de cette machine puis sur un autre, ne serait pas pertinente pour les résultats. Je vais donc ici considérer des faits qui peuvent s'y apparenter mais cela de manière plus précise. 
+\begin{post}
+Chaque machine virtuelle, qu'elle soit engendrée par un Hyperviseur ou un service de Conteneurisation, sera une machine Debian.  
+\end{post}
+Ici ce choix, fut diriger simplement pour le côté libre de la distribution. La version de celle-ci est détaillée dans un autre postulat.
+\begin{post}
+L'ensemble des machines virtuelles Debian qui seront clonées seront considérées identiques. 
+\end{post}
+Effectivement, les scripts utilisés sont, dans la plupart des cas, du clonage de machines virtuelle existantes, avec pour différence désirée, l’adresse mac. La pertinence des résultats ne peut être que renforcée par ce postulat. Aucune preuve n'existe pour prouver la véracité de ce postulat.
+\begin{post}
+Chaque test sera réalisé en interne de chaque machine virtualisée et conteneurisée.
+\end{post}
+Ce postulat répond à une demande du sujet "expérience utilisateur".
+\begin{post}
+Tous les tests seront réalisés par la suite de test de Phoronix à la version 7.0.1 .
+\end{post}
+Il est nécessaire de préciser cette prise de positions. Un test fait avec une autre version de phoronix engendrerait une différence de résultats.
+\begin{post}
+La version de la Debian utilisée sera une version 8.7.1 .
+\end{post}
+\subsection{Nombres de machines}
+Il est nécessaire de voir l'impact des machines virtuelles entre elles et donc l'impact de la logique de l'hyperviseur sur les performances quand un nombre de machines virtuelles suffisamment grand est mis en jeu. Pour cela, nous réaliserons des tests dont le nombre de machines virtuelles sera un multiple de 5. Plus la difficulté se fera sentir sur les machines, plus le nombre sera malléable et sujet à changement. En effet, si vingt-cinq machines Docker fonctionnent correctement alors que trente machines sont trop lentes, nous pouvons utiliser la technique de séparation suivante : On prend les tests sur vingt-sept et, si les résultats sont acceptables, on augmente petit à petit le nombre de machine. Dans le cas contraires, on le réduira.  
 
-\newpage{}
+\subsection{Sur les tests graphiques}
+% a corriger
+La machine qui sert de support à l'ensemble des tests ne possède par une carte graphique suffisamment puissante pour avoir une pertinence dans les données ainsi récolte sur plusieurs machines, afin d’évaluer les performances possible, un test fut lance sur la machine physique et celui ci a dure trop longtemps pour avoir un aboutissement sur un ensemble de machines finis. De plus, lors de l'installation de la machine, aucun serveur X(Pour rappel la machine physique/ hôte est une Debian 8 version serveur) n'as été installe ceci compromet la plupart des éventuels test mis à notre disposition par Phoronix test suite. Mis cela a part, il est indispensable de procéder ce genre de test pour pouvoir en faire des scenarios.
 
-\subsection{Sous-partie 2}
 
-\begin{figure}[!ht]
-\begin{center}
-\includegraphics[height=12cm]{autre_partie/image2}
-\end{center}
-\caption[autre partie]{autre partie globale de notre quelque chose}
-\end{figure}
+\subsection{Sur les tests reseaux}
+% a corriger
+TO DO SCAPY
 
-Nous retrouvons ici, blabla\footnote{Application bla - Interface blabla} [...].
 
-\subsubsection{Sous-sous-partie 1}
+\section{Les différents scénarios de tests}
+Au sein de cette section nous mettrons en avant les différents scénarios applicables dans notre univers de test. Ainsi, il sera mis en avant le scénario du Web sur les calculs processeurs, le disque et l'utilisation basique de réseaux. Enfin nous préciserons le nom des tests de chaque scénario et leur ordre. 
 
-Le bla (cf. ref. \cite{cite6}) est [...]:
-
+\subsection{Scénario 1 : Web}
+Ce premier scénario vise à évaluer la capacité de la machine virtuelle à gérer des cas de figure assez extrêmes tel qu'un nombre de requêtes élevé. Cela est typique du premier test d'Apache Benchmark qui a fait subir un million de requêtes en séquentiel à la machine. De plus, on le retrouve lors de l'envoi de mille requêtes en simultané jusqu'au nombre de 1 million, total cumulé, dans notre deuxième test PHP Benchmark. Voici donc la version des tests pour le web :   
 \begin{itemize}
-\item item1;
-\item item2;
-\item item3;
-\item item4;
-\item item5.
+\item pts/apache-1.6.1
+\item pts/phpbench-1.1.0
 \end{itemize}
 
-\newpage
+\subsection{Scénario 2 : Calcul sur processeurs}
+Ce second scénario vise à évaluer la capacité de la machine virtuelle à gérer des cas de figure où le processeur est fortement sollicité. C'est le cas précisément lors d'une compression à l'aide de 7-zip, dans deux algorithmes d'intelligence artificielle nommés Crafty et TSCP ou bien encore lors de l'utilisation de PovRay, un logiciel assez gourmand en capacités.  
+\begin{itemize}
+\item pts/7zip-compression-1.6.2
+\item pts/crafty-1.3.1
+\item pts/tscp-1.2.1
+\item pts/povray-1.1.3
+\end{itemize}
+\subsection{Scénario 3 : Utilisations du disque}
+Dans ce troisième scénario nous avons plusieurs cas de figure ayant des obligations d'architecture, notamment pour la taille des blocs d'écriture et de lecture ainsi que pour la méthode d'accès, séquentielle ou aléatoire.   
+\begin{itemize}
+\item pts/compilebench-1.0.0
+\end{itemize}
 
-\subsubsection{Sous-sous-partie 2}
-
-%Les lignes :
-% \setcounter{secnumdepth}{4}
-% \setcounter{tocdepth}{4}
-%dans le fichier "main.tex" permettent de faire en sorte que les paragraphes soient interprété comme des titres de niveau 5
-\paragraph{Paragraphe 1 (agissant comme titre niveau 5)}
-%forcer un saut de ligne
-~\\
-\hskip7mm
-
-\begin{figure}[!ht]
-\begin{center}
-\includegraphics[height=6cm]{autre_partie/image3}
-\end{center}
-\caption[Structure d'unz autre chose]{Structure d'une autre chose\protect\footnotemark}
-\end{figure}
-
-Ce schéma représente bla.
-
-\footnotetext{Schéma et explication d'après le wiki bla (cf. ref. \cite{cite0})}
-
-\paragraph{Paragraphe 2}
-~\\
-\hskip7mm
-
-%fixer les floats précédemment définis
-%\FloatBarrier
-
-Bla
-
-\subparagraph{Sous-paragraphe 1}
-~\\
-\hskip7mm
-
-Bla
-
-\begin{figure}[H]
-\begin{center}
-\includegraphics[height=10cm]{autre_partie/image4}
-\end{center}
-\caption{Diagramme de truc}
-\end{figure}
-
-\subparagraph{Sous-paragraphe 2}
-~\\
-\hskip7mm
-
-Bla\\
-
-Bla
-
-\subparagraph{Sous-paragraphe 3}
-~\\
-\hskip7mm
-
-Bla
-
-\subsubsection{Sous-sous-partie 3}
-
-Bla
-
-\section{Partie 2}
-
-Bla
-
-\footnotetext{D'après le schéma disponible sur la documentation officielle disponible sur le site blabla}
-
-Bla
-
-\subsection{Sous-partie 1}
-
-Bla
-
-\subsection{Sous-partie 2}
-
-Bla
-
-\paragraph*{Paragraphe 1 (n'apparaitra pas dans l'index)}
-Bla
-
-\paragraph*{Paragraphe 2}
-Bla
-
-\paragraph*{Paragraphe 3}
-Bla
-
-\subsection{Sous-partie 3}
-
-Bla
+\subsection{Scénario 4 : Utilisation de la mémoire vive }
+La mémoire vive demeure une ressource enviée de tous, pour la mise en mémoire d'un programme un peu gourmand par exemple, mais c'est aussi un lieu de problème. En effet, il y a souvent des problèmes d'accès mémoire, en particulier lorsque plusieurs acteurs l'utilisent. Rappelons également que c'est une ressource où la vitesse est importante. 
+\begin{itemize}
+\item pts/ramspeed-1.4.0 Type Copy - Benchmark integer
+\item pts/stream-1.2.0 Type Copy
+\item pts/t-test1-1.0.0 Thread 1
+\end{itemize}
+\subsection{Scénario 5 : Utilisation Réseaux }
+A travers ce cinquième scénario il a été choisi d'évaluer la connexion sur la loopback afin de palier d'éventuels problèmes tels qu'un manque de temps pour la réalisation d'autres tests par exemple. Dès lors, des envoies en anneaux entre chaque machines virtuelles ou, mieux encore, un connexion en clique viendraient parfaire et affiner ce test. 
+\begin{itemize}
+\item pts/network-loopback-1.0.1
+\end{itemize}

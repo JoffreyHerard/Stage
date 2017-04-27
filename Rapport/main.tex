@@ -5,7 +5,6 @@
 \usepackage[french]{babel}
 %pour gérer les positionnement d'images
 \usepackage{float}
-\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{url}
@@ -26,12 +25,16 @@
 \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
 %Pour les galerie d'images
 \usepackage{subfig}
-\usepackage{amsthm,thmtools}
+\usepackage{}
 \usepackage{xcolor}
 \usepackage{framed}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{amsthm,thmtools,amssymb, amsmath, mathtools} %pour les mathématiques
 \colorlet{shadecolor}{lightgray!25}
 %====================== INFORMATION ET REGLES ======================
-
 %rajouter les numérotation pour les \paragraphe et \subparagraphe
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
@@ -96,6 +99,7 @@ pdfstartview={FitH}}					% ajuste la page à la largueur de l'écran
  
 \input{./besoins.tex}
 
+\input{./autre_partie.tex}
 \input{./resultats.tex}
 
 \newpage
@@ -151,12 +155,12 @@ pdfstartview={FitH}}					% ajuste la page à la largueur de l'écran
           The impact of Docker containers on the performance of genomic pipelines
           \url {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4586803/}              
    \bibitem{Art3}
-          \url{Wei Huang, Jiuxing Liu, Bulent Abali et Dhabaleswar K. Panda, « A Case for High Performance Computing with Virtual Machines », ICS '06, ACM, série ICS '06,‎ 2006, p. 125–134 (ISBN 1-59593-282-8, DOI 10.1145/1183401.1183421}      
+          W.Huang, J.Liu, B.Abali, Dhabaleswar K. Panda, "A Case for High Performance Computing with Virtual Machines"     
           \bibitem{Art4}
-          \url{Piotr Luszczek, Eric Meek, Shirley Moore et Dan Terpstra, Evaluation of the HPC Challenge Benchmarks in Virtualized environments, Springer Berlin Heidelberg, coll. « Lecture Notes in Computer Science », 29 août 2011 }
+          P.Luszczek, E.Meek, S.Moore,D.Terpstra, Evaluation of the HPC Challenge Benchmarks in Virtualized environments, Springer Berlin Heidelberg, coll. « Lecture Notes in Computer Science », 29 août 2011 
    \bibitem{Documentation de PTS}
-         GitHub documentation de Phoronix test suite.
-          \url{https://gist.github.com/anshula/728a76297e4a4ee7688d#the-easy-way}.
+        Documentation de Phoronix test suite.
+          \url{https://gist.github.com/anshula/728a76297e4a4ee7688d}.
           
    \bibitem{Site de SaltStack}
         Site officiel de SaltStack

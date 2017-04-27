@@ -1,0 +1,81 @@
+\documentclass[french]{article}
+\usepackage{amssymb, amsmath, mathtools} %pour les mathématiques
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage[a4paper]{geometry}
+\usepackage{babel}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{minted}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
+\usetikzlibrary{arrows.meta,shapes,positioning,shadows,trees}
+
+\tikzset{
+    basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
+    root/.style   = {basic, rounded corners=2pt, thin, align=center,
+                     fill=green!30},
+    onode/.style = {basic, thin, align=center, fill=green!60,text width=3cm,},
+    tnode/.style = {basic, thin, align=left, fill=pink!60, text width=6.5em},
+    edge from parent/.style={->, >={latex}, draw=black, edge from parent fork right}
+}
+
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\newtheorem{post}{Postulat}
+\newtheorem{mydef}{Définition}
+
+\begin{document}
+\title{Résumé Journalier}
+\author{Joffrey Hérard}
+\date{21 avril 2017} 
+
+\maketitle
+\section{Mise en place machines virtuelles avec libvirt}
+
+Ensemble de commande 
+\begin{lstlisting}[language=bash,caption={}]
+sudo apt-get install kvm qemu-kvm libvirt-bin virtinst
+sudo usermod -a -G libvirtd user
+sudo usermod -a -G kvm user
+$ virsh list
+$ virsh start foo
+
+$ virsh reboot foo
+
+$ virsh shutdown foo
+
+$ virsh suspend foo
+
+$ virsh resume foo
+$ virsh dumpxml foo > /tmp/foo.xml
+
+$ virsh connect qemu+ssh://jherard@194.57.105.124:6299/system
+\end{lstlisting}
+Les VM sont crée avec virt-manager
+\begin{lstlisting}[language=bash,caption={}]
+sudo apt-get install virt-manager
+#VM configuration supplementaire : 
+# /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="console=tty0 console=ttyS0"
+GRUB_TERMINAL="serial console"
+update-grub
+
+\end{lstlisting}
+
+\newpage
+\begin{thebibliography}{9}
+
+   \bibitem{Site de Libvirt}
+       
+          \url{https://libvirt.org/}.
+
+\end{thebibliography}
+
+\end{document}

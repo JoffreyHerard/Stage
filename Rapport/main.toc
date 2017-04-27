@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {3.1.1}Sur les tests}{5}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Expérimentation disque dur}{5}{subsection.3.1.2}
 \contentsline {subsubsection}{\numberline {3.1.2.1}Pourquoi tester le disque dur ? }{5}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}Tester le disque dur sur quoi ? }{5}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Tester le disque dur sur quoi ?}{5}{subsubsection.3.1.2.2}
 \contentsline {subsection}{\numberline {3.1.3}Expérimentation processeur}{6}{subsection.3.1.3}
 \contentsline {subsubsection}{\numberline {3.1.3.1}Pourquoi tester le processeur ? }{6}{subsubsection.3.1.3.1}
 \contentsline {subsubsection}{\numberline {3.1.3.2}Tester le processeur sur quoi ? }{6}{subsubsection.3.1.3.2}
@@ -31,7 +31,7 @@
 \contentsline {subsection}{\numberline {3.3.2}Phoronix}{8}{subsection.3.3.2}
 \contentsline {section}{\numberline {3.4}Choix d'outils d'orchestration}{9}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Saltstack}{9}{subsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Configuration Maitre}{9}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Configuration Maître}{9}{subsubsection.3.4.1.1}
 \contentsline {subsubsection}{\numberline {3.4.1.2}Configuration Minion}{9}{subsubsection.3.4.1.2}
 \contentsline {subsubsection}{\numberline {3.4.1.3}Détails sur le fonctionnement général}{9}{subsubsection.3.4.1.3}
 \contentsline {subsection}{\numberline {3.4.2}Phoromatic}{9}{subsection.3.4.2}
@@ -40,39 +40,41 @@
 \contentsline {subsection}{\numberline {3.5.1}Impact d'un Hyperviseur}{11}{subsection.3.5.1}
 \contentsline {subparagraph}{Processeur}{11}{section*.3}
 \contentsline {subsection}{\numberline {3.5.2}Impact d'un conteneur}{11}{subsection.3.5.2}
-\contentsline {chapter}{\numberline {4}Résultats}{12}{chapter.4}
-\contentsline {section}{\numberline {4.1}Partie processeurs}{12}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Scénario 1 : bla bla }{12}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Scénario 2 : bla bla }{12}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Scénario 3 : bla bla }{12}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Partie Disque dur }{12}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Scénario 1 : bla bla }{12}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Scénario 2 : bla bla }{13}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Scénario 3 : bla bla }{13}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Partie Réseaux }{13}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Scénario 1 : bla bla }{13}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Scénario 2 : bla bla }{14}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Scénario 3 : bla bla }{14}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}Partie d'utilisation différentes}{14}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Scénario 1 : bla bla }{14}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Scénario 2 : bla bla }{15}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Scénario 3 : bla bla }{15}{subsection.4.4.3}
-\contentsline {chapter}{\numberline {5}Bilan}{16}{chapter.5}
-\contentsline {section}{\numberline {5.1}Annexes}{18}{section.5.1}
-\contentsline {part}{Annexes}{20}{part*.16}
-\contentsline {chapter}{Annexe 1}{20}{chapter*.17}
-\contentsline {section}{\numberline {1}Partie 1}{20}{section.5.1}
-\contentsline {subsection}{\numberline {1.1}Sous-partie 1}{20}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {1.2}Sous-partie 2}{20}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {1.3}Sous-partie 3}{20}{subsection.5.1.3}
-\contentsline {section}{\numberline {2}Partie 2}{20}{section.5.2}
-\contentsline {subsection}{\numberline {2.1}Sous-partie 1}{20}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {2.2}Sous-partie 2}{20}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {2.3}Sous-partie 3}{20}{subsection.5.2.3}
-\contentsline {chapter}{Annexe 2}{21}{chapter*.18}
-\contentsline {section}{Prérequis}{21}{section*.19}
-\contentsline {section}{\numberline {1}Partie 1}{21}{section.5.1}
-\contentsline {subsection}{\numberline {1.1}Sous-parie 1}{21}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {1.2}Sous-parie 2}{21}{subsection.5.1.2}
-\contentsline {section}{\numberline {2}Partie 2}{21}{section.5.2}
-\contentsline {section}{\numberline {3}Partie 3}{22}{section.5.3}
+\contentsline {chapter}{\numberline {4}Prise de positions}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Postulats}{12}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Les hyperviseurs}{12}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}L'environnement}{12}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Nombres de machines}{13}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Sur les tests graphiques}{13}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Sur les tests reseaux}{13}{subsection.4.1.5}
+\contentsline {section}{\numberline {4.2}Les différents scénarios de tests}{13}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Scénario 1 : Web}{13}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Scénario 2 : Calcul sur processeurs}{13}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Scénario 3 : Utilisations du disque}{14}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Scénario 4 : Utilisation de la mémoire vive }{14}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Scénario 5 : Utilisation Réseaux }{14}{subsection.4.2.5}
+\contentsline {chapter}{\numberline {5}Résultats}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Partie Processeurs}{15}{section.5.1}
+\contentsline {section}{\numberline {5.2}Partie Disque dur }{15}{section.5.2}
+\contentsline {section}{\numberline {5.3}Partie Mémoire}{15}{section.5.3}
+\contentsline {section}{\numberline {5.4}Partie Réseaux }{15}{section.5.4}
+\contentsline {section}{\numberline {5.5}Partie Web}{15}{section.5.5}
+\contentsline {chapter}{\numberline {6}Bilan}{16}{chapter.6}
+\contentsline {section}{\numberline {6.1}Annexes}{17}{section.6.1}
+\contentsline {part}{Annexes}{19}{part*.5}
+\contentsline {chapter}{Annexe 1}{19}{chapter*.6}
+\contentsline {section}{\numberline {1}Partie 1}{19}{section.6.1}
+\contentsline {subsection}{\numberline {1.1}Sous-partie 1}{19}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {1.2}Sous-partie 2}{19}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {1.3}Sous-partie 3}{19}{subsection.6.1.3}
+\contentsline {section}{\numberline {2}Partie 2}{19}{section.6.2}
+\contentsline {subsection}{\numberline {2.1}Sous-partie 1}{19}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {2.2}Sous-partie 2}{19}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {2.3}Sous-partie 3}{19}{subsection.6.2.3}
+\contentsline {chapter}{Annexe 2}{20}{chapter*.7}
+\contentsline {section}{Prérequis}{20}{section*.8}
+\contentsline {section}{\numberline {1}Partie 1}{20}{section.6.1}
+\contentsline {subsection}{\numberline {1.1}Sous-parie 1}{20}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {1.2}Sous-parie 2}{20}{subsection.6.1.2}
+\contentsline {section}{\numberline {2}Partie 2}{20}{section.6.2}
+\contentsline {section}{\numberline {3}Partie 3}{21}{section.6.3}
