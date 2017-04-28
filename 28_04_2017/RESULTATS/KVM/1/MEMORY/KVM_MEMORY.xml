@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.0.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>MEMORY_KVM_1 - jherard - Manual Test Run - 16:47 25 Apr 2017</Title>
+    <LastModified>2017-04-25 19:27:49</LastModified>
+    <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
+    <Description>A Phoromatic run.</Description>
+  </Generated>
+  <System>
+    <Identifier>debianKVM1</Identifier>
+    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4000 MB RAM QEMU, Disk: 4GB, Graphics: Red Hat QXL paravirtual graphic card, Audio: Intel 82801FB/FBM/FR/FW/FRW, Network: Red Hat Virtio device</Hardware>
+    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-25 16:48:34</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/ramspeed-1.4.0</Identifier>
+    <Title>RAMspeed SMP</Title>
+    <AppVersion>3.5.0</AppVersion>
+    <Arguments>COPY -b 3</Arguments>
+    <Description>Type: Copy - Benchmark: Integer</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>debianKVM1</Identifier>
+        <Value>6074.51</Value>
+        <RawString></RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":""}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/stream-1.2.0</Identifier>
+    <Title>Stream</Title>
+    <AppVersion>2013-01-17</AppVersion>
+    <Arguments>Copy</Arguments>
+    <Description>Type: Copy</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>debianKVM1</Identifier>
+        <Value>6315.67</Value>
+        <RawString>6293.5:6460.2:6275.5:6268.3:6275.7:6467.6:6269.1:6284.9:6272.6:6289.3</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native -fopenmp"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/t-test1-1.0.0</Identifier>
+    <Title>t-test1</Title>
+    <AppVersion>2017-01-13</AppVersion>
+    <Arguments>1</Arguments>
+    <Description>Threads: 1</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>debianKVM1</Identifier>
+        <Value>31.64</Value>
+        <RawString>31.791566133499:31.700397014618:31.414748191833</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-pthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

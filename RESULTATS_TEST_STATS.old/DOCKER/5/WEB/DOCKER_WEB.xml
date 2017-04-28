@@ -2,107 +2,57 @@
 <!--Phoronix Test Suite v7.0.1-->
 <PhoronixTestSuite>
   <Generated>
-    <Title>WEB_KVM_10 - 2017-04-25</Title>
-    <LastModified>2017-04-25 09:11:18</LastModified>
+    <Title>DOCKER_WEB_5 - jherard - Manual Test Run - 13:27 28 Apr 2017</Title>
+    <LastModified>2017-04-28 13:58:47</LastModified>
     <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
     <Description>A Phoromatic run.</Description>
   </Generated>
   <System>
-    <Identifier>debianKVM12: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 1: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 04:00:13</TimeStamp>
+    <TimeStamp>2017-04-28 11:28:29</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM17: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 4: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 04:00:22</TimeStamp>
+    <TimeStamp>2017-04-28 11:28:36</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM18: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 3: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 04:00:41</TimeStamp>
+    <TimeStamp>2017-04-28 11:28:26</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM10: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 5: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 04:01:01</TimeStamp>
+    <TimeStamp>2017-04-28 11:28:44</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM15: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 2: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 04:01:00</TimeStamp>
-    <TestClientVersion></TestClientVersion>
-    <Notes></Notes>
-    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
-  </System>
-  <System>
-    <Identifier>debianKVM11: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
-    <User>root</User>
-    <TimeStamp>2017-04-25 04:00:50</TimeStamp>
-    <TestClientVersion></TestClientVersion>
-    <Notes></Notes>
-    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
-  </System>
-  <System>
-    <Identifier>debianKVM13: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
-    <User>root</User>
-    <TimeStamp>2017-04-25 04:00:21</TimeStamp>
-    <TestClientVersion></TestClientVersion>
-    <Notes></Notes>
-    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
-  </System>
-  <System>
-    <Identifier>debianKVM1: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4000 MB RAM QEMU, Disk: 4GB, Graphics: Red Hat QXL paravirtual graphic card, Audio: Intel 82801FB/FBM/FR/FW/FRW, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
-    <User>root</User>
-    <TimeStamp>2017-04-25 04:00:14</TimeStamp>
-    <TestClientVersion></TestClientVersion>
-    <Notes></Notes>
-    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
-  </System>
-  <System>
-    <Identifier>debianKVM14: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
-    <User>root</User>
-    <TimeStamp>2017-04-25 04:00:08</TimeStamp>
-    <TestClientVersion></TestClientVersion>
-    <Notes></Notes>
-    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
-  </System>
-  <System>
-    <Identifier>debianKVM16: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
-    <User>root</User>
-    <TimeStamp>2017-04-25 04:00:04</TimeStamp>
+    <TimeStamp>2017-04-28 11:28:55</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
@@ -118,63 +68,33 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>debianKVM12: 2017-04-25</Identifier>
-        <Value>2903.62</Value>
-        <RawString>3015.86:2821.9:2873.11</RawString>
+        <Identifier>Docker 1: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+        <Value>7008.94</Value>
+        <RawString>5461.23:5132.34:5148.93:8640.62:9038.6:8631.89</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM17: 2017-04-25</Identifier>
-        <Value>2899.01</Value>
-        <RawString>2917.93:2825.63:2953.46</RawString>
+        <Identifier>Docker 4: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+        <Value>6995.00</Value>
+        <RawString>4951.23:4846.78:5210.42:8815:8905.8:9240.75</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM18: 2017-04-25</Identifier>
-        <Value>2917.36</Value>
-        <RawString>2900.41:2877.24:2974.42</RawString>
+        <Identifier>Docker 3: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+        <Value>5237.50</Value>
+        <RawString>5443.06:5163.84:5105.59</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM10: 2017-04-25</Identifier>
-        <Value>2943.70</Value>
-        <RawString>2873.75:2935.57:3021.77</RawString>
+        <Identifier>Docker 5: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+        <Value>5221.71</Value>
+        <RawString>5200.89:5164.88:5299.37</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM15: 2017-04-25</Identifier>
-        <Value>2943.00</Value>
-        <RawString>2847.61:2952.73:3028.67</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
-      </Entry>
-      <Entry>
-        <Identifier>debianKVM11: 2017-04-25</Identifier>
-        <Value>2884.59</Value>
-        <RawString>2861.62:2836.24:2955.91</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
-      </Entry>
-      <Entry>
-        <Identifier>debianKVM13: 2017-04-25</Identifier>
-        <Value>2918.46</Value>
-        <RawString>2992.14:2894.27:2868.97</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
-      </Entry>
-      <Entry>
-        <Identifier>debianKVM1: 2017-04-25</Identifier>
-        <Value>2799.36</Value>
-        <RawString>2887.45:2720.13:2790.51</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
-      </Entry>
-      <Entry>
-        <Identifier>debianKVM14: 2017-04-25</Identifier>
-        <Value>3179.97</Value>
-        <RawString>3059.41:2787.47:2867.01:3319.28:3214.1:3832.57</RawString>
-        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
-      </Entry>
-      <Entry>
-        <Identifier>debianKVM16: 2017-04-25</Identifier>
-        <Value>3194.76</Value>
-        <RawString>3053.73:2782.93:2827.26:3320.01:3267.57:3917.07</RawString>
+        <Identifier>Docker 2: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+        <Value>5228.64</Value>
+        <RawString>5303.07:5074.16:5308.68</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-shared -fPIC -O2 -pthread"}}</JSON>
       </Entry>
     </Data>
@@ -190,54 +110,29 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>debianKVM12: 2017-04-25</Identifier>
-        <Value>40848</Value>
-        <RawString>42123:40533:39887</RawString>
+        <Identifier>Docker 1: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+        <Value>62975</Value>
+        <RawString>63008:62603:63314</RawString>
       </Entry>
       <Entry>
-        <Identifier>debianKVM17: 2017-04-25</Identifier>
-        <Value>40800</Value>
-        <RawString>41588:40450:40363</RawString>
+        <Identifier>Docker 4: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+        <Value>62958</Value>
+        <RawString>62590:63114:63171</RawString>
       </Entry>
       <Entry>
-        <Identifier>debianKVM18: 2017-04-25</Identifier>
-        <Value>40252</Value>
-        <RawString>40482:39888:40385</RawString>
+        <Identifier>Docker 3: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+        <Value>56762</Value>
+        <RawString>36378:52119:61242:63088:64495:63250</RawString>
       </Entry>
       <Entry>
-        <Identifier>debianKVM10: 2017-04-25</Identifier>
-        <Value>40609</Value>
-        <RawString>40486:39910:41430</RawString>
+        <Identifier>Docker 5: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+        <Value>57008</Value>
+        <RawString>36426:54972:62168:59424:64104:64953</RawString>
       </Entry>
       <Entry>
-        <Identifier>debianKVM15: 2017-04-25</Identifier>
-        <Value>40643</Value>
-        <RawString>40270:39628:42030</RawString>
-      </Entry>
-      <Entry>
-        <Identifier>debianKVM11: 2017-04-25</Identifier>
-        <Value>40849</Value>
-        <RawString>39837:41577:41134</RawString>
-      </Entry>
-      <Entry>
-        <Identifier>debianKVM13: 2017-04-25</Identifier>
-        <Value>51301</Value>
-        <RawString>42291:40068:39238:59122:63486:63598</RawString>
-      </Entry>
-      <Entry>
-        <Identifier>debianKVM1: 2017-04-25</Identifier>
-        <Value>51944</Value>
-        <RawString>38550:38589:42776:63448:64092:64206</RawString>
-      </Entry>
-      <Entry>
-        <Identifier>debianKVM14: 2017-04-25</Identifier>
-        <Value>64147</Value>
-        <RawString>64247:63901:64292</RawString>
-      </Entry>
-      <Entry>
-        <Identifier>debianKVM16: 2017-04-25</Identifier>
-        <Value>62652</Value>
-        <RawString>59497:63214:63803:64095</RawString>
+        <Identifier>Docker 2: jherard - Manual Test Run - 13:27 28 Apr 2017</Identifier>
+        <Value>57470</Value>
+        <RawString>35822:56063:64070:59793:64578:64493</RawString>
       </Entry>
     </Data>
   </Result>

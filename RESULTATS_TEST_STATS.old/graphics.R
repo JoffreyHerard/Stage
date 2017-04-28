@@ -167,7 +167,7 @@ dataQEMU_NETWORK__25 <- read.table("EXTRACT/25/NETWORK/QEMU.txt",h=TRUE)
 
 
 #Construction des courbes
-pdf("resultat.pdf")
+pdf("resultats_sans_HDD.pdf")
 
 
 #HDD
@@ -192,13 +192,13 @@ ScoreDOCKER <-c(dataDOCKER_WEB__1[1,1],dataDOCKER_WEB__5[1,1],dataDOCKER_WEB__10
 ScoreLXC <-c(dataLXC_WEB__1[1,1],dataLXC_WEB__5[1,1],dataLXC_WEB__10[1,1],dataLXC_WEB__15[1,1],dataLXC_WEB__20[1,1],dataLXC_WEB__25[1,1])
 ScoreQEMU <-c(dataQEMU_WEB__1[1,1],dataQEMU_WEB__5[1,1],dataQEMU_WEB__10[1,1],dataQEMU_WEB__15[1,1],dataQEMU_WEB__20[1,1],dataQEMU_WEB__25[1,1])
 
-plot(Scores~Nombre_de_machines,main="Test Apache Benchmark 1.6.2",col="orange")
+plot(ScoreLXC~Nombre_de_machines,main="Test Apache Benchmark 1.6.2",col="red")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
-legend(x="topleft",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
+legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
 
 #PHP BENCH
 
@@ -213,7 +213,7 @@ lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
-legend(x="topleft",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
+legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
 
 
 # RAM 
@@ -225,13 +225,13 @@ ScoreDOCKER <-c(dataDOCKER_MEMORY__1[1,1],dataDOCKER_MEMORY__5[1,1],dataDOCKER_M
 ScoreLXC <-c(dataLXC_MEMORY__1[1,1],dataLXC_MEMORY__5[1,1],dataLXC_MEMORY__10[1,1],dataLXC_MEMORY__15[1,1],dataLXC_MEMORY__20[1,1],dataLXC_MEMORY__25[1,1])
 ScoreQEMU <-c(dataQEMU_MEMORY__1[1,1],dataQEMU_MEMORY__5[1,1],dataQEMU_MEMORY__10[1,1],dataQEMU_MEMORY__15[1,1],dataQEMU_MEMORY__20[1,1],dataQEMU_MEMORY__25[1,1])
 
-plot(Scores~Nombre_de_machines,main="Test Ramspeed 1.4.0",col="orange")
+plot(ScoreLXC~Nombre_de_machines,main="Test Ramspeed 1.4.0",col="red")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
-legend(x="topleft",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
+legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
 
 ## STREAM 
 
@@ -240,13 +240,13 @@ ScoreDOCKER <-c(dataDOCKER_MEMORY__1[2,1],dataDOCKER_MEMORY__5[2,1],dataDOCKER_M
 ScoreLXC <-c(dataLXC_MEMORY__1[2,1],dataLXC_MEMORY__5[2,1],dataLXC_MEMORY__10[2,1],dataLXC_MEMORY__15[2,1],dataLXC_MEMORY__20[2,1],dataLXC_MEMORY__25[2,1])
 ScoreQEMU <-c(dataQEMU_MEMORY__1[2,1],dataQEMU_MEMORY__5[2,1],dataQEMU_MEMORY__10[2,1],dataQEMU_MEMORY__15[2,1],dataQEMU_MEMORY__20[2,1],dataQEMU_MEMORY__25[2,1])
 
-plot(Scores~Nombre_de_machines,main="Test stream 1.2.0",col="orange")
+plot(ScoreLXC~Nombre_de_machines,main="Test stream 1.2.0",col="red")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
-legend(x="topleft",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
+legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
 
 ## T-TESTS
 Scores <-c(dataKVM_MEMORY__1[3,1],dataKVM_MEMORY__5[3,1],dataKVM_MEMORY__10[3,1],dataKVM_MEMORY__15[3,1],dataKVM_MEMORY__20[3,1],dataKVM_MEMORY__25[3,1])
@@ -254,7 +254,7 @@ ScoreDOCKER <-c(dataDOCKER_MEMORY__1[3,1],dataDOCKER_MEMORY__5[3,1],dataDOCKER_M
 ScoreLXC <-c(dataLXC_MEMORY__1[3,1],dataLXC_MEMORY__5[3,1],dataLXC_MEMORY__10[3,1],dataLXC_MEMORY__15[3,1],dataLXC_MEMORY__20[3,1],dataLXC_MEMORY__25[3,1])
 ScoreQEMU <-c(dataQEMU_MEMORY__1[3,1],dataQEMU_MEMORY__5[3,1],dataQEMU_MEMORY__10[3,1],dataQEMU_MEMORY__15[3,1],dataQEMU_MEMORY__20[3,1],dataQEMU_MEMORY__25[3,1])
 
-plot(Scores~Nombre_de_machines,main="Test T-test 1.0.0",col="orange")
+plot(ScoreLXC~Nombre_de_machines,main="Test T-test 1.0.0",col="red")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
@@ -278,7 +278,7 @@ lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
-legend(x="topleft",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
+legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
 
 ###resultats_CPU_TEST1_compress
 
@@ -288,13 +288,13 @@ ScoreDOCKER <-c(dataDOCKER_CPU__1[2,1],dataDOCKER_CPU__5[2,1],dataDOCKER_CPU__10
 ScoreLXC <-c(dataLXC_CPU__1[2,1],dataLXC_CPU__5[2,1],dataLXC_CPU__10[2,1],dataLXC_CPU__15[2,1],dataLXC_CPU__20[2,1],dataLXC_CPU__25[2,1])
 ScoreQEMU <-c(dataQEMU_CPU__1[2,1],dataQEMU_CPU__5[2,1],dataQEMU_CPU__10[2,1],dataQEMU_CPU__15[2,1],dataQEMU_CPU__20[2,1],dataQEMU_CPU__25[2,1])
 
-plot(Scores~Nombre_de_machines,main="Test 7Zip-Compression 1.0.0",col="orange")
+plot(ScoreLXC~Nombre_de_machines,main="Test 7Zip-Compression 1.0.0",col="red")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
-legend(x="topleft",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
+legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
 
 
 ###resultats_CPU_TEST1_crafty
@@ -305,7 +305,7 @@ ScoreDOCKER <-c(dataDOCKER_CPU__1[3,1],dataDOCKER_CPU__5[3,1],dataDOCKER_CPU__10
 ScoreLXC <-c(dataLXC_CPU__1[3,1],dataLXC_CPU__5[3,1],dataLXC_CPU__10[3,1],dataLXC_CPU__15[3,1],dataLXC_CPU__20[3,1],dataLXC_CPU__25[3,1])
 ScoreQEMU <-c(dataQEMU_CPU__1[3,1],dataQEMU_CPU__5[3,1],dataQEMU_CPU__10[3,1],dataQEMU_CPU__15[3,1],dataQEMU_CPU__20[3,1],dataQEMU_CPU__25[3,1])
 
-plot(Scores~Nombre_de_machines,main="Test Crafty",col="orange")
+plot(ScoreQEMU~Nombre_de_machines,main="Test Crafty",col="purple")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
@@ -322,7 +322,7 @@ ScoreDOCKER <-c(dataDOCKER_CPU__1[4,1],dataDOCKER_CPU__5[4,1],dataDOCKER_CPU__10
 ScoreLXC <-c(dataLXC_CPU__1[4,1],dataLXC_CPU__5[4,1],dataLXC_CPU__10[4,1],dataLXC_CPU__15[4,1],dataLXC_CPU__20[4,1],dataLXC_CPU__25[4,1])
 ScoreQEMU <-c(dataQEMU_CPU__1[4,1],dataQEMU_CPU__5[4,1],dataQEMU_CPU__10[4,1],dataQEMU_CPU__15[4,1],dataQEMU_CPU__20[4,1],dataQEMU_CPU__25[4,1])
 
-plot(Scores~Nombre_de_machines,main=" Test Povray 1.3.1",col="orange")
+plot(ScoreDOCKER~Nombre_de_machines,main=" Test Povray 1.3.1",col="blue")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)

@@ -1,0 +1,20 @@
+DOCKER_CPU_10 - 2017-04-28
+
+ ,"Docker 8: 2017-04-28","Docker 2: 2017-04-28","Docker 4: 2017-04-28","Docker 6 : 2017-04-28","Docker 9: 2017-04-28","Docker 3: 2017-04-28","Docker 1: 2017-04-28","Docker 10: 2017-04-28","Docker 7: 2017-04-28","Docker 5: 2017-04-28"
+Processor,2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores)
+Motherboard,Dell 0MD99X,Dell 0MD99X,Dell 0MD99X,Dell 0MD99X,Dell 0MD99X,Dell 0MD99X,Dell 0MD99X,Dell 0MD99X,Dell 0MD99X,Dell 0MD99X
+Memory,242688MB,242688MB,242688MB,242688MB,242688MB,242688MB,242688MB,242688MB,242688MB,242688MB
+Disk,3999GB Virtual Disk,3999GB Virtual Disk,3999GB Virtual Disk,3999GB Virtual Disk,3999GB Virtual Disk,3999GB Virtual Disk,3999GB Virtual Disk,3999GB Virtual Disk,3999GB Virtual Disk,3999GB Virtual Disk
+Graphics,mgadrmfb,mgadrmfb,mgadrmfb,mgadrmfb,mgadrmfb,mgadrmfb,mgadrmfb,mgadrmfb,mgadrmfb,mgadrmfb
+OS,Debian GNU/Linux 8,Debian GNU/Linux 8,Debian GNU/Linux 8,Debian GNU/Linux 8,Debian GNU/Linux 8,Debian GNU/Linux 8,Debian GNU/Linux 8,Debian GNU/Linux 8,Debian GNU/Linux 8,Debian GNU/Linux 8
+Kernel,3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64)
+Compiler,GCC 4.9.2,GCC 4.9.2,GCC 4.9.2,GCC 4.9.2,GCC 4.9.2,GCC 4.9.2,GCC 4.9.2,GCC 4.9.2,GCC 4.9.2,GCC 4.9.2
+File-System,aufs,aufs,aufs,aufs,aufs,aufs,aufs,aufs,aufs,aufs
+Screen Resolution,1280x1024,1280x1024,1280x1024,1280x1024,1280x1024,1280x1024,1280x1024,1280x1024,1280x1024,1280x1024
+
+ ,,"Docker 8: 2017-04-28","Docker 2: 2017-04-28","Docker 4: 2017-04-28","Docker 6 : 2017-04-28","Docker 9: 2017-04-28","Docker 3: 2017-04-28","Docker 1: 2017-04-28","Docker 10: 2017-04-28","Docker 7: 2017-04-28","Docker 5: 2017-04-28"
+"pts/tscp-1.2.1 - ",HIB,490566,470674,400387,369799,405519,355709,354163,361678,357894,
+"pts/compress-7zip-1.6.2 - ",HIB,3602,2815,2741,2657,2574,2274,2233,2269,2219,
+"pts/crafty-1.3.1 - ",LIB,246.36,242.50,241.63,253.25,243.56,221.23,223.61,224.33,223.26,
+"pts/povray-1.1.3 - ",LIB,1580.68,1580.41,1593.47,1592.51,1594.75,1243.49,1246.84,1255.94,1258.48,772.14
+

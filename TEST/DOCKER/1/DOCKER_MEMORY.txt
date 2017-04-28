@@ -1,0 +1,25 @@
+DOCKER_MEMORY_1 - jherard - Manual Test Run - 14:22 28 Apr 2017
+A Phoromatic run.
+
+
+Docker 1: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+RAMspeed SMP 3.5.0
+Type: Copy - Benchmark: Integer
+  MB/s
+    Docker 1 .. 12994.65 |=====================================================
+
+Stream 2013-01-17
+Type: Copy
+  MB/s
+    Docker 1 .. 12000.31 |=====================================================
+
+t-test1 2017-01-13
+Threads: 1
+  Seconds
+    Docker 1 .. 30.49 |========================================================
+

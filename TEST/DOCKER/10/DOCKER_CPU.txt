@@ -1,0 +1,123 @@
+DOCKER_CPU_10 - 2017-04-28
+A Phoromatic run.
+
+
+Docker 8: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 2: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 4: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 6 : 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 9: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 3: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 1: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 10: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 7: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 5: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+TSCP 1.81
+AI Chess Performance
+  Nodes Per Second
+    Docker 8: 2017-04-28 ... 490566 |==========================================
+    Docker 2: 2017-04-28 ... 470674 |========================================
+    Docker 4: 2017-04-28 ... 400387 |==================================
+    Docker 6 : 2017-04-28 .. 369799 |================================
+    Docker 9: 2017-04-28 ... 405519 |===================================
+    Docker 3: 2017-04-28 ... 355709 |==============================
+    Docker 1: 2017-04-28 ... 354163 |==============================
+    Docker 10: 2017-04-28 .. 361678 |===============================
+    Docker 7: 2017-04-28 ... 357894 |===============================
+    2017-04-28 ............. 354982 |==============================
+    2017-04-28 ............. 330683 |============================
+
+7-Zip Compression 9.20.1
+Compress Speed Test
+  MIPS
+    Docker 8: 2017-04-28 ... 3602 |============================================
+    Docker 2: 2017-04-28 ... 2815 |==================================
+    Docker 4: 2017-04-28 ... 2741 |=================================
+    Docker 6 : 2017-04-28 .. 2657 |================================
+    Docker 9: 2017-04-28 ... 2574 |===============================
+    Docker 3: 2017-04-28 ... 2274 |============================
+    Docker 1: 2017-04-28 ... 2233 |===========================
+    Docker 10: 2017-04-28 .. 2269 |============================
+    Docker 7: 2017-04-28 ... 2219 |===========================
+    2017-04-28 ............. 2274 |============================
+    2017-04-28 ............. 2294 |============================
+
+Crafty 23.4
+Elapsed Time
+  Seconds
+    Docker 8: 2017-04-28 ... 246.36 |=========================================
+    Docker 2: 2017-04-28 ... 242.50 |========================================
+    Docker 4: 2017-04-28 ... 241.63 |========================================
+    Docker 6 : 2017-04-28 .. 253.25 |==========================================
+    Docker 9: 2017-04-28 ... 243.56 |========================================
+    Docker 3: 2017-04-28 ... 221.23 |=====================================
+    Docker 1: 2017-04-28 ... 223.61 |=====================================
+    Docker 10: 2017-04-28 .. 224.33 |=====================================
+    Docker 7: 2017-04-28 ... 223.26 |=====================================
+    2017-04-28 ............. 225.45 |=====================================
+    2017-04-28 ............. 251.46 |==========================================
+
+POV-Ray 3.7.0
+Total Time
+  Seconds
+    Docker 8: 2017-04-28 ... 1580.68 |=========================================
+    Docker 2: 2017-04-28 ... 1580.41 |=========================================
+    Docker 4: 2017-04-28 ... 1593.47 |=========================================
+    Docker 6 : 2017-04-28 .. 1592.51 |=========================================
+    Docker 9: 2017-04-28 ... 1594.75 |=========================================
+    Docker 3: 2017-04-28 ... 1243.49 |================================
+    Docker 1: 2017-04-28 ... 1246.84 |================================
+    Docker 10: 2017-04-28 .. 1255.94 |================================
+    Docker 7: 2017-04-28 ... 1258.48 |================================
+    Docker 5: 2017-04-28 ... 772.14  |====================
+

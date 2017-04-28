@@ -1,0 +1,132 @@
+DOCKER_WEB_15 - 2017-04-28
+A Phoromatic run.
+
+
+Docker 11: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 13: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 3: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 8: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 4: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 6 : 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 10: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 5: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 12: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 7: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 2: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 1: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 14: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 9: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 15: 2017-04-28: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Apache Benchmark 2.4.7
+Static Web Page Serving
+  Requests Per Second
+    Docker 11: 2017-04-28 .. 2709.27 |===================================
+    Docker 13: 2017-04-28 .. 2692.10 |===================================
+    Docker 3: 2017-04-28 ... 2695.85 |===================================
+    Docker 8: 2017-04-28 ... 2680.22 |===================================
+    Docker 4: 2017-04-28 ... 2666.11 |===================================
+    Docker 6 : 2017-04-28 .. 2652.80 |==================================
+    Docker 10: 2017-04-28 .. 2671.86 |===================================
+    Docker 5: 2017-04-28 ... 2704.19 |===================================
+    Docker 12: 2017-04-28 .. 2622.36 |==================================
+    Docker 7: 2017-04-28 ... 2671.60 |===================================
+    Docker 2: 2017-04-28 ... 3099.75 |========================================
+    Docker 1: 2017-04-28 ... 2643.93 |==================================
+    Docker 14: 2017-04-28 .. 3073.03 |========================================
+    Docker 9: 2017-04-28 ... 3082.56 |========================================
+    Docker 15: 2017-04-28 .. 3163.11 |=========================================
+
+PHPBench 0.8.1
+PHP Benchmark Suite
+  Score
+    Docker 11: 2017-04-28 .. 36071 |=========================
+    Docker 13: 2017-04-28 .. 36177 |=========================
+    Docker 3: 2017-04-28 ... 35802 |=========================
+    Docker 8: 2017-04-28 ... 36003 |=========================
+    Docker 4: 2017-04-28 ... 36224 |=========================
+    Docker 6 : 2017-04-28 .. 35767 |=========================
+    Docker 10: 2017-04-28 .. 36013 |=========================
+    Docker 5: 2017-04-28 ... 35661 |=========================
+    Docker 12: 2017-04-28 .. 35252 |========================
+    Docker 7: 2017-04-28 ... 35160 |========================
+    Docker 2: 2017-04-28 ... 60692 |==========================================
+    Docker 1: 2017-04-28 ... 47421 |=================================
+    Docker 14: 2017-04-28 .. 62332 |===========================================
+    Docker 9: 2017-04-28 ... 61990 |===========================================
+    Docker 15: 2017-04-28 .. 61537 |==========================================
+

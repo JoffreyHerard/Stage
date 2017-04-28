@@ -1,0 +1,70 @@
+DOCKER_CPU_5 - jherard - Manual Test Run - 11:32 28 Apr 2017
+A Phoromatic run.
+
+
+Docker 4: jherard - Manual Test Run - 11:32 28 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 3: jherard - Manual Test Run - 11:32 28 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 5: jherard - Manual Test Run - 11:32 28 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 2: jherard - Manual Test Run - 11:32 28 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 1: jherard - Manual Test Run - 11:32 28 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+TSCP 1.81
+AI Chess Performance
+  Nodes Per Second
+    Docker 4: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 403795 |=======
+    Docker 3: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 484745 |========
+    Docker 5: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 492737 |========
+    Docker 2: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 412209 |=======
+    Docker 1: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 425783 |=======
+
+7-Zip Compression 9.20.1
+Compress Speed Test
+  MIPS
+    Docker 4: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 4693 |========
+    Docker 3: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 5852 |==========
+    Docker 5: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 5337 |=========
+    Docker 2: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 5056 |=========
+    Docker 1: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 5167 |=========
+
+Crafty 23.4
+Elapsed Time
+  Seconds
+    Docker 4: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 175.97 |========
+    Docker 3: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 174.83 |========
+    Docker 5: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 174.45 |========
+    Docker 2: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 173.10 |========
+    Docker 1: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 174.13 |========
+
+POV-Ray 3.7.0
+Total Time
+  Seconds
+    Docker 4: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 233.57 |===
+    Docker 3: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 616.03 |========
+    Docker 5: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 626.88 |========
+    Docker 2: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 620.00 |========
+    Docker 1: jherard - Manual Test Run - 11:32 28 Apr 2017 .. 389.14 |=====
+

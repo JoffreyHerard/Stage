@@ -1,0 +1,908 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.0.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>LXC_CPU - 2017-04-22</Title>
+    <LastModified>2017-04-23 10:31:24</LastModified>
+    <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
+    <Description>A Phoromatic run.</Description>
+  </Generated>
+  <System>
+    <Identifier>debLXC2125: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:12</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2116: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:25</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2101: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:39</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2115: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:42</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2105: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:51:08</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2110: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:31</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2117: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:29</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2122: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:51:06</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2118: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:33</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2121: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:32</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2103: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:25</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2107: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:51:16</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2109: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:51:12</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2119: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:24</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2114: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:51:11</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2106: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:34</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2102: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:51:21</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2124: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:51:12</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2112: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:51:15</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2113: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:51:07</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2104: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:51:15</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2123: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:53</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2111: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:51:21</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2120: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:51:11</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC2108: 2017-04-22</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-22 21:50:16</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/tscp-1.2.1</Identifier>
+    <Title>TSCP</Title>
+    <AppVersion>1.81</AppVersion>
+    <Arguments></Arguments>
+    <Description>AI Chess Performance</Description>
+    <Scale>Nodes Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>debLXC2125: 2017-04-22</Identifier>
+        <Value>272497</Value>
+        <RawString>258702:333199:267367:264162:229299:254400:301630:302791:285821:227594</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2116: 2017-04-22</Identifier>
+        <Value>268904</Value>
+        <RawString>299173:242419:236588:244355:303961:302293:245335:262400:265947:286565</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2101: 2017-04-22</Identifier>
+        <Value>278321</Value>
+        <RawString>250353:230065:276912:303458:294533:294061:257975:281583:279724:314550</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2115: 2017-04-22</Identifier>
+        <Value>278630</Value>
+        <RawString>234973:256772:301465:313119:259311:282450:251038:234673:335227:317268</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2105: 2017-04-22</Identifier>
+        <Value>259346</Value>
+        <RawString>315813:255818:219346:251496:280436:308386:259923:203840:214060:284345</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2110: 2017-04-22</Identifier>
+        <Value>269947</Value>
+        <RawString>262275:233876:220487:291571:323606:289730:299335:242847:273338:262400</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2117: 2017-04-22</Identifier>
+        <Value>274480</Value>
+        <RawString>256892:289578:270652:228918:324368:322280:278874:234973:269329:268934</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2122: 2017-04-22</Identifier>
+        <Value>279405</Value>
+        <RawString>321904:271989:263656:260415:262400:283613:315632:310122:232199:272123</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2118: 2017-04-22</Identifier>
+        <Value>267925</Value>
+        <RawString>258459:221462:250695:307353:317634:273338:262400:243491:261528:282885</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2121: 2017-04-22</Identifier>
+        <Value>277935</Value>
+        <RawString>270785:297075:275664:243169:293435:271052:262150:276494:290188:299335</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2103: 2017-04-22</Identifier>
+        <Value>260738</Value>
+        <RawString>259923:237404:252072:238949:301796:289274:255937:243061:260292:268672</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2107: 2017-04-22</Identifier>
+        <Value>274531</Value>
+        <RawString>274976:264288:250695:277749:316357:323226:267888:265179:237711:267238</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2109: 2017-04-22</Identifier>
+        <Value>263726</Value>
+        <RawString>278030:242740:263530:251382:298201:274976:285525:248098:259800:234973</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2119: 2017-04-22</Identifier>
+        <Value>255642</Value>
+        <RawString>262775:257252:220135:246433:265563:304465:281296:216415:268410:233677</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2114: 2017-04-22</Identifier>
+        <Value>276485</Value>
+        <RawString>269724:288063:280865:265179:278592</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2106: 2017-04-22</Identifier>
+        <Value>274918</Value>
+        <RawString>249108:239990:207527:311526:302127:248995:257975:306328:287913:337693</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2102: 2017-04-22</Identifier>
+        <Value>282130</Value>
+        <RawString>285081:276772:255581:297717:318184:274565:259923:276494:269460:307525</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2124: 2017-04-22</Identifier>
+        <Value>269997</Value>
+        <RawString>261403:265563:268279:263656:312055:292967:269592:260908:262275:243276</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2112: 2017-04-22</Identifier>
+        <Value>277753</Value>
+        <RawString>225543:290035:259067:271586:326290:311349:277749:269329:270918:275664</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2113: 2017-04-22</Identifier>
+        <Value>268862</Value>
+        <RawString>276633:272392:239781:277190:297235:299498:277051:242100:251038:255700</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2104: 2017-04-22</Identifier>
+        <Value>266707</Value>
+        <RawString>277890:256533:268803:228443:302625:283176:251726:242954:271452:283467</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2123: 2017-04-22</Identifier>
+        <Value>281490</Value>
+        <RawString>252766:307869:309252:261528:248882:290035:298040:314012:271854:260661</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2111: 2017-04-22</Identifier>
+        <Value>276409</Value>
+        <RawString>246764:278874:243276:292967:297878:321904:265179:256414:256533:304297</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2120: 2017-04-22</Identifier>
+        <Value>272436</Value>
+        <RawString>256175:282885:272662:272932:256295:331993:270254:258217:260292:262650</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2108: 2017-04-22</Identifier>
+        <Value>257874</Value>
+        <RawString>264162:252418:220311:239260:265563:238638:310472:247096:252303:288516</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.6.2</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>9.20.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Compress Speed Test</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>debLXC2125: 2017-04-22</Identifier>
+        <Value>920</Value>
+        <RawString>1000:930:897:909:882:903</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2116: 2017-04-22</Identifier>
+        <Value>896</Value>
+        <RawString>956:892:881:884:887:876</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2101: 2017-04-22</Identifier>
+        <Value>883</Value>
+        <RawString>948:855:875:868:868:884</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2115: 2017-04-22</Identifier>
+        <Value>897</Value>
+        <RawString>955:898:898:868:869:892</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2105: 2017-04-22</Identifier>
+        <Value>891</Value>
+        <RawString>869:935:874:885</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2110: 2017-04-22</Identifier>
+        <Value>895</Value>
+        <RawString>901:891:892</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2117: 2017-04-22</Identifier>
+        <Value>921</Value>
+        <RawString>941:906:916</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2122: 2017-04-22</Identifier>
+        <Value>914</Value>
+        <RawString>923:896:924</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2118: 2017-04-22</Identifier>
+        <Value>901</Value>
+        <RawString>908:864:928:904</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2121: 2017-04-22</Identifier>
+        <Value>892</Value>
+        <RawString>896:888:892</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2103: 2017-04-22</Identifier>
+        <Value>909</Value>
+        <RawString>941:878:909</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2107: 2017-04-22</Identifier>
+        <Value>900</Value>
+        <RawString>911:891:899</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2109: 2017-04-22</Identifier>
+        <Value>893</Value>
+        <RawString>876:913:890</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2119: 2017-04-22</Identifier>
+        <Value>909</Value>
+        <RawString>932:881:913</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2114: 2017-04-22</Identifier>
+        <Value>927</Value>
+        <RawString>934:934:912</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2106: 2017-04-22</Identifier>
+        <Value>904</Value>
+        <RawString>898:923:890</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2102: 2017-04-22</Identifier>
+        <Value>901</Value>
+        <RawString>916:893:893</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2124: 2017-04-22</Identifier>
+        <Value>905</Value>
+        <RawString>913:905:896</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2112: 2017-04-22</Identifier>
+        <Value>903</Value>
+        <RawString>901:882:925</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2113: 2017-04-22</Identifier>
+        <Value>884</Value>
+        <RawString>883:861:908</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2104: 2017-04-22</Identifier>
+        <Value>908</Value>
+        <RawString>919:917:887</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2123: 2017-04-22</Identifier>
+        <Value>896</Value>
+        <RawString>909:887:891</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2111: 2017-04-22</Identifier>
+        <Value>896</Value>
+        <RawString>906:899:883</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2120: 2017-04-22</Identifier>
+        <Value>882</Value>
+        <RawString>893:854:899</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2108: 2017-04-22</Identifier>
+        <Value>942</Value>
+        <RawString>974:935:917</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/crafty-1.3.1</Identifier>
+    <Title>Crafty</Title>
+    <AppVersion>23.4</AppVersion>
+    <Arguments></Arguments>
+    <Description>Elapsed Time</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>debLXC2125: 2017-04-22</Identifier>
+        <Value>406.07</Value>
+        <RawString>404.77:399.15:414.29</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2116: 2017-04-22</Identifier>
+        <Value>354.67</Value>
+        <RawString>354.18:348.44:361.39</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2101: 2017-04-22</Identifier>
+        <Value>392.08</Value>
+        <RawString>400.17:379.05:397.01</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2115: 2017-04-22</Identifier>
+        <Value>405.37</Value>
+        <RawString>404.02:401.53:410.57</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2105: 2017-04-22</Identifier>
+        <Value>382.53</Value>
+        <RawString>413.98:372.85:380.51:366.37:401.53:359.91</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2110: 2017-04-22</Identifier>
+        <Value>388.60</Value>
+        <RawString>391.2:370.88:409.23:380.54:408.25:371.5</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2117: 2017-04-22</Identifier>
+        <Value>393.40</Value>
+        <RawString>375.95:374.41:418.63:408.5:403.58:379.35</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2122: 2017-04-22</Identifier>
+        <Value>405.23</Value>
+        <RawString>384.71:431.22:406.56:411.37:421.72:375.81</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2118: 2017-04-22</Identifier>
+        <Value>415.89</Value>
+        <RawString>418.52:423.69:405.46</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2121: 2017-04-22</Identifier>
+        <Value>408.75</Value>
+        <RawString>414.2:425.81:396.81:392.85:414.06</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2103: 2017-04-22</Identifier>
+        <Value>376.28</Value>
+        <RawString>406.85:375.29:392.78:358.14:373.24:351.4</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2107: 2017-04-22</Identifier>
+        <Value>383.89</Value>
+        <RawString>389.42:367.76:400.95:384.61:376.73</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2109: 2017-04-22</Identifier>
+        <Value>375.13</Value>
+        <RawString>364.76:376.49:406.66:377.4:355.53:369.93</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2119: 2017-04-22</Identifier>
+        <Value>407.55</Value>
+        <RawString>387.12:424.15:410.49:403.19:412.82</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2114: 2017-04-22</Identifier>
+        <Value>406.81</Value>
+        <RawString>390.79:425.87:406.32:404.63:406.42</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2106: 2017-04-22</Identifier>
+        <Value>390.77</Value>
+        <RawString>390.26:374.71:407.57:390.53</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2102: 2017-04-22</Identifier>
+        <Value>416.78</Value>
+        <RawString>421.53:419.44:409.38</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2124: 2017-04-22</Identifier>
+        <Value>384.66</Value>
+        <RawString>386.89:369.99:397.75:384.01</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2112: 2017-04-22</Identifier>
+        <Value>413.90</Value>
+        <RawString>415.06:420.85:405.8</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2113: 2017-04-22</Identifier>
+        <Value>414.90</Value>
+        <RawString>416.99:421.78:405.92</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2104: 2017-04-22</Identifier>
+        <Value>410.53</Value>
+        <RawString>408.97:412.44:410.17</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2123: 2017-04-22</Identifier>
+        <Value>412.50</Value>
+        <RawString>408.7:426.45:402.34</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2111: 2017-04-22</Identifier>
+        <Value>411.63</Value>
+        <RawString>411.2:420.61:403.08</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2120: 2017-04-22</Identifier>
+        <Value>412.07</Value>
+        <RawString>411.63:422.79:401.79</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2108: 2017-04-22</Identifier>
+        <Value>393.57</Value>
+        <RawString>394.92:382:403.78</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/povray-1.1.3</Identifier>
+    <Title>POV-Ray</Title>
+    <AppVersion>3.7.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>debLXC2125: 2017-04-22</Identifier>
+        <Value>2436.93</Value>
+        <RawString>4193.12:4177.56:2239.875:1453.779:1521.3:1035.934</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2116: 2017-04-22</Identifier>
+        <Value>2452.02</Value>
+        <RawString>4101.309:4116.253:2373.713:1509.328:1520.249:1091.292</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2101: 2017-04-22</Identifier>
+        <Value>2412.46</Value>
+        <RawString>4046.124:4082.673:2329.409:1482.975:1433.19:1100.399</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2115: 2017-04-22</Identifier>
+        <Value>2418.30</Value>
+        <RawString>4220.138:4178.597:2184.274:1409.883:1405.625:1111.258</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2105: 2017-04-22</Identifier>
+        <Value>2571.97</Value>
+        <RawString>4113.56:4157.879:2894.573:1490.537:1522.117:1253.129</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2110: 2017-04-22</Identifier>
+        <Value>2713.00</Value>
+        <RawString>4145.148:4163.599:3544.656:1486.081:1529.228:1409.279</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2117: 2017-04-22</Identifier>
+        <Value>2713.47</Value>
+        <RawString>4110.912:4148.345:3624.887:1450.275:1480.378:1465.993</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2122: 2017-04-22</Identifier>
+        <Value>2687.79</Value>
+        <RawString>4204.996:4173.693:3467.542:1445.421:1416.083:1418.995</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2118: 2017-04-22</Identifier>
+        <Value>2701.83</Value>
+        <RawString>4203.649:4169.267:3555.725:1436.741:1403.259:1442.361</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2121: 2017-04-22</Identifier>
+        <Value>4020.22</Value>
+        <RawString>4147.957:4156.075:3756.622</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2103: 2017-04-22</Identifier>
+        <Value>3943.84</Value>
+        <RawString>4044.193:4071.294:3716.019</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2107: 2017-04-22</Identifier>
+        <Value>4038.98</Value>
+        <RawString>4084.601:4196.884:3835.447</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2109: 2017-04-22</Identifier>
+        <Value>3944.40</Value>
+        <RawString>4014.293:4116.323:3702.582</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2119: 2017-04-22</Identifier>
+        <Value>4012.24</Value>
+        <RawString>4163.458:4095.32:3777.949</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2114: 2017-04-22</Identifier>
+        <Value>4017.04</Value>
+        <RawString>4013.765:4145.12:3892.231</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2106: 2017-04-22</Identifier>
+        <Value>4098.78</Value>
+        <RawString>4212.89:4058.143:4025.307</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2102: 2017-04-22</Identifier>
+        <Value>4172.12</Value>
+        <RawString>4217.464:4232.815:4066.071</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2124: 2017-04-22</Identifier>
+        <Value>4074.70</Value>
+        <RawString>4119.644:4161.907:3942.544</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2112: 2017-04-22</Identifier>
+        <Value>4116.18</Value>
+        <RawString>4198.476:4060.29:4089.759</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2113: 2017-04-22</Identifier>
+        <Value>4095.38</Value>
+        <RawString>4139.746:4083.501:4062.895</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2104: 2017-04-22</Identifier>
+        <Value>4082.57</Value>
+        <RawString>4178.903:4050.35:4018.443</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2123: 2017-04-22</Identifier>
+        <Value>4064.57</Value>
+        <RawString>3979.622:4093.618:4120.478</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2111: 2017-04-22</Identifier>
+        <Value>4037.72</Value>
+        <RawString>3990.689:4016.372:4106.104</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2120: 2017-04-22</Identifier>
+        <Value>4035.95</Value>
+        <RawString>4002.804:4026.145:4078.886</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC2108: 2017-04-22</Identifier>
+        <Value>4096.31</Value>
+        <RawString>4170.29:4030.655:4087.971</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

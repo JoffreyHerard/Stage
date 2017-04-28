@@ -2,107 +2,157 @@
 <!--Phoronix Test Suite v7.0.1-->
 <PhoronixTestSuite>
   <Generated>
-    <Title>CPU_KVM_10 - 2017-04-25</Title>
-    <LastModified>2017-04-25 12:42:43</LastModified>
+    <Title>DOCKER_CPU_15 - jherard - Manual Test Run - 19:52 27 Apr 2017</Title>
+    <LastModified>2017-04-28 06:27:36</LastModified>
     <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
     <Description>A Phoromatic run.</Description>
   </Generated>
   <System>
-    <Identifier>debianKVM16: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 8: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 09:00:10</TimeStamp>
+    <TimeStamp>2017-04-27 17:52:45</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM18: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 3: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 09:00:36</TimeStamp>
+    <TimeStamp>2017-04-27 17:52:47</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM14: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 9: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 09:00:32</TimeStamp>
+    <TimeStamp>2017-04-27 17:52:44</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM1: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4000 MB RAM QEMU, Disk: 4GB, Graphics: Red Hat QXL paravirtual graphic card, Audio: Intel 82801FB/FBM/FR/FW/FRW, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 7: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 09:00:03</TimeStamp>
+    <TimeStamp>2017-04-27 17:52:44</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM17: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 11: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 09:00:44</TimeStamp>
+    <TimeStamp>2017-04-27 17:52:43</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM10: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 6 : jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 09:00:52</TimeStamp>
+    <TimeStamp>2017-04-27 17:52:46</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM12: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 2: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 09:00:23</TimeStamp>
+    <TimeStamp>2017-04-27 17:52:48</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM15: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 5: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 09:00:27</TimeStamp>
+    <TimeStamp>2017-04-27 17:52:46</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM13: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 4: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 09:00:36</TimeStamp>
+    <TimeStamp>2017-04-27 17:52:46</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
   </System>
   <System>
-    <Identifier>debianKVM11: 2017-04-25</Identifier>
-    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 4024 MB RAM QEMU, Disk: 4GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
-    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, System Layer: KVM</Software>
+    <Identifier>Docker 12: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
     <User>root</User>
-    <TimeStamp>2017-04-25 09:00:21</TimeStamp>
+    <TimeStamp>2017-04-27 17:52:42</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 10: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-27 17:52:43</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 14: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-27 17:52:40</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 15: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-27 17:52:41</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 1: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-27 17:52:48</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 13: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-27 17:52:42</TimeStamp>
     <TestClientVersion></TestClientVersion>
     <Notes></Notes>
     <JSON>{"compiler-configuration":"--build=x86_64-linux-gnu --disable-browser-plugin --disable-vtable-verify --enable-checking=release --enable-clocale=gnu --enable-gnu-unique-object --enable-gtk-cairo --enable-java-awt=gtk --enable-java-home --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-multiarch --enable-multilib --enable-nls --enable-objc-gc --enable-plugin --enable-shared --enable-threads=posix --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-abi=m64 --with-arch-32=i586 --with-arch-directory=amd64 --with-multilib-list=m32,m64,mx32 --with-tune=generic -v"}</JSON>
@@ -118,63 +168,93 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>debianKVM16: 2017-04-25</Identifier>
-        <Value>484297</Value>
-        <RawString>488278:486983:484413:474399:487414</RawString>
+        <Identifier>Docker 8: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>310011</Value>
+        <RawString>416624:278733:266333:273338:265307:257734:322847:340196:346401:332595</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM18: 2017-04-25</Identifier>
-        <Value>462495</Value>
-        <RawString>457837:461674:454062:476451:462450</RawString>
+        <Identifier>Docker 3: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>315327</Value>
+        <RawString>320033:261155:310647:284052:317634:328626:284052:332595:349478:364995</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM14: 2017-04-25</Identifier>
-        <Value>439034</Value>
-        <RawString>484839:482715:461674:451827:390622:448881:480190:448881:359281:381425</RawString>
+        <Identifier>Docker 9: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>294946</Value>
+        <RawString>315090:274155:255818:270121:273474:287462:279299:386782:256892:350367</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM1: 2017-04-25</Identifier>
-        <Value>488636</Value>
-        <RawString>488711:490452:490452:489580:483987</RawString>
+        <Identifier>Docker 7: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>305774</Value>
+        <RawString>458217:274839:268410:270652:266204:262275:325134:327649:266462:337900</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM17: 2017-04-25</Identifier>
-        <Value>426232</Value>
-        <RawString>461288:454812:428954:485266:460902:405281:345531:454437:435053:330797</RawString>
+        <Identifier>Docker 11: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>312865</Value>
+        <RawString>462450:240514:273882:312409:299661:280865:306669:358346:318737:275113</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM10: 2017-04-25</Identifier>
-        <Value>430647</Value>
-        <RawString>464399:463617:460902:404686:365479:393412:449247:395106:454062:455564</RawString>
+        <Identifier>Docker 6 : jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>316809</Value>
+        <RawString>400857:255462:296435:296435:302459:261652:293748:338315:260661:462062</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM12: 2017-04-25</Identifier>
-        <Value>465939</Value>
-        <RawString>486553:487414:448516:454437:460131:463617:460902</RawString>
+        <Identifier>Docker 2: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>311111</Value>
+        <RawString>259923:251038:299010:267757:319847:284052:359281:277330:303291:489580</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM15: 2017-04-25</Identifier>
-        <Value>465887</Value>
-        <RawString>473991:478105:458599:460902:457837</RawString>
+        <Identifier>Docker 5: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>305494</Value>
+        <RawString>303291:266591:298686:304802:308905:294533:298362:327454:315451:336867</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM13: 2017-04-25</Identifier>
-        <Value>462842</Value>
-        <RawString>465184:462450:461674:462062:462838</RawString>
+        <Identifier>Docker 4: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>310356</Value>
+        <RawString>259678:251267:297878:299661:310472:311702:328626:316903:261403:465971</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM11: 2017-04-25</Identifier>
-        <Value>467374</Value>
-        <RawString>490889:488278:475628:446697:458981:455942:460902:461674</RawString>
+        <Identifier>Docker 12: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>311455</Value>
+        <RawString>423349:274155:258217:277609:313654:305140:318552:359515:275802:308559</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 10: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>315762</Value>
+        <RawString>468747:275389:260292:278311:272932:263908:322469:349256:323796:342523</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 14: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>313345</Value>
+        <RawString>452198:338523:299010:309948:274702:281152:299824:273067:312055:292967</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 15: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>323376</Value>
+        <RawString>468747:334007:312764:290801:290188:269592:305817:290955:329215:341673</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 1: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>317504</Value>
+        <RawString>277330:287462:295958:268018:277330:341039:349700:323416:266076:488711</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 13: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>317817</Value>
+        <RawString>471556:287462:290801:302791:265563:323796:257252:326483:322658:329807</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -march=native"}}</JSON>
       </Entry>
     </Data>
@@ -190,63 +270,93 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>debianKVM16: 2017-04-25</Identifier>
-        <Value>1664</Value>
-        <RawString>2036:1632:1555:1513:1655:1592</RawString>
+        <Identifier>Docker 8: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1511</Value>
+        <RawString>1471:1516:1545</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM18: 2017-04-25</Identifier>
-        <Value>1560</Value>
-        <RawString>1633:1517:1564:1526</RawString>
+        <Identifier>Docker 3: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1491</Value>
+        <RawString>1477:1507:1488</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM14: 2017-04-25</Identifier>
-        <Value>1596</Value>
-        <RawString>1622:1580:1587</RawString>
+        <Identifier>Docker 9: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1501</Value>
+        <RawString>1492:1485:1525</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM1: 2017-04-25</Identifier>
-        <Value>1638</Value>
-        <RawString>2102:1667:1481:1540:1580:1456</RawString>
+        <Identifier>Docker 7: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1541</Value>
+        <RawString>1545:1518:1561</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM17: 2017-04-25</Identifier>
-        <Value>1597</Value>
-        <RawString>1738:1575:1558:1545:1625:1542</RawString>
+        <Identifier>Docker 11: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1498</Value>
+        <RawString>1520:1480:1493</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM10: 2017-04-25</Identifier>
-        <Value>1594</Value>
-        <RawString>1634:1598:1501:1509:1629:1690</RawString>
+        <Identifier>Docker 6 : jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1490</Value>
+        <RawString>1460:1529:1480</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM12: 2017-04-25</Identifier>
-        <Value>1597</Value>
-        <RawString>1789:1529:1520:1537:1631:1574</RawString>
+        <Identifier>Docker 2: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1501</Value>
+        <RawString>1495:1529:1480</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM15: 2017-04-25</Identifier>
-        <Value>1614</Value>
-        <RawString>1897:1679:1495:1486:1540:1589</RawString>
+        <Identifier>Docker 5: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1488</Value>
+        <RawString>1459:1514:1490</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM13: 2017-04-25</Identifier>
-        <Value>1594</Value>
-        <RawString>1731:1592:1613:1488:1583:1556</RawString>
+        <Identifier>Docker 4: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1514</Value>
+        <RawString>1519:1524:1500</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM11: 2017-04-25</Identifier>
-        <Value>1594</Value>
-        <RawString>1695:1533:1528:1554:1606:1645</RawString>
+        <Identifier>Docker 12: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1509</Value>
+        <RawString>1545:1514:1467</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 10: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1578</Value>
+        <RawString>1593:1458:1479:1741:1701:1498</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 14: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1587</Value>
+        <RawString>1657:1471:1516:1721:1602:1557</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 15: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1699</Value>
+        <RawString>2485:1529:1482:1629:1576:1493</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 1: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1547</Value>
+        <RawString>1425:1534:1519:1728:1531:1546</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 13: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1739</Value>
+        <RawString>2714:1496:1479:1588:1607:1549</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
       </Entry>
     </Data>
@@ -262,63 +372,93 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>debianKVM16: 2017-04-25</Identifier>
-        <Value>214.10</Value>
-        <RawString>207.09:217.1:225.28:206:219.03:210.07</RawString>
+        <Identifier>Docker 8: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>231.88</Value>
+        <RawString>231.41:231.98:232.24</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM18: 2017-04-25</Identifier>
-        <Value>209.86</Value>
-        <RawString>194.18:219.74:210.18:209.35:212.2:213.52</RawString>
+        <Identifier>Docker 3: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>236.93</Value>
+        <RawString>229.55:244.57:236.67</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM14: 2017-04-25</Identifier>
-        <Value>214.41</Value>
-        <RawString>204.14:219.58:221.14:212.94:214.26</RawString>
+        <Identifier>Docker 9: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>233.12</Value>
+        <RawString>228.32:230.38:240.66</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM1: 2017-04-25</Identifier>
-        <Value>221.31</Value>
-        <RawString>215.24:223.8:224.88</RawString>
+        <Identifier>Docker 7: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>256.93</Value>
+        <RawString>258.74:257.55:254.49</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM17: 2017-04-25</Identifier>
-        <Value>215.94</Value>
-        <RawString>218.73:218.76:210.32</RawString>
+        <Identifier>Docker 11: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>248.90</Value>
+        <RawString>253.32:251.32:242.06</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM10: 2017-04-25</Identifier>
-        <Value>216.61</Value>
-        <RawString>218.29:218.87:212.67</RawString>
+        <Identifier>Docker 6 : jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>249.51</Value>
+        <RawString>256.79:256.32:240.96:243.96</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM12: 2017-04-25</Identifier>
-        <Value>216.86</Value>
-        <RawString>216.75:218.9:214.92</RawString>
+        <Identifier>Docker 2: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>236.17</Value>
+        <RawString>225.6:239.71:246.01:236.78:232.76</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM15: 2017-04-25</Identifier>
-        <Value>216.83</Value>
-        <RawString>216.42:219.29:214.79</RawString>
+        <Identifier>Docker 5: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>241.05</Value>
+        <RawString>253.73:227.25:237.38:239.31:241.49:247.16</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM13: 2017-04-25</Identifier>
-        <Value>213.62</Value>
-        <RawString>215.84:212.94:212.07</RawString>
+        <Identifier>Docker 4: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>236.12</Value>
+        <RawString>225.75:227.98:244.06:242.13:237.96:238.84</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM11: 2017-04-25</Identifier>
-        <Value>217.70</Value>
-        <RawString>219.72:217.39:215.98</RawString>
+        <Identifier>Docker 12: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>246.73</Value>
+        <RawString>245.3:265.36:243.49:248.06:236.32:241.82</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 10: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>256.09</Value>
+        <RawString>258.87:256.7:252.71</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 14: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>243.53</Value>
+        <RawString>242.58:245.22:242.78</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 15: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>246.24</Value>
+        <RawString>242.99:254.28:241.46</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 1: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>255.95</Value>
+        <RawString>258.27:256.99:252.6</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 13: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>247.28</Value>
+        <RawString>242.15:258.32:244.18:244.45</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lstdc++ -lm"}}</JSON>
       </Entry>
     </Data>
@@ -334,63 +474,93 @@
     <DisplayFormat>BAR_GRAPH</DisplayFormat>
     <Data>
       <Entry>
-        <Identifier>debianKVM16: 2017-04-25</Identifier>
-        <Value>1827.31</Value>
-        <RawString>2300.433:2291.008:2045.606:1438.879:1445.681:1442.269</RawString>
+        <Identifier>Docker 8: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>2408.85</Value>
+        <RawString>2342.348:2460.436:2423.77</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM18: 2017-04-25</Identifier>
-        <Value>1825.99</Value>
-        <RawString>2285.01:2273.237:2086.933:1437.676:1437.251:1435.844</RawString>
+        <Identifier>Docker 3: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>2398.57</Value>
+        <RawString>2343.465:2425.281:2426.952</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM14: 2017-04-25</Identifier>
-        <Value>2246.20</Value>
-        <RawString>2280.131:2284.798:2173.673</RawString>
+        <Identifier>Docker 9: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>2413.92</Value>
+        <RawString>2322.185:2445.316:2474.272</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM1: 2017-04-25</Identifier>
-        <Value>2338.39</Value>
-        <RawString>2377.757:2363.816:2273.593</RawString>
+        <Identifier>Docker 7: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>2402.55</Value>
+        <RawString>2372.323:2447.646:2387.675</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM17: 2017-04-25</Identifier>
-        <Value>2271.30</Value>
-        <RawString>2259.793:2286.871:2267.247</RawString>
+        <Identifier>Docker 11: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>2417.30</Value>
+        <RawString>2369.238:2461.887:2420.765</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM10: 2017-04-25</Identifier>
-        <Value>2266.37</Value>
-        <RawString>2267.044:2266.229:2265.836</RawString>
+        <Identifier>Docker 6 : jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>2394.46</Value>
+        <RawString>2393.293:2464.617:2325.47</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM12: 2017-04-25</Identifier>
-        <Value>2275.83</Value>
-        <RawString>2283.047:2273.858:2270.589</RawString>
+        <Identifier>Docker 2: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1898.64</Value>
+        <RawString>2381.098:2459.679:2210.256:1439.464:1453.083:1448.289</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM15: 2017-04-25</Identifier>
-        <Value>2273.44</Value>
-        <RawString>2269.844:2280.599:2269.866</RawString>
+        <Identifier>Docker 5: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1881.04</Value>
+        <RawString>2407.975:2415.023:2128.479:1429.484:1462.822:1442.431</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM13: 2017-04-25</Identifier>
-        <Value>2273.41</Value>
-        <RawString>2276.609:2261.74:2281.89</RawString>
+        <Identifier>Docker 4: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1895.01</Value>
+        <RawString>2430.482:2440.516:2173.027:1462.539:1433.724:1429.791</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
       </Entry>
       <Entry>
-        <Identifier>debianKVM11: 2017-04-25</Identifier>
-        <Value>2266.31</Value>
-        <RawString>2252.641:2276.598:2269.684</RawString>
+        <Identifier>Docker 12: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1891.22</Value>
+        <RawString>2381.481:2479.097:2151.86:1463.084:1444.086:1427.734</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 10: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1762.48</Value>
+        <RawString>2436.985:2420.737:1690.101:1462.47:1440.199:1124.38</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 14: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1771.33</Value>
+        <RawString>2440.393:2500.284:1669.026:1464.515:1472.741:1081.05</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 15: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1773.59</Value>
+        <RawString>2470.13:2486.69:1653.962:1474.189:1452.268:1104.307</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 1: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1766.83</Value>
+        <RawString>2462.317:2482.739:1652.884:1464.343:1463.025:1075.665</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 13: jherard - Manual Test Run - 19:52 27 Apr 2017</Identifier>
+        <Value>1739.87</Value>
+        <RawString>2423.15:2457.505:1581.325:1472.932:1476.656:1027.672</RawString>
         <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -O3 -ffast-math -march=native -pthread -ltiff -ljpeg -lpng -lz -lrt -lm -lboost_thread -lboost_system"}}</JSON>
       </Entry>
     </Data>

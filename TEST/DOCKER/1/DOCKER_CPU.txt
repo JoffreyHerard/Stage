@@ -1,0 +1,30 @@
+DOCKER_CPU_1 - jherard - Manual Test Run - 14:29 28 Apr 2017
+A Phoromatic run.
+
+
+Docker 1: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+TSCP 1.81
+AI Chess Performance
+  Nodes Per Second
+    Docker 1 .. 491507 |=======================================================
+
+7-Zip Compression 9.20.1
+Compress Speed Test
+  MIPS
+    Docker 1 .. 16693 |========================================================
+
+Crafty 23.4
+Elapsed Time
+  Seconds
+    Docker 1 .. 128.38 |=======================================================
+
+POV-Ray 3.7.0
+Total Time
+  Seconds
+    Docker 1 .. 155.36 |=======================================================
+

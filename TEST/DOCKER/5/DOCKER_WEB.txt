@@ -1,0 +1,52 @@
+DOCKER_WEB_5 - jherard - Manual Test Run - 13:27 28 Apr 2017
+A Phoromatic run.
+
+
+Docker 1: jherard - Manual Test Run - 13:27 28 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 4: jherard - Manual Test Run - 13:27 28 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 3: jherard - Manual Test Run - 13:27 28 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 5: jherard - Manual Test Run - 13:27 28 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Docker 2: jherard - Manual Test Run - 13:27 28 Apr 2017: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Apache Benchmark 2.4.7
+Static Web Page Serving
+  Requests Per Second
+    Docker 1: jherard - Manual Test Run - 13:27 28 Apr 2017 .. 7008.94 |=======
+    Docker 4: jherard - Manual Test Run - 13:27 28 Apr 2017 .. 6995.00 |=======
+    Docker 3: jherard - Manual Test Run - 13:27 28 Apr 2017 .. 5237.50 |=====
+    Docker 5: jherard - Manual Test Run - 13:27 28 Apr 2017 .. 5221.71 |=====
+    Docker 2: jherard - Manual Test Run - 13:27 28 Apr 2017 .. 5228.64 |=====
+
+PHPBench 0.8.1
+PHP Benchmark Suite
+  Score
+    Docker 1: jherard - Manual Test Run - 13:27 28 Apr 2017 .. 62975 |=========
+    Docker 4: jherard - Manual Test Run - 13:27 28 Apr 2017 .. 62958 |=========
+    Docker 3: jherard - Manual Test Run - 13:27 28 Apr 2017 .. 56762 |========
+    Docker 5: jherard - Manual Test Run - 13:27 28 Apr 2017 .. 57008 |========
+    Docker 2: jherard - Manual Test Run - 13:27 28 Apr 2017 .. 57470 |========
+
