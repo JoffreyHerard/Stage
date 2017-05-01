@@ -1,0 +1,15 @@
+DOCKER_HDD1 - jherard - Manual Test Run - 18:30 28 Apr 2017
+A Phoromatic run.
+
+
+Docker 1: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024
+
+Compile Bench 0.6
+Test: Compile
+  MB/s
+    Docker 1 .. 748.94 |=======================================================
+

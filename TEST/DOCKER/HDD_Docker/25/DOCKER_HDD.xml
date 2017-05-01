@@ -1,0 +1,397 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.0.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>DOCKER_HDD_25 - 2017-04-29</Title>
+    <LastModified>2017-04-29 22:32:49</LastModified>
+    <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
+    <Description>A Phoromatic run.</Description>
+  </Generated>
+  <System>
+    <Identifier>Docker 20: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:41:20</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 9: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:42:12</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 3: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:33:19</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 4: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:31:46</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 2: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:31:46</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 6 : 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:31:46</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 7: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:33:18</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 12: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:32:33</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 19: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:40:40</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 13: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:40:42</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 1: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:41:12</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 14: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:42:03</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 10: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:41:56</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 8: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 12:44:47</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 22: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 12:09:09</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 21: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 12:07:46</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 5: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 12:00:08</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>docker 23: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 12:09:09</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 25: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 12:09:12</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 16: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:55:19</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 15: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:55:53</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 24: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 12:09:13</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 17 : 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:08:52</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 11: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 13:08:38</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <System>
+    <Identifier>Docker 18: 2017-04-29</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: aufs, Screen Resolution: 1280x1024</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-29 12:05:55</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>COMPILE</Arguments>
+    <Description>Test: Compile</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>Docker 20: 2017-04-29</Identifier>
+        <Value>74.93</Value>
+        <RawString>7.23:15.18:67.38:75.82:114.18:169.79</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 9: 2017-04-29</Identifier>
+        <Value>92.42</Value>
+        <RawString>7.76:127.92:63.59:77.37:114.9:162.98</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 3: 2017-04-29</Identifier>
+        <Value>74.28</Value>
+        <RawString>7.09:14.46:65.25:78.11:110.78:170</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 4: 2017-04-29</Identifier>
+        <Value>74.27</Value>
+        <RawString>6.41:21.27:63.97:74.09:112.26:167.63</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 2: 2017-04-29</Identifier>
+        <Value>78.07</Value>
+        <RawString>6.7:17.23:69.94:133.94:116.6:124.03</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 6 : 2017-04-29</Identifier>
+        <Value>68.34</Value>
+        <RawString>6.38:15.83:67.46:77.43:117.01:125.9</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 7: 2017-04-29</Identifier>
+        <Value>58.37</Value>
+        <RawString>6.66:7.79:29.94:66.1:95.06:144.68</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 12: 2017-04-29</Identifier>
+        <Value>58.93</Value>
+        <RawString>7.07:9.42:30.48:63.27:104.1:139.24</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 19: 2017-04-29</Identifier>
+        <Value>59.29</Value>
+        <RawString>10.43:7.75:32.06:63.64:102.53:139.34</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 13: 2017-04-29</Identifier>
+        <Value>82.29</Value>
+        <RawString>5.51:10.04:32.34:120.08:193.99:131.75</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 1: 2017-04-29</Identifier>
+        <Value>156.47</Value>
+        <RawString>48.48:11.13:425.52:118.36:191.26:144.09</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 14: 2017-04-29</Identifier>
+        <Value>79.71</Value>
+        <RawString>13.84:8.58:29.9:64.62:220.36:140.96</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 10: 2017-04-29</Identifier>
+        <Value>86.68</Value>
+        <RawString>12.17:8.61:29.25:120.53:222.31:127.2</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 8: 2017-04-29</Identifier>
+        <Value>25.74</Value>
+        <RawString>46.21:13.13:17.87</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 22: 2017-04-29</Identifier>
+        <Value>14.67</Value>
+        <RawString>8.21:7.68:28.12</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 21: 2017-04-29</Identifier>
+        <Value>45.42</Value>
+        <RawString>8.77:10.43:117.07</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 5: 2017-04-29</Identifier>
+        <Value>13.17</Value>
+        <RawString>10.37:12.24:16.91</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>docker 23: 2017-04-29</Identifier>
+        <Value>9.75</Value>
+        <RawString>14.11:6.92:8.22</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 25: 2017-04-29</Identifier>
+        <Value>122.84</Value>
+        <RawString>11.62:59.12:278.48:257.09:7.89</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 16: 2017-04-29</Identifier>
+        <Value>190.19</Value>
+        <RawString>253.7:307.47:9.41</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 15: 2017-04-29</Identifier>
+        <Value>149.26</Value>
+        <RawString>149.9:287.27:10.62</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 24: 2017-04-29</Identifier>
+        <Value>10.25</Value>
+        <RawString>17.2:5.42:8.14</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 17 : 2017-04-29</Identifier>
+        <Value>138.51</Value>
+        <RawString>32.64:278.66:339.12:21.96:20.17</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 11: 2017-04-29</Identifier>
+        <Value>118.56</Value>
+        <RawString>28.14:164.26:272.19:9.66</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>Docker 18: 2017-04-29</Identifier>
+        <Value>9.57</Value>
+        <RawString>10.53:5.33:12.85</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>
