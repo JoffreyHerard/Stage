@@ -1,0 +1,64 @@
+LXC_HDD_10 - 2017-04-30
+A Phoromatic run.
+
+
+debLXC101: 2017-04-30: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc
+
+debLXC105: 2017-04-30: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc
+
+debLXC103: 2017-04-30: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc
+
+debLXC104: 2017-04-30: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc
+
+debLXC109: 2017-04-30: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc
+
+debLXC110: 2017-04-30: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc
+
+debLXC106: 2017-04-30: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc
+
+debLXC102: 2017-04-30: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb
+
+	OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc
+
+Compile Bench 0.6
+Test: Compile
+  MB/s
+    debLXC101: 2017-04-30 .. 170.59 |=============
+    debLXC105: 2017-04-30 .. 222.33 |==================
+    debLXC103: 2017-04-30 .. 249.37 |====================
+    debLXC104: 2017-04-30 .. 173.45 |==============
+    debLXC109: 2017-04-30 .. 532.82 |==========================================
+    debLXC110: 2017-04-30 .. 31.18  |==
+    debLXC106: 2017-04-30 .. 31.30  |==
+    debLXC102: 2017-04-30 .. 206.71 |================
+

@@ -1,0 +1,25 @@
+DOCKER_CPU_RACINE - jherard - Manual Test Run - 14:28 18 Apr 2017
+A Phoromatic run.
+
+
+debHV: 
+
+	Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Chipset: Intel 5520 I/O + ICH9, Memory: 18 x 16384 MB DDR3-1333MHz, Disk: 3999GB Virtual Disk, Graphics: Matrox s MGA G200eW WPCM450, Network: Broadcom NetXtreme II BCM5709 Gigabit
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4
+
+TSCP 1.81
+AI Chess Performance
+  Nodes Per Second
+    debHV .. 490714 |==========================================================
+
+7-Zip Compression 9.20.1
+Compress Speed Test
+  MIPS
+    debHV .. 17140 |===========================================================
+
+Crafty 23.4
+Elapsed Time
+  Seconds
+    debHV .. 127.50 |==========================================================
+

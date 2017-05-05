@@ -1,0 +1,18 @@
+LXC_HDD_1 - 2017-04-30
+
+ ,"debLXC101"
+Processor,2 x Intel Xeon L5630 @ 2.13GHz (16 Cores)
+Motherboard,Dell 0MD99X
+Memory,242688MB
+Disk,3999GB Virtual Disk
+Graphics,mgadrmfb
+OS,Debian GNU/Linux 8
+Kernel,3.16.0-4-amd64 (x86_64)
+Compiler,GCC 4.9.2
+File-System,ext4
+Screen Resolution,1280x1024
+System Layer,lxc
+
+ ,,"debLXC101"
+"pts/compilebench-1.0.1 - COMPILE",HIB,770.49
+

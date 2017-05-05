@@ -52,27 +52,20 @@
 \BOOKMARK [2][-]{subsection.4.2.4}{Scénario 4 : Utilisation de la mémoire vive }{section.4.2}% 52
 \BOOKMARK [2][-]{subsection.4.2.5}{Scénario 5 : Utilisation Réseaux }{section.4.2}% 53
 \BOOKMARK [0][-]{chapter.5}{Résultats}{}% 54
-\BOOKMARK [1][-]{section.5.1}{Partie\040Processeurs}{chapter.5}% 55
-\BOOKMARK [1][-]{section.5.2}{Partie\040Disque\040dur\040}{chapter.5}% 56
-\BOOKMARK [1][-]{section.5.3}{Partie Mémoire}{chapter.5}% 57
-\BOOKMARK [1][-]{section.5.4}{Partie Réseaux }{chapter.5}% 58
-\BOOKMARK [1][-]{section.5.5}{Partie\040Web}{chapter.5}% 59
-\BOOKMARK [0][-]{chapter.6}{Bilan}{}% 60
-\BOOKMARK [1][-]{section.6.1}{Annexes}{chapter.6}% 61
-\BOOKMARK [-1][-]{part*.5}{Annexes}{}% 62
-\BOOKMARK [0][-]{chapter*.6}{Annexe\0401}{part*.5}% 63
-\BOOKMARK [1][-]{section.6.1}{Partie\0401}{chapter*.6}% 64
-\BOOKMARK [2][-]{subsection.6.1.1}{Sous-partie\0401}{section.6.1}% 65
-\BOOKMARK [2][-]{subsection.6.1.2}{Sous-partie\0402}{section.6.1}% 66
-\BOOKMARK [2][-]{subsection.6.1.3}{Sous-partie\0403}{section.6.1}% 67
-\BOOKMARK [1][-]{section.6.2}{Partie\0402}{chapter*.6}% 68
-\BOOKMARK [2][-]{subsection.6.2.1}{Sous-partie\0401}{section.6.2}% 69
-\BOOKMARK [2][-]{subsection.6.2.2}{Sous-partie\0402}{section.6.2}% 70
-\BOOKMARK [2][-]{subsection.6.2.3}{Sous-partie\0403}{section.6.2}% 71
-\BOOKMARK [0][-]{chapter*.7}{Annexe\0402}{part*.5}% 72
-\BOOKMARK [1][-]{section*.8}{Prérequis}{chapter*.7}% 73
-\BOOKMARK [1][-]{section.6.1}{Partie\0401}{chapter*.7}% 74
-\BOOKMARK [2][-]{subsection.6.1.1}{Sous-parie\0401}{section.6.1}% 75
-\BOOKMARK [2][-]{subsection.6.1.2}{Sous-parie\0402}{section.6.1}% 76
-\BOOKMARK [1][-]{section.6.2}{Partie\0402}{chapter*.7}% 77
-\BOOKMARK [1][-]{section.6.3}{Partie\0403}{chapter*.7}% 78
+\BOOKMARK [1][-]{section.5.1}{Préambule}{chapter.5}% 55
+\BOOKMARK [2][-]{subsection.5.1.1}{Description\040de\040la\040machine\040physique\040}{section.5.1}% 56
+\BOOKMARK [2][-]{subsection.5.1.2}{Sur\040les\040machines\040virtuelles}{section.5.1}% 57
+\BOOKMARK [1][-]{section.5.2}{Partie\040Processeurs}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.3}{Partie\040Disque\040dur\040}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.4}{Partie Mémoire}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.5}{Partie Réseaux }{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.6}{Partie\040Web}{chapter.5}% 62
+\BOOKMARK [0][-]{chapter.6}{Complément}{}% 63
+\BOOKMARK [1][-]{section.6.1}{Comparaison\040simple\040avec\040la\040machine\040physique}{chapter.6}% 64
+\BOOKMARK [1][-]{section.6.2}{La\040meilleure\040technologie?}{chapter.6}% 65
+\BOOKMARK [1][-]{section.6.3}{Tentative}{chapter.6}% 66
+\BOOKMARK [2][-]{subsection.6.3.1}{Sur les mathématiques}{section.6.3}% 67
+\BOOKMARK [2][-]{subsection.6.3.2}{Sur\040les\040tests}{section.6.3}% 68
+\BOOKMARK [2][-]{subsection.6.3.3}{Sur\040les\040hyperviseurs}{section.6.3}% 69
+\BOOKMARK [0][-]{chapter.7}{Bilan}{}% 70
+\BOOKMARK [1][-]{section.7.1}{Annexes}{chapter.7}% 71

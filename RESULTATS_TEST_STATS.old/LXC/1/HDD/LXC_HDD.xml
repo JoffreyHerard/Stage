@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.0.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>LXC_HDD_1 - 2017-04-30</Title>
+    <LastModified>2017-05-01 11:35:16</LastModified>
+    <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
+    <Description>A Phoromatic run.</Description>
+  </Generated>
+  <System>
+    <Identifier>debLXC101</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-30 11:00:10</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>COMPILE</Arguments>
+    <Description>Test: Compile</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>debLXC101</Identifier>
+        <Value>770.49</Value>
+        <RawString>790.11:765.72:755.63</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

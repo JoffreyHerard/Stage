@@ -1,0 +1,23 @@
+  PROCESSOR:          2 x Intel Xeon L5630 @ 2.13GHz (16 Cores)
+    Core Count:       4
+    Thread Count:     16
+    Extensions:       SSE 4.2
+    Cache Size:       12288 KB
+    Microcode:        0x13
+
+  GRAPHICS:           Matrox s MGA G200eW WPCM450
+    Screen:           1280x1024
+
+  MOTHERBOARD:        Dell 0MD99X
+    Memory:           18 x 16384 MB DDR3-1333MHz
+    Chipset:          Intel 5520 I/O + ICH9
+    Network:          Broadcom NetXtreme II BCM5709 Gigabit
+
+  DISK:               3999GB Virtual Disk
+    File-System:      ext4
+    Mount Options:    data=ordered errors=remount-ro relatime rw
+    Disk Scheduler:   CFQ
+
+  OPERATING SYSTEM:   Debian 8.7
+    Kernel:           3.16.0-4-amd64 (x86_64)
+    Compiler:         GCC 4.9.2

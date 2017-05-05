@@ -1,0 +1,18 @@
+KVM_HDD_10 - 2017-05-02
+
+ ,"debianKVM4: 2017-05-02","debianKVM5: 2017-05-02","debianKVM3: 2017-05-02","debianKVM2: 2017-05-02","debianKVM9: 2017-05-02","debianKVM10: 2017-05-02","debianKVM8: 2017-05-02","debianKVM7: 2017-05-02","debianKVM6: 2017-05-02","debianKVM1: 2017-05-02"
+Processor,Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core),Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core),Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core),Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core),Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core),Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core),Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core),Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core),Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core),Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core)
+Motherboard,QEMU Standard PC (i440FX + PIIX 1996),QEMU Standard PC (i440FX + PIIX 1996),QEMU Standard PC (i440FX + PIIX 1996),QEMU Standard PC (i440FX + PIIX 1996),QEMU Standard PC (i440FX + PIIX 1996),QEMU Standard PC (i440FX + PIIX 1996),QEMU Standard PC (i440FX + PIIX 1996),QEMU Standard PC (i440FX + PIIX 1996),QEMU Standard PC (i440FX + PIIX 1996),QEMU Standard PC (i440FX + PIIX 1996)
+Chipset,Intel 440FX- 82441FX PMC,Intel 440FX- 82441FX PMC,Intel 440FX- 82441FX PMC,Intel 440FX- 82441FX PMC,Intel 440FX- 82441FX PMC,Intel 440FX- 82441FX PMC,Intel 440FX- 82441FX PMC,Intel 440FX- 82441FX PMC,Intel 440FX- 82441FX PMC,Intel 440FX- 82441FX PMC
+Memory,1 x 1024 MB RAM QEMU,1 x 1024 MB RAM QEMU,1 x 1024 MB RAM QEMU,1 x 1024 MB RAM QEMU,1 x 1024 MB RAM QEMU,1 x 1024 MB RAM QEMU,1 x 1024 MB RAM QEMU,1 x 1024 MB RAM QEMU,1 x 1024 MB RAM QEMU,1 x 1024 MB RAM QEMU
+Disk,24GB,24GB,24GB,24GB,24GB,24GB,24GB,24GB,24GB,24GB
+Graphics,Cirrus Logic GD 5446,Cirrus Logic GD 5446,Cirrus Logic GD 5446,Cirrus Logic GD 5446,Cirrus Logic GD 5446,Cirrus Logic GD 5446,Cirrus Logic GD 5446,Cirrus Logic GD 5446,Cirrus Logic GD 5446,Cirrus Logic GD 5446
+Network,Red Hat Virtio device,Red Hat Virtio device,Red Hat Virtio device,Red Hat Virtio device,Red Hat Virtio device,Red Hat Virtio device,Red Hat Virtio device,Red Hat Virtio device,Red Hat Virtio device,Red Hat Virtio device
+OS,Debian 8.7,Debian 8.7,Debian 8.7,Debian 8.7,Debian 8.7,Debian 8.7,Debian 8.7,Debian 8.7,Debian 8.7,Debian 8.7
+Kernel,3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64)
+File-System,ext4,ext4,ext4,ext4,ext4,ext4,ext4,ext4,ext4,ext4
+System Layer,KVM,KVM,KVM,KVM,KVM,KVM,KVM,KVM,KVM,KVM
+
+ ,,"debianKVM4: 2017-05-02","debianKVM5: 2017-05-02","debianKVM3: 2017-05-02","debianKVM2: 2017-05-02","debianKVM9: 2017-05-02","debianKVM10: 2017-05-02","debianKVM8: 2017-05-02","debianKVM7: 2017-05-02","debianKVM6: 2017-05-02","debianKVM1: 2017-05-02"
+"pts/compilebench-1.0.1 - COMPILE",HIB,154.68,135.51,142.54,107.47,123.76,217.30,140.71,95.38,207.28,198.90
+

@@ -1,0 +1,120 @@
+KVM_HDD_25 - 2017-05-02
+A Phoromatic run.
+
+
+debianKVM13: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM18: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM22: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM17: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM23: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM21: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM14: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM19: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM1: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM9: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM2: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM8: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM6: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM7: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM5: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+debianKVM3: 2017-05-02: 
+
+	Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device
+
+	OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM
+
+Compile Bench 0.6
+Test: Compile
+  MB/s
+    debianKVM13: 2017-05-02 .. 108.98 |======================
+    debianKVM18: 2017-05-02 .. 94.15  |===================
+    debianKVM22: 2017-05-02 .. 110.27 |======================
+    debianKVM17: 2017-05-02 .. 95.26  |===================
+    debianKVM23: 2017-05-02 .. 86.34  |=================
+    debianKVM21: 2017-05-02 .. 109.74 |======================
+    debianKVM14: 2017-05-02 .. 107.74 |=====================
+    debianKVM19: 2017-05-02 .. 112.69 |======================
+    debianKVM1: 2017-05-02 ... 185.83 |=====================================
+    debianKVM9: 2017-05-02 ... 101.56 |====================
+    debianKVM2: 2017-05-02 ... 90.00  |==================
+    debianKVM8: 2017-05-02 ... 100.58 |====================
+    debianKVM6: 2017-05-02 ... 142.91 |============================
+    debianKVM7: 2017-05-02 ... 158.48 |===============================
+    debianKVM5: 2017-05-02 ... 102.37 |====================
+    debianKVM3: 2017-05-02 ... 202.20 |========================================
+

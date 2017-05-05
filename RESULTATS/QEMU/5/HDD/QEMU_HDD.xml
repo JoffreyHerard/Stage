@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.0.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>KVM_HDD_5 - 2017-05-02</Title>
+    <LastModified>2017-05-02 22:18:30</LastModified>
+    <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
+    <Description>A Phoromatic run.</Description>
+  </Generated>
+  <System>
+    <Identifier>debianKVM1: 2017-05-02</Identifier>
+    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
+    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM</Software>
+    <User>root</User>
+    <TimeStamp>2017-05-02 16:10:21</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"none","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <System>
+    <Identifier>debianKVM4: 2017-05-02</Identifier>
+    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
+    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM</Software>
+    <User>root</User>
+    <TimeStamp>2017-05-02 16:10:20</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"none","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <System>
+    <Identifier>debianKVM5: 2017-05-02</Identifier>
+    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
+    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM</Software>
+    <User>root</User>
+    <TimeStamp>2017-05-02 16:10:54</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"none","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <System>
+    <Identifier>debianKVM2: 2017-05-02</Identifier>
+    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
+    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM</Software>
+    <User>root</User>
+    <TimeStamp>2017-05-02 16:10:40</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"none","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <System>
+    <Identifier>debianKVM3: 2017-05-02</Identifier>
+    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
+    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM</Software>
+    <User>root</User>
+    <TimeStamp>2017-05-02 16:10:51</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"none","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>COMPILE</Arguments>
+    <Description>Test: Compile</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>debianKVM1: 2017-05-02</Identifier>
+        <Value>255.57</Value>
+        <RawString>281.36:299.2:233.49:173.33:310.61:235.44</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>debianKVM4: 2017-05-02</Identifier>
+        <Value>174.14</Value>
+        <RawString>45.35:192.82:112.65:71.83:223.38:398.8</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>debianKVM5: 2017-05-02</Identifier>
+        <Value>182.66</Value>
+        <RawString>27.63:124.69:251.3:162.75:242.51:287.08</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>debianKVM2: 2017-05-02</Identifier>
+        <Value>158.90</Value>
+        <RawString>27.62:89.21:86.47:191.02:220.59:338.5</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>debianKVM3: 2017-05-02</Identifier>
+        <Value>157.39</Value>
+        <RawString>34.25:86.2:74.85:177.02:222.02:350.01</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

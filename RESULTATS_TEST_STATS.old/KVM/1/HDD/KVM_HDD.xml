@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.0.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>KVM_HDD_1 - joffrey - Manual Test Run - 15:05 2 May 2017</Title>
+    <LastModified>2017-05-02 15:51:15</LastModified>
+    <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
+    <Description>A Phoromatic run.</Description>
+  </Generated>
+  <System>
+    <Identifier>debianKVM1</Identifier>
+    <Hardware>Processor: Westmere E56xx/L56xx/X56xx @ 2.13GHz (1 Core), Motherboard: QEMU Standard PC (i440FX + PIIX 1996), Chipset: Intel 440FX- 82441FX PMC, Memory: 1 x 1024 MB RAM QEMU, Disk: 24GB, Graphics: Cirrus Logic GD 5446, Network: Red Hat Virtio device</Hardware>
+    <Software>OS: Debian 8.7, Kernel: 3.16.0-4-amd64 (x86_64), File-System: ext4, System Layer: KVM</Software>
+    <User>root</User>
+    <TimeStamp>2017-05-02 15:06:15</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"none","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>COMPILE</Arguments>
+    <Description>Test: Compile</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>debianKVM1</Identifier>
+        <Value>478.32</Value>
+        <RawString>485.89:475.06:474.02</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

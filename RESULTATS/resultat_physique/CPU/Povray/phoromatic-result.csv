@@ -1,0 +1,18 @@
+povray
+
+ ,"povray"
+Processor,2 x Intel Xeon L5630 @ 2.13GHz (16 Cores)
+Motherboard,Dell 0MD99X
+Chipset,Intel 5520 I/O + ICH9
+Memory,18 x 16384 MB DDR3-1333MHz
+Disk,3999GB Virtual Disk
+Graphics,Matrox s MGA G200eW WPCM450
+Network,Broadcom NetXtreme II BCM5709 Gigabit
+OS,Debian 8.7
+Kernel,3.16.0-4-amd64 (x86_64)
+Compiler,GCC 4.9.2
+File-System,ext4
+
+ ,,"povray"
+"pts/povray-1.1.3 - ",LIB,154.99
+

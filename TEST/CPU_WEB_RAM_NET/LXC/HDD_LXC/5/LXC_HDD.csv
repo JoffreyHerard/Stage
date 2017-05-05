@@ -1,0 +1,18 @@
+LXC_HDD_5 - 2017-04-30
+
+ ,"debLXC105: 2017-04-30","debLXC103: 2017-04-30","debLXC104: 2017-04-30","debLXC101: 2017-04-30","debLXC102: 2017-04-30"
+Processor,2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores),2 x Intel Xeon L5630 @ 2.13GHz (16 Cores)
+Motherboard,Dell 0MD99X,Dell 0MD99X,Dell 0MD99X,Dell 0MD99X,Dell 0MD99X
+Memory,242688MB,242688MB,242688MB,242688MB,242688MB
+Disk,3999GB Virtual Disk,3999GB Virtual Disk,3999GB Virtual Disk,3999GB Virtual Disk,3999GB Virtual Disk
+Graphics,mgadrmfb,mgadrmfb,mgadrmfb,mgadrmfb,mgadrmfb
+OS,Debian GNU/Linux 8,Debian GNU/Linux 8,Debian GNU/Linux 8,Debian GNU/Linux 8,Debian GNU/Linux 8
+Kernel,3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64),3.16.0-4-amd64 (x86_64)
+Compiler,GCC 4.9.2,GCC 4.9.2,GCC 4.9.2,GCC 4.9.2,GCC 4.9.2
+File-System,ext4,ext4,ext4,ext4,ext4
+Screen Resolution,1280x1024,1280x1024,1280x1024,1280x1024,1280x1024
+System Layer,lxc,lxc,lxc,lxc,lxc
+
+ ,,"debLXC105: 2017-04-30","debLXC103: 2017-04-30","debLXC104: 2017-04-30","debLXC101: 2017-04-30","debLXC102: 2017-04-30"
+"pts/compilebench-1.0.1 - COMPILE",HIB,239.36,199.00,193.18,136.60,373.65
+

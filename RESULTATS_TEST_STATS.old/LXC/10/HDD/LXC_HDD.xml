@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.0.1-->
+<PhoronixTestSuite>
+  <Generated>
+    <Title>LXC_HDD_10 - 2017-04-30</Title>
+    <LastModified>2017-05-01 11:38:22</LastModified>
+    <TestClient>Phoronix Test Suite v7.0.1 (Ringsaker)</TestClient>
+    <Description>A Phoromatic run.</Description>
+  </Generated>
+  <System>
+    <Identifier>debLXC101: 2017-04-30</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-30 16:09:09</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC105: 2017-04-30</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-30 16:28:27</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC103: 2017-04-30</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-30 16:09:11</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC104: 2017-04-30</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-30 16:09:08</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC109: 2017-04-30</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-30 15:44:51</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC110: 2017-04-30</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-30 15:44:29</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC106: 2017-04-30</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-30 15:44:29</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <System>
+    <Identifier>debLXC102: 2017-04-30</Identifier>
+    <Hardware>Processor: 2 x Intel Xeon L5630 @ 2.13GHz (16 Cores), Motherboard: Dell 0MD99X, Memory: 242688MB, Disk: 3999GB Virtual Disk, Graphics: mgadrmfb</Hardware>
+    <Software>OS: Debian GNU/Linux 8, Kernel: 3.16.0-4-amd64 (x86_64), Compiler: GCC 4.9.2, File-System: ext4, Screen Resolution: 1280x1024, System Layer: lxc</Software>
+    <User>root</User>
+    <TimeStamp>2017-04-30 15:44:33</TimeStamp>
+    <TestClientVersion></TestClientVersion>
+    <Notes>Disk Scheduler: CFQ. Python 2.7.9.</Notes>
+    <JSON>{"disk-scheduler":"CFQ","disk-mount-options":"data=ordered,errors=remount-ro,relatime,rw"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compilebench-1.0.1</Identifier>
+    <Title>Compile Bench</Title>
+    <AppVersion>0.6</AppVersion>
+    <Arguments>COMPILE</Arguments>
+    <Description>Test: Compile</Description>
+    <Scale>MB/s</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>debLXC101: 2017-04-30</Identifier>
+        <Value>170.59</Value>
+        <RawString>456.97:387.15:55.19:75.58:25.2:23.47</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC105: 2017-04-30</Identifier>
+        <Value>222.33</Value>
+        <RawString>694.09:399.54:106.12:87.99:19.66:26.6</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC103: 2017-04-30</Identifier>
+        <Value>249.37</Value>
+        <RawString>450.84:395.25:17.49:567.94:38.86:25.86</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC104: 2017-04-30</Identifier>
+        <Value>173.45</Value>
+        <RawString>454:395.35:19.25:78.51:68.94:24.66</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC109: 2017-04-30</Identifier>
+        <Value>532.82</Value>
+        <RawString>15.07:613.62:659.66:736.76:513.51:658.29</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC110: 2017-04-30</Identifier>
+        <Value>31.18</Value>
+        <RawString>15.01:64.04:14.49</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC106: 2017-04-30</Identifier>
+        <Value>31.30</Value>
+        <RawString>14.78:58.86:20.26</RawString>
+      </Entry>
+      <Entry>
+        <Identifier>debLXC102: 2017-04-30</Identifier>
+        <Value>206.71</Value>
+        <RawString>15.61:583.14:21.38</RawString>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

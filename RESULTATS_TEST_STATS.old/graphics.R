@@ -167,172 +167,183 @@ dataQEMU_NETWORK__25 <- read.table("EXTRACT/25/NETWORK/QEMU.txt",h=TRUE)
 
 
 #Construction des courbes
-pdf("resultats_sans_HDD.pdf")
+#pdf("resultats_sans_HDD.pdf")
 
 
 #HDD
+png(file="compilebench.png", bg="transparent")
 Nombre_de_machines <- c(1,5,10,15,20,25)
 Scores <-c(dataKVM_HDD__1[1,1],dataKVM_HDD__5[1,1],dataKVM_HDD__10[1,1],dataKVM_HDD__15[1,1],dataKVM_HDD__20[1,1],dataKVM_HDD__25[1,1])
 ScoreDOCKER <-c(dataDOCKER_HDD__1[1,1] ,dataDOCKER_HDD__5[1,1] ,dataDOCKER_HDD__10[1,1],dataDOCKER_HDD__15[1,1],dataDOCKER_HDD__20[1,1],dataDOCKER_HDD__25[1,1])
 ScoreLXC <-c(dataLXC_HDD__1[1,1] ,dataLXC_HDD__5[1,1] ,dataLXC_HDD__10[1,1],dataLXC_HDD__15[1,1],dataLXC_HDD__20[1,1],dataLXC_HDD__25[1,1])
 ScoreQEMU <-c(dataQEMU_HDD__1[1,1],dataQEMU_HDD__5[1,1],dataQEMU_HDD__10[1,1],dataQEMU_HDD__15[1,1],dataQEMU_HDD__20[1,1],dataQEMU_HDD__25[1,1])
 
-plot(Scores~Nombre_de_machines,main="Test HDD compilebench",col="orange")
+plot(ScoreDOCKER~Nombre_de_machines,main="Test HDD compilebench", ylab="Score High is better", xlab="Nombre de machines",col="blue")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
-legend(x="topleft",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
-
+legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
+dev.off()
 #WEB
 ## APACHE BENCHMARK 1.6.2
+png(file="apache.png", bg="transparent")
 Scores <-c(dataKVM_WEB__1[1,1],dataKVM_WEB__5[1,1],dataKVM_WEB__10[1,1],dataKVM_WEB__15[1,1],dataKVM_WEB__20[1,1],dataKVM_WEB__25[1,1])
 ScoreDOCKER <-c(dataDOCKER_WEB__1[1,1],dataDOCKER_WEB__5[1,1],dataDOCKER_WEB__10[1,1],dataDOCKER_WEB__15[1,1],dataDOCKER_WEB__20[1,1],dataDOCKER_WEB__25[1,1])
 ScoreLXC <-c(dataLXC_WEB__1[1,1],dataLXC_WEB__5[1,1],dataLXC_WEB__10[1,1],dataLXC_WEB__15[1,1],dataLXC_WEB__20[1,1],dataLXC_WEB__25[1,1])
 ScoreQEMU <-c(dataQEMU_WEB__1[1,1],dataQEMU_WEB__5[1,1],dataQEMU_WEB__10[1,1],dataQEMU_WEB__15[1,1],dataQEMU_WEB__20[1,1],dataQEMU_WEB__25[1,1])
 
-plot(ScoreLXC~Nombre_de_machines,main="Test Apache Benchmark 1.6.2",col="red")
+plot(ScoreLXC~Nombre_de_machines,main="Test Apache Benchmark 1.6.2", ylab="Score High is better", xlab="Nombre de machines",col="red")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
 legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
-
+dev.off()
 #PHP BENCH
-
+png(file="phpbench.png", bg="transparent")
 Scores <-c(dataKVM_WEB__1[2,1],dataKVM_WEB__5[2,1],dataKVM_WEB__10[2,1],dataKVM_WEB__15[2,1],dataKVM_WEB__20[2,1],dataKVM_WEB__25[2,1])
 ScoreDOCKER <-c(dataDOCKER_WEB__1[2,1],dataDOCKER_WEB__5[2,1],dataDOCKER_WEB__10[2,1],dataDOCKER_WEB__15[2,1],dataDOCKER_WEB__20[2,1],dataDOCKER_WEB__25[2,1])
 ScoreLXC <-c(dataLXC_WEB__1[2,1],dataLXC_WEB__5[2,1],dataLXC_WEB__10[2,1],dataLXC_WEB__15[2,1],dataLXC_WEB__20[2,1],dataLXC_WEB__25[2,1])
 ScoreQEMU <-c(dataQEMU_WEB__1[2,1],dataQEMU_WEB__5[2,1],dataQEMU_WEB__10[2,1],dataQEMU_WEB__15[2,1],dataQEMU_WEB__20[2,1],dataQEMU_WEB__25[2,1])
 
-plot(Scores~Nombre_de_machines,main="Test PHP Benchmark 1.2.0",col="orange")
+plot(Scores~Nombre_de_machines,main="Test PHP Benchmark 1.2.0", ylab="Score High is better", xlab="Nombre de machines",col="orange")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
 legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
-
+dev.off()
 
 # RAM 
 
 ## RAMSPEED
-
+png(file="ramspeed.png", bg="transparent")
 Scores <-c(dataKVM_MEMORY__1[1,1],dataKVM_MEMORY__5[1,1],dataKVM_MEMORY__10[1,1],dataKVM_MEMORY__15[1,1],dataKVM_MEMORY__20[1,1],dataKVM_MEMORY__25[1,1])
 ScoreDOCKER <-c(dataDOCKER_MEMORY__1[1,1],dataDOCKER_MEMORY__5[1,1],dataDOCKER_MEMORY__10[1,1],dataDOCKER_MEMORY__15[1,1],dataDOCKER_MEMORY__20[1,1],dataDOCKER_MEMORY__25[1,1])
 ScoreLXC <-c(dataLXC_MEMORY__1[1,1],dataLXC_MEMORY__5[1,1],dataLXC_MEMORY__10[1,1],dataLXC_MEMORY__15[1,1],dataLXC_MEMORY__20[1,1],dataLXC_MEMORY__25[1,1])
 ScoreQEMU <-c(dataQEMU_MEMORY__1[1,1],dataQEMU_MEMORY__5[1,1],dataQEMU_MEMORY__10[1,1],dataQEMU_MEMORY__15[1,1],dataQEMU_MEMORY__20[1,1],dataQEMU_MEMORY__25[1,1])
 
-plot(ScoreLXC~Nombre_de_machines,main="Test Ramspeed 1.4.0",col="red")
+plot(ScoreLXC~Nombre_de_machines,main="Test Ramspeed 1.4.0", ylab="Score High is better", xlab="Nombre de machines",col="red")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
 legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
-
+dev.off()
 ## STREAM 
-
+png(file="stream.png", bg="transparent")
 Scores <-c(dataKVM_MEMORY__1[2,1],dataKVM_MEMORY__5[2,1],dataKVM_MEMORY__10[2,1],dataKVM_MEMORY__15[2,1],dataKVM_MEMORY__20[2,1],dataKVM_MEMORY__25[2,1])
 ScoreDOCKER <-c(dataDOCKER_MEMORY__1[2,1],dataDOCKER_MEMORY__5[2,1],dataDOCKER_MEMORY__10[2,1],dataDOCKER_MEMORY__15[2,1],dataDOCKER_MEMORY__20[2,1],dataDOCKER_MEMORY__25[2,1])
 ScoreLXC <-c(dataLXC_MEMORY__1[2,1],dataLXC_MEMORY__5[2,1],dataLXC_MEMORY__10[2,1],dataLXC_MEMORY__15[2,1],dataLXC_MEMORY__20[2,1],dataLXC_MEMORY__25[2,1])
 ScoreQEMU <-c(dataQEMU_MEMORY__1[2,1],dataQEMU_MEMORY__5[2,1],dataQEMU_MEMORY__10[2,1],dataQEMU_MEMORY__15[2,1],dataQEMU_MEMORY__20[2,1],dataQEMU_MEMORY__25[2,1])
 
-plot(ScoreLXC~Nombre_de_machines,main="Test stream 1.2.0",col="red")
+plot(ScoreLXC~Nombre_de_machines,main="Test stream 1.2.0", ylab="Score High is better", xlab="Nombre de machines",col="red")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
 legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
-
+dev.off()
 ## T-TESTS
+png(file="t-test.png", bg="transparent")
 Scores <-c(dataKVM_MEMORY__1[3,1],dataKVM_MEMORY__5[3,1],dataKVM_MEMORY__10[3,1],dataKVM_MEMORY__15[3,1],dataKVM_MEMORY__20[3,1],dataKVM_MEMORY__25[3,1])
 ScoreDOCKER <-c(dataDOCKER_MEMORY__1[3,1],dataDOCKER_MEMORY__5[3,1],dataDOCKER_MEMORY__10[3,1],dataDOCKER_MEMORY__15[3,1],dataDOCKER_MEMORY__20[3,1],dataDOCKER_MEMORY__25[3,1])
 ScoreLXC <-c(dataLXC_MEMORY__1[3,1],dataLXC_MEMORY__5[3,1],dataLXC_MEMORY__10[3,1],dataLXC_MEMORY__15[3,1],dataLXC_MEMORY__20[3,1],dataLXC_MEMORY__25[3,1])
 ScoreQEMU <-c(dataQEMU_MEMORY__1[3,1],dataQEMU_MEMORY__5[3,1],dataQEMU_MEMORY__10[3,1],dataQEMU_MEMORY__15[3,1],dataQEMU_MEMORY__20[3,1],dataQEMU_MEMORY__25[3,1])
 
-plot(ScoreLXC~Nombre_de_machines,main="Test T-test 1.0.0",col="red")
+plot(ScoreLXC~Nombre_de_machines,main="Test T-test 1.0.0", ylab="Score Less is better", xlab="Nombre de machines",col="red")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
 legend(x="topleft",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
-
+dev.off()
 
 #CPU
 ###resultats_CPU_TEST1_TSCP
 
-
+png(file="TSCP.png", bg="transparent")
 Scores <-c(dataKVM_CPU__1[1,1],dataKVM_CPU__5[1,1],dataKVM_CPU__10[1,1],dataKVM_CPU__15[1,1],dataKVM_CPU__20[1,1],dataKVM_CPU__25[1,1])
 ScoreDOCKER <-c(dataDOCKER_CPU__1[1,1],dataDOCKER_CPU__5[1,1],dataDOCKER_CPU__10[1,1],dataDOCKER_CPU__15[1,1],dataDOCKER_CPU__20[1,1],dataDOCKER_CPU__25[1,1])
 ScoreLXC <-c(dataLXC_CPU__1[1,1],dataLXC_CPU__5[1,1],dataLXC_CPU__10[1,1],dataLXC_CPU__15[1,1],dataLXC_CPU__20[1,1],dataLXC_CPU__25[1,1])
 ScoreQEMU <-c(dataQEMU_CPU__1[1,1],dataQEMU_CPU__5[1,1],dataQEMU_CPU__10[1,1],dataQEMU_CPU__15[1,1],dataQEMU_CPU__20[1,1],dataQEMU_CPU__25[1,1])
 
-plot(Scores~Nombre_de_machines,main="Test TSCP 1.0.0 ",col="orange")
+plot(Scores~Nombre_de_machines,main="Test TSCP 1.0.0 ", ylab="Score High is better", xlab="Nombre de machines",col="orange")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
 legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
-
+dev.off()
 ###resultats_CPU_TEST1_compress
 
-
+png(file="7zip.png", bg="transparent")
 Scores <-c(dataKVM_CPU__1[2,1],dataKVM_CPU__5[2,1],dataKVM_CPU__10[2,1],dataKVM_CPU__15[2,1],dataKVM_CPU__20[2,1],dataKVM_CPU__25[2,1])
 ScoreDOCKER <-c(dataDOCKER_CPU__1[2,1],dataDOCKER_CPU__5[2,1],dataDOCKER_CPU__10[2,1],dataDOCKER_CPU__15[2,1],dataDOCKER_CPU__20[2,1],dataDOCKER_CPU__25[2,1])
 ScoreLXC <-c(dataLXC_CPU__1[2,1],dataLXC_CPU__5[2,1],dataLXC_CPU__10[2,1],dataLXC_CPU__15[2,1],dataLXC_CPU__20[2,1],dataLXC_CPU__25[2,1])
 ScoreQEMU <-c(dataQEMU_CPU__1[2,1],dataQEMU_CPU__5[2,1],dataQEMU_CPU__10[2,1],dataQEMU_CPU__15[2,1],dataQEMU_CPU__20[2,1],dataQEMU_CPU__25[2,1])
 
-plot(ScoreLXC~Nombre_de_machines,main="Test 7Zip-Compression 1.0.0",col="red")
+plot(ScoreLXC~Nombre_de_machines,main="Test 7Zip-Compression 1.0.0",ylab="Score High is better", xlab="Nombre de machines",col="red")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
 legend(x="topright",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
-
+dev.off()
 
 ###resultats_CPU_TEST1_crafty
 
-
+png(file="Crafty.png", bg="transparent")
 Scores <-c(dataKVM_CPU__1[3,1],dataKVM_CPU__5[3,1],dataKVM_CPU__10[3,1],dataKVM_CPU__15[3,1],dataKVM_CPU__20[3,1],dataKVM_CPU__25[3,1])
 ScoreDOCKER <-c(dataDOCKER_CPU__1[3,1],dataDOCKER_CPU__5[3,1],dataDOCKER_CPU__10[3,1],dataDOCKER_CPU__15[3,1],dataDOCKER_CPU__20[3,1],dataDOCKER_CPU__25[3,1])
 ScoreLXC <-c(dataLXC_CPU__1[3,1],dataLXC_CPU__5[3,1],dataLXC_CPU__10[3,1],dataLXC_CPU__15[3,1],dataLXC_CPU__20[3,1],dataLXC_CPU__25[3,1])
 ScoreQEMU <-c(dataQEMU_CPU__1[3,1],dataQEMU_CPU__5[3,1],dataQEMU_CPU__10[3,1],dataQEMU_CPU__15[3,1],dataQEMU_CPU__20[3,1],dataQEMU_CPU__25[3,1])
 
-plot(ScoreQEMU~Nombre_de_machines,main="Test Crafty",col="purple")
+plot(ScoreQEMU~Nombre_de_machines,main="Test Crafty", ylab="Score Less is better", xlab="Nombre de machines",col="purple")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
 legend(x="topleft",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
-
+dev.off()
 
 ###resultats_CPU_TEST1_povray
 
-
+png(file="povray.png", bg="transparent")
 Scores <-c(dataKVM_CPU__1[4,1],dataKVM_CPU__5[4,1],dataKVM_CPU__10[4,1],dataKVM_CPU__15[4,1],dataKVM_CPU__20[4,1],dataKVM_CPU__25[4,1])
 ScoreDOCKER <-c(dataDOCKER_CPU__1[4,1],dataDOCKER_CPU__5[4,1],dataDOCKER_CPU__10[4,1],dataDOCKER_CPU__15[4,1],dataDOCKER_CPU__20[4,1],dataDOCKER_CPU__25[4,1])
 ScoreLXC <-c(dataLXC_CPU__1[4,1],dataLXC_CPU__5[4,1],dataLXC_CPU__10[4,1],dataLXC_CPU__15[4,1],dataLXC_CPU__20[4,1],dataLXC_CPU__25[4,1])
 ScoreQEMU <-c(dataQEMU_CPU__1[4,1],dataQEMU_CPU__5[4,1],dataQEMU_CPU__10[4,1],dataQEMU_CPU__15[4,1],dataQEMU_CPU__20[4,1],dataQEMU_CPU__25[4,1])
 
-plot(ScoreDOCKER~Nombre_de_machines,main=" Test Povray 1.3.1",col="blue")
+plot(ScoreDOCKER~Nombre_de_machines,main=" Test Povray 1.3.1", ylab="Score Less is better", xlab="Nombre de machines",col="blue")
 
 lines(Nombre_de_machines, Scores, pch=16, col="orange", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreDOCKER, pch=16, col="blue", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreLXC, pch=16, col="red", type="b", lwd=2)
 lines(Nombre_de_machines, ScoreQEMU, pch=16, col="purple", type="b", lwd=2)
 legend(x="topleft",legend=c("KVM","Docker","LXC","QEMU"),text.col=c("orange","blue","red","purple"),pch=16,col=c("orange","blue","red","purple"))
-
+dev.off()
 #NETWORK 
-data=c(dataKVM_NETWORK__25[1,1],dataDOCKER_NETWORK__25[1,1],dataLXC_NETWORK__25[1,1],dataQEMU_NETWORK__25[1,1])
+
+png(file="netloop.png", bg="transparent")
 
 barplot(c(dataKVM_NETWORK__25[1,1],dataDOCKER_NETWORK__25[1,1],dataLXC_NETWORK__25[1,1],dataQEMU_NETWORK__25[1,1]),main="Test NetworkLoopback 1.0.0",col="blue")
 
+dev.off()
+
+#Histogramme comparaison avec machines physique 
+
+png(file="Monomachine.png", bg="transparent")
+x<- c(40,33,32,20,15) 
+barplot(x,names.arg=c("M","LXC","DOCKER","KVM","QEMU"),horiz=TRUE,main="Test mono-machine",col=c("black","red","blue","orange","purple"),las=1)
 dev.off()
